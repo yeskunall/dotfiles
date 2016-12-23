@@ -32,3 +32,4 @@
  )
 
 (setq inhibit-startup-screen t)
+(setq frame-title-format "%b")
