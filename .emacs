@@ -23,7 +23,7 @@
      ("melpa-stable" . "http://stable.melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (dracula-theme haskell-mode use-package rainbow-delimiters projectile flycheck evil counsel auto-complete))))
+    (ac-emoji neotree dracula-theme haskell-mode use-package rainbow-delimiters projectile flycheck evil counsel auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -33,3 +33,5 @@
 
 (setq inhibit-startup-screen t)
 (setq frame-title-format "%b")
+(setq default-directory "C:/Users/Kunall/Desktop/")
+(global-set-key [f8] 'neotree-toggle)
