@@ -33,3 +33,7 @@ alias gx='gitx --all'
 alias got='git '
 alias get='git '
 alias gti='git '
+
+# Personal favs
+alias cp='cp -iv'
+alias mv='mv -iv'
