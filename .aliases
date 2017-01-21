@@ -25,9 +25,11 @@ alias ga='git add '
 alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
-alias go='git checkout'
+alias gco='git checkout'
 alias gk='gitk --all&'
 alias gx='gitx --all'
+alias gp='git push'
+alias gmt='git mergetool'
 # The aliases below may seem trivial, but they are so useful, you can't even
 # imagine 😅
 alias got='git '
