@@ -30,6 +30,8 @@ alias gk='gitk --all&'
 alias gx='gitx --all'
 alias gp='git push'
 alias gmt='git mergetool'
+alias gsp='git status --porcelain'
+
 # The aliases below may seem trivial, but they are so useful, you can't even
 # imagine 😅
 alias got='git '
@@ -39,3 +41,7 @@ alias gti='git '
 # Personal favs
 alias cp='cp -iv'
 alias mv='mv -iv'
+alias c='clear'
+alias cls='clear'
+alias weather='curl -4 http://wttr.in/'
+alias now='date +"%T"'
