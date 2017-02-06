@@ -1,2 +1,15 @@
-# Custom bash prompt via kirsle.net/wizards/ps1.html
-export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+# Custom bash prompt
+
+parse_git_dirty() {
+  [[ $(git status --porcelain 2> /dev/null | tail -n1) != "" ]] && echo -e "\e[38;5;120m°\e[0m"
+}
+
+parse_git_branch() {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
+}
+
+
+export PS1=" \[\e[38;5;30m\]⚡ \[\e[1m\]\[\e[4m\]\[\e[38;5;43m\]\W\[\e[0m\] \[\e[38;5;159m\]\$(parse_git_branch)\[\e[0m\] "
+
+# \[\]
+# <Esc>[38;5;ColorNumberm
