@@ -1,5 +1,6 @@
 [core]
   editor = subl
+  excludesfile = C:/Users/Kunall/AppData/Roaming/SPB_16.6/.gitignore_global
 [user]
   name = Kunall Banerjee
   email = yeskunall96@gmail.com
@@ -18,3 +19,18 @@
   added = yellow
   changed = green
   untracked = cyan
+[merge]
+	tool = kdiff3
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	trustExitCode = false
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	trustExitCode = false
+[diff]
+	guitool = kdiff3
+	guitool = kdiff3
+[difftool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	trustExitCode = false
