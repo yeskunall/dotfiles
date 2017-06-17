@@ -1,6 +1,7 @@
 [core]
   editor = subl
-  excludesfile = C:/Users/Kunall/AppData/Roaming/SPB_16.6/.gitignore_global
+	excludesfile = C:/Users/Kunall/AppData/Roaming/SPB_16.6/.gitignore_global
+	autocrlf = false
 [user]
   name = Kunall Banerjee
   email = yeskunall96@gmail.com
