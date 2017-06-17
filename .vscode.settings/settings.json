@@ -1,0 +1,13 @@
+{
+    "editor.cursorBlinking": "phase",
+    "editor.cursorStyle": "block",
+    "editor.fontFamily": "Fira Code Medium, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 24,
+    "editor.renderLineHighlight": "none",
+    "editor.renderWhitespace": "boundary",
+    "workbench.colorCustomizations": {},
+    "workbench.colorTheme": "Material Theme Palenight",
+    "workbench.welcome.enabled": false
+}
