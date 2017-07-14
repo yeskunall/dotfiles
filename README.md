@@ -10,6 +10,6 @@ I use the Material Theme (Palenight). My editor settings can be found [here](htt
 
 <img src="media/editor.png" alt="editor" />
 
-If you're curious, the font I use [Fira Code](https://github.com/tonsky/FiraCode) since VSCode has support for ligatures.
+If you're curious, the font I use is [Fira Code](https://github.com/tonsky/FiraCode) since VSCode has support for ligatures.
 
 _... More coming soon!_
