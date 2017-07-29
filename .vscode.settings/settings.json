@@ -7,7 +7,10 @@
     "editor.lineHeight": 24,
     "editor.renderLineHighlight": "none",
     "editor.renderWhitespace": "boundary",
-    "workbench.colorCustomizations": {},
-    "workbench.colorTheme": "Material Theme Palenight",
-    "workbench.welcome.enabled": false
+    "workbench.welcome.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "materialTheme.cache.workbench.settings": {
+        "themeColours": "Palenight"
+    },
+    "workbench.colorTheme": "Material Theme"
 }
