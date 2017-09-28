@@ -1,10 +1,20 @@
+[alias]
+  # List contributors with number of commits
+  contributors = shortlog --summary --numbered
+  # Pull in submodules as well
+  cr = clone --recursive
+  # Show the diff between the latest commit and the current state
+  diff = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+  remotes = remote -v
 [core]
+  # Use global `.gitignore` and `.gitattributes`
+  attributesfile = ~/.gitattributes
+  autocrlf = false
   editor = subl
-	excludesfile = C:/Users/Kunall/AppData/Roaming/SPB_16.6/.gitignore_global
-	autocrlf = false
+  excludesfile = ~/.gitignore_global
 [user]
-  name = Kunall Banerjee
   email = yeskunall96@gmail.com
+  name = Kunall Banerjee
 [color]
   ui = auto
 [color "branch"]
@@ -12,26 +22,21 @@
   local = yellow
   remote = green
 [color "diff"]
-  meta = yellow bold
   frag = magenta bold
-  old = red bold
+  meta = yellow bold
   new = green bold
+  old = red bold
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
 [merge]
-	tool = kdiff3
-	tool = kdiff3
+  tool = kdiff3
 [mergetool "kdiff3"]
-	path = C:/Program Files/KDiff3/kdiff3.exe
-	trustExitCode = false
-	path = C:/Program Files/KDiff3/kdiff3.exe
-	trustExitCode = false
+  path = C:/Program Files/KDiff3/kdiff3.exe
+  trustExitCode = false
 [diff]
-	guitool = kdiff3
-	guitool = kdiff3
+  guitool = kdiff3
 [difftool "kdiff3"]
-	path = C:/Program Files/KDiff3/kdiff3.exe
-	path = C:/Program Files/KDiff3/kdiff3.exe
-	trustExitCode = false
+  path = C:/Program Files/KDiff3/kdiff3.exe
+  trustExitCode = false
