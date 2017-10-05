@@ -10,7 +10,7 @@
   # Use global `.gitignore` and `.gitattributes`
   attributesfile = ~/.gitattributes
   autocrlf = false
-  editor = subl
+  editor = code
   excludesfile = ~/.gitignore_global
 [user]
   email = yeskunall96@gmail.com
