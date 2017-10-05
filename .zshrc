@@ -12,6 +12,7 @@ DISABLE_AUTO_TITLE="true"
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh/.aliases.zsh
 source ~/.zsh/.functions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 DEFAULT_USER='Kimchi'
 
