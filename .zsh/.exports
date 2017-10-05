@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Make VS Code the default editor
+export EDITOR='code';
+
+# Use Node's persistent REPL history (Node >= 8)
+export NODE_REPL_HISTORY=~/.node_history;
+# Allow 500 entries; the default is 1000
+export NODE_REPL_HISTORY_SIZE='500';
+
