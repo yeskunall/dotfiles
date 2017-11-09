@@ -7,4 +7,3 @@ export EDITOR='code';
 export NODE_REPL_HISTORY=~/.node_history;
 # Allow 500 entries; the default is 1000
 export NODE_REPL_HISTORY_SIZE='500';
-
