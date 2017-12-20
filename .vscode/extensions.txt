@@ -1,0 +1,7 @@
+dbaeumer.vscode-eslint-1.4.3
+EditorConfig.editorconfig-0.11.1
+Equinusocio.vsc-material-theme-1.1.2
+faustinoaq.crystal-lang-0.3.9
+lukehoban.go-0.6.70
+ms-python.python-0.9.1
+PKief.material-icon-theme-3.2.0
