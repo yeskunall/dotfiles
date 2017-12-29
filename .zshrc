@@ -93,6 +93,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# I don't want this enabled
+# Ref: http://zsh.sourceforge.net/Doc/Release/Redirection.html#Multios
+unsetopt MULTIOS
+
 export NVM_DIR=$HOME/.nvm
 source $NVM_DIR/nvm.sh
 
