@@ -13,6 +13,5 @@ alias gti='git '
 
 # Miscellaneous
 alias c='clear'
-alias now='date +"%T"'
 alias weather='curl -4 http://wttr.in/'
 alias week='date +%V'
