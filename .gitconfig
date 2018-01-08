@@ -5,6 +5,10 @@
   cr = clone --recursive
   # Show the diff between the latest commit and the current state
   diff = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+  # Remove branches that have already been merged with master
+	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+  # View abbreviated SHA, description, and history graph of the latest 20 commits
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
   remotes = remote -v
 [core]
   # Use global `.gitignore` and `.gitattributes`
@@ -16,7 +20,8 @@
   email = yeskunall96@gmail.com
   name = Kunall Banerjee
 [color]
-  ui = auto
+  # Disable this as its the default setting in Git ≥ 1.8.4
+	# ui = auto
 [color "branch"]
   current = yellow reverse
   local = yellow
