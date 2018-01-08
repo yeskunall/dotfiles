@@ -1,11 +1,6 @@
-# Path to your oh-my-zsh installation.
 export ZSH=/Users/kimchi/.oh-my-zsh
 ZSH_THEME="spaceship"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
@@ -15,7 +10,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt MULTIOS
 
 # Do this here explicitly instead of doing
-# it in `~/.exports``
+# it in `~/.exports`
 export NVM_DIR=$HOME/.nvm
 source $NVM_DIR/nvm.sh
 
