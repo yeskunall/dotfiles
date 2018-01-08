@@ -1,15 +1,19 @@
 <img width="900" src="media/dotfiles.png" alt="dotfiles" />
 
-> Some of my defaults for development on a Windows machine &mdash; okay, maybe more than _just_ dotfiles
+> [Kimchi's](https://kimchi.now.sh) dotfiles
+
+
+## Terminal
+
+[iTerm2](https://www.iterm2.com/) is my preferred terminal.
+<img src="media/term.png" alt="terminal.png" />
+
+I use [zsh]() backed by [Oh My Zsh](http://ohmyz.sh/). I'm using the [spaceship-zsh-theme](git.io/spaceship).
 
 ## Editor
 
-I recently made the switch from Atom to [Visual Studio Code](https://code.visualstudio.com/) because of one **huge** reason: [Atom](https://atom.io/) gets _ridiculously_ slow when trying to load large projects.
+I use the Material Theme, Palenight color variant. My other editor settings can be found [here](https://github.com/yeskunall/dotfiles/blob/master/.vscode.settings/settings.json).
 
-I use the Material Theme (Palenight). My editor settings can be found [here](https://github.com/yeskunall/dotfiles/blob/master/.vscode.settings/settings.json).
-
-<img src="media/editor.png" alt="editor" />
+<img src="media/editor.png" alt="editor.png" />
 
 If you're curious, the font I use is [Fira Code](https://github.com/tonsky/FiraCode) since VSCode has support for ligatures.
-
-_... More coming soon!_
