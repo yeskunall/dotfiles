@@ -8,7 +8,7 @@
 [iTerm2](https://www.iterm2.com/) is my preferred terminal.
 <img src="media/term.png" alt="terminal.png" />
 
-I use [zsh]() backed by [Oh My Zsh](http://ohmyz.sh/). I'm using the [spaceship-zsh-theme](git.io/spaceship).
+I use [zsh](http://www.zsh.org/) backed by [Oh My Zsh](http://ohmyz.sh/). I'm using the [spaceship-zsh-theme](https://github.com/denysdovhan/spaceship-zsh-theme).
 
 ## Editor
 
