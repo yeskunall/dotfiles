@@ -1,6 +1,8 @@
 export ZSH=/Users/kimchi/.oh-my-zsh
 ZSH_THEME="spaceship"
 
+SPACESHIP_PROMPT_SYMBOL=❯
+
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
