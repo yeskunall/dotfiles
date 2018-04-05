@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Disable automatic period substitution. This shit's straight up annoying
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
