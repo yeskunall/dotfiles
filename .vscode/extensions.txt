@@ -1,7 +1,10 @@
-dbaeumer.vscode-eslint-1.4.3
-EditorConfig.editorconfig-0.11.1
-Equinusocio.vsc-material-theme-1.1.2
-faustinoaq.crystal-lang-0.3.9
-lukehoban.go-0.6.70
-ms-python.python-0.9.1
-PKief.material-icon-theme-3.2.0
+dbaeumer.vscode-eslint-1.4.8
+EditorConfig.editorconfig-0.12.1
+Equinusocio.vsc-material-theme-2.0.1
+faustinoaq.crystal-lang-0.3.10
+flowtype.flow-for-vscode-0.8.1
+karyfoundation.racket-0.0.3
+karyfoundation.theme-karyfoundation-themes-18.0.1
+lukehoban.go-0.6.78
+ms-python.python-2018.4.0
+PKief.material-icon-theme-3.3.0
