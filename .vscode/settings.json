@@ -1,4 +1,5 @@
 {
+  "disableInstallationChecks": true,
   "editor.cursorBlinking": "phase",
   "editor.cursorStyle": "block",
   "editor.fontFamily": "'Fira Code', Menlo, Consolas, 'Courier New', monospace",
@@ -7,26 +8,30 @@
   "editor.lineHeight": 24,
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "boundary",
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+  },
   "workbench.editor.tabSizing": "shrink",
   "workbench.welcome.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
   "materialTheme.cache.workbench.settings": {
       "themeColours": "Palenight",
-      "accentPrevious": "Pink",
-      "accent": "Sky"
+      "accentPrevious": "Acid Lime",
+      "accent": "Pink"
   },
   "workbench.colorTheme": "Material Theme",
   "workbench.colorCustomizations": {
-      "activityBarBadge.background": "#84FFFF",
-      "list.activeSelectionForeground": "#84FFFF",
-      "list.inactiveSelectionForeground": "#84FFFF",
-      "list.highlightForeground": "#84FFFF",
-      "scrollbarSlider.activeBackground": "#84FFFF50",
-      "editorSuggestWidget.highlightForeground": "#84FFFF",
-      "textLink.foreground": "#84FFFF",
-      "progressBar.background": "#84FFFF",
-      "pickerGroup.foreground": "#84FFFF",
-      "tab.activeBorder": "#84FFFF"
+      "activityBarBadge.background": "#FF4081",
+      "list.activeSelectionForeground": "#FF4081",
+      "list.inactiveSelectionForeground": "#FF4081",
+      "list.highlightForeground": "#FF4081",
+      "scrollbarSlider.activeBackground": "#FF408150",
+      "editorSuggestWidget.highlightForeground": "#FF4081",
+      "textLink.foreground": "#FF4081",
+      "progressBar.background": "#FF4081",
+      "pickerGroup.foreground": "#FF4081",
+      "tab.activeBorder": "#FF4081"
   },
+  "telemetry.enableTelemetry": false,
   "typescript.check.npmIsInstalled": false
 }
