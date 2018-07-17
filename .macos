@@ -2,3 +2,6 @@
 
 # Disable automatic period substitution. This shit's straight up annoying
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
+# Disable smart dashes as they can get annoying when typing code
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
