@@ -19,7 +19,7 @@
       "accentPrevious": "Acid Lime",
       "accent": "Pink"
   },
-"workbench.colorTheme": "Material Theme Palenight",
+  "workbench.colorTheme": "Material Theme Palenight",
   "workbench.colorCustomizations": {
       "activityBarBadge.background": "#FF4081",
       "list.activeSelectionForeground": "#FF4081",
@@ -33,5 +33,6 @@
       "tab.activeBorder": "#FF4081"
   },
   "telemetry.enableTelemetry": false,
-  "typescript.check.npmIsInstalled": false
+  "typescript.check.npmIsInstalled": false,
+  "workbench.statusBar.feedback.visible": false
 }
