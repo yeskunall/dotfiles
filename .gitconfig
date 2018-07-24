@@ -21,7 +21,7 @@
   name = Kunall Banerjee
 [color]
   # Disable this as its the default setting in Git ≥ 1.8.4
-	# ui = auto
+  # ui = auto
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -36,12 +36,10 @@
   changed = green
   untracked = cyan
 [merge]
-  tool = kdiff3
-[mergetool "kdiff3"]
-  path = C:/Program Files/KDiff3/kdiff3.exe
-  trustExitCode = false
+  tool = vscode
 [diff]
-  guitool = kdiff3
-[difftool "kdiff3"]
-  path = C:/Program Files/KDiff3/kdiff3.exe
-  trustExitCode = false
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
