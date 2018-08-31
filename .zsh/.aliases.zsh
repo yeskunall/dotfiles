@@ -7,6 +7,5 @@ alias gti='git '
 
 # Miscellaneous
 alias c='clear'
-alias caret='open -a Caret'
 alias weather='curl -4 http://wttr.in/'
 alias week='date +%V'
