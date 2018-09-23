@@ -31,9 +31,9 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
-source $DEV/dotfiles/.zsh/.aliases.zsh
-source $DEV/dotfiles/.zsh/.exports
-source $DEV/dotfiles/.zsh/.functions
+source $DEV/uses/.zsh/.aliases.zsh
+source $DEV/uses/.zsh/.exports
+source $DEV/uses/.zsh/.functions
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
