@@ -8,6 +8,8 @@ I'm currently using [VS Code](https://code.visualstudio.com/). I use the Materia
 
 <img src="media/editor.png" alt="editor.png" />
 
+> _If you're curious, I sometimes write about my musings at_ [kimchi.now.sh/musings](https://kimchi.now.sh/musings).
+
 ### VS Code Extensions
 
 Extensions I use regularly. These are updated frequently.
