@@ -3,9 +3,16 @@ ZSH_THEME="spaceship"
 
 SPACESHIP_PROMPT_SYMBOL=❯
 
-plugins=(git)
+plugins=(
+  z,
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
+# `zsh-autosuggestions` won't work if placed in
+# $ZSH_CUSTOM/plugins/ or ~/.oh-my-zsh/plugins/
+# so `source`-ing it from Homebrew cellar instead
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # I don't want this enabled
 # Ref: http://zsh.sourceforge.net/Doc/Release/Redirection.html#Multios
