@@ -1,10 +1,10 @@
-<img width="900" src="media/uses@2x.png" alt="kimchi-uses" />
+<img width="900" src="media/uses-white-bg@2x.png" alt="kimchi-uses-white-bg" />
 
 > _[Kimchi uses](https://kimchi.now.sh/uses)_
 
 ## Editor
 
-I'm currently using [VS Code](https://code.visualstudio.com/). I use the Material Theme, Palenight color variant. My other editor settings can be found [here](https://github.com/yeskunall/dotfiles/blob/master/.vscode.settings/settings.json). If you're curious, the font I use is [Fira Code](https://github.com/tonsky/FiraCode) since VSCode has support for ligatures.
+I'm currently using [VS Code](https://code.visualstudio.com/). I use the Material Theme, Palenight color variant. My other editor settings can be found [here](https://github.com/yeskunall/uses/blob/master/.vscode.settings/settings.json). If you're curious, the font I use is [Fira Code](https://github.com/tonsky/FiraCode) since VSCode has support for ligatures.
 
 <img src="media/editor.png" alt="editor.png" />
 
