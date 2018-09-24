@@ -1,6 +1,3 @@
-# hub (for GitHub)
-git='hub'
-
 # Miscellaneous
 alias c='clear'
 alias weather='curl -4 http://wttr.in/'
