@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Disable automatic period substitution. This shit's straight up annoying
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
+# Disable smart dashes as they can get annoying when typing code
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Set an insanely fast keyboard repeat rate
+# NOTE: This does not work for special keyboard keys
+# that have a "press-and-hold" option.
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10

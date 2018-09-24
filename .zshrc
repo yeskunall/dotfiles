@@ -1,21 +1,43 @@
-# Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
+export ZSH=/Users/kimchi/.oh-my-zsh
+ZSH_THEME="spaceship"
 
-# Custom theme
-# Need to find a better name  for it
-ZSH_THEME="custom"
+SPACESHIP_PROMPT_SYMBOL=❯
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
-DISABLE_AUTO_TITLE="true"
+plugins=(
+  z,
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/.aliases.zsh
-source ~/.zsh/.exports
-source ~/.zsh/.functions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# `zsh-autosuggestions` won't work if placed in
+# $ZSH_CUSTOM/plugins/ or ~/.oh-my-zsh/plugins/
+# so `source`-ing it from Homebrew cellar instead
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-DEFAULT_USER='Kimchi'
+# I don't want this enabled
+# Ref: http://zsh.sourceforge.net/Doc/Release/Redirection.html#Multios
+unsetopt MULTIOS
 
-# Set window title
-export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND"
+# Do this here explicitly instead of doing
+# it in `~/.exports`
+export NVM_DIR=$HOME/.nvm
+source $NVM_DIR/nvm.sh
+
+WRKSPC=$HOME/Documents
+export DEV=$WRKSPC/dev
+
+export GOPATH=$DEV/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
+source $DEV/uses/.zsh/.aliases.zsh
+source $DEV/uses/.zsh/.exports
+source $DEV/uses/.zsh/.functions
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/kimchi/.nvm/versions/node/v10.3.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/kimchi/.nvm/versions/node/v10.3.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/kimchi/.nvm/versions/node/v10.3.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/kimchi/.nvm/versions/node/v10.3.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
