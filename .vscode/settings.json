@@ -19,6 +19,17 @@
       "accentPrevious": "Acid Lime",
       "accent": "Pink"
   },
+  "telemetry.enableTelemetry": false,
+  "todohighlight.keywords": [
+    "NOTE:",
+    {
+        "text": "NOTE:",
+        "color": "#fff",
+        "backgroundColor": "#00044f",
+        "overviewRulerColor": "grey"
+    },
+],
+"typescript.check.npmIsInstalled": false,
   "workbench.colorTheme": "Material Theme Palenight",
   "workbench.colorCustomizations": {
       "activityBarBadge.background": "#FF4081",
@@ -32,7 +43,5 @@
       "pickerGroup.foreground": "#FF4081",
       "tab.activeBorder": "#FF4081"
   },
-  "telemetry.enableTelemetry": false,
-  "typescript.check.npmIsInstalled": false,
   "workbench.statusBar.feedback.visible": false
 }
