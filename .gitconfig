@@ -10,16 +10,6 @@
   # View abbreviated SHA, description, and history graph of the latest 20 commits
   l = log --pretty=oneline -n 20 --graph --abbrev-commit
   remotes = remote -v
-[core]
-  # Use global `.gitignore` and `.gitattributes`
-  attributesfile = ~/.gitattributes
-  autocrlf = false
-  editor = code
-  excludesfile = ~/.gitignore_global
-  pager = diff-so-fancy | less --tabs=4 -RFX
-[user]
-  email = yeskunall96@gmail.com
-  name = Kunall Banerjee
 [color]
   ui = true
 [color "branch"]
@@ -33,27 +23,26 @@
   old = red bold
   commit = yellow bold
   whitespace = red reverse
-[color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
-[merge]
-  tool = vscode
-[mergetool "kdiff3"]
-  path = C:/Program Files/KDiff3/kdiff3.exe
-  trustExitCode = false
-[diff]
-  guitool = kdiff3
-  tool = vscode
-[difftool "kdiff3"]
-  path = C:/Program Files/KDiff3/kdiff3.exe
-  trustExitCode = false
-[mergetool "vscode"]
-  cmd = "code --wait "
-[difftool "vscode"]
-  cmd = "code --wait --diff  "
 [color "diff-highlight"]
   newNormal = green bold
   newHighlight = green bold 22
   oldNormal = red bold
   oldHighlight = red bold 52
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[core]
+  # Use global `.gitignore` and `.gitattributes`
+  attributesfile = ~/.gitattributes
+  autocrlf = false
+  editor = code
+  excludesfile = ~/.gitignore_global
+  pager = diff-so-fancy | less --tabs=4 -RFX
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = "code --wait "
+[user]
+  email = yeskunall96@gmail.com
+  name = Kunall Banerjee
