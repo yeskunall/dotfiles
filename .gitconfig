@@ -6,9 +6,9 @@
   # Show the diff between the latest commit and the current state
   diff = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
   # Remove branches that have already been merged with master
-	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+  dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
   # View abbreviated SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  l = log --pretty=oneline -n 20 --graph --abbrev-commit
   remotes = remote -v
 [core]
   # Use global `.gitignore` and `.gitattributes`
@@ -16,30 +16,44 @@
   autocrlf = false
   editor = code
   excludesfile = ~/.gitignore_global
+  pager = diff-so-fancy | less --tabs=4 -RFX
 [user]
   email = yeskunall96@gmail.com
   name = Kunall Banerjee
 [color]
-  # Disable this as its the default setting in Git ≥ 1.8.4
-  # ui = auto
+  ui = true
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
 [color "diff"]
   frag = magenta bold
-  meta = yellow bold
+  meta = yellow
   new = green bold
   old = red bold
+  commit = yellow bold
+  whitespace = red reverse
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
 [merge]
   tool = vscode
+[mergetool "kdiff3"]
+  path = C:/Program Files/KDiff3/kdiff3.exe
+  trustExitCode = false
 [diff]
+  guitool = kdiff3
   tool = vscode
+[difftool "kdiff3"]
+  path = C:/Program Files/KDiff3/kdiff3.exe
+  trustExitCode = false
 [mergetool "vscode"]
-  cmd = code --wait $MERGED
+  cmd = "code --wait "
 [difftool "vscode"]
-  cmd = code --wait --diff $LOCAL $REMOTE
+  cmd = "code --wait --diff  "
+[color "diff-highlight"]
+  newNormal = green bold
+  newHighlight = green bold 22
+  oldNormal = red bold
+  oldHighlight = red bold 52
