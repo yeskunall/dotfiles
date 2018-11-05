@@ -1,10 +1,10 @@
 {
-  "disableInstallationChecks": true,
   "editor.cursorBlinking": "phase",
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'Fira Code', Menlo, Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'Hasklig', 'Fira Code', Menlo, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 12,
+  "editor.fontWeight": "500",
   "editor.lineHeight": 24,
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "boundary",
@@ -19,18 +19,16 @@
       "accentPrevious": "Acid Lime",
       "accent": "Pink"
   },
-  "telemetry.enableTelemetry": false,
   "todohighlight.keywords": [
-    "NOTE:",
-    {
-        "text": "NOTE:",
-        "color": "#fff",
-        "backgroundColor": "#00044f",
-        "overviewRulerColor": "grey"
-    },
-],
-"typescript.check.npmIsInstalled": false,
-  "workbench.colorTheme": "Material Theme Palenight",
+      "NOTE:",
+      {
+          "text": "NOTE:",
+          "color": "#fff",
+          "backgroundColor": "#00044f",
+          "overviewRulerColor": "grey"
+      },
+  ],
+  "workbench.colorTheme": "Night Owl",
   "workbench.colorCustomizations": {
       "activityBarBadge.background": "#FF4081",
       "list.activeSelectionForeground": "#FF4081",
@@ -43,5 +41,10 @@
       "pickerGroup.foreground": "#FF4081",
       "tab.activeBorder": "#FF4081"
   },
-  "workbench.statusBar.feedback.visible": false
+  "telemetry.enableTelemetry": false,
+  "typescript.check.npmIsInstalled": false,
+  "materialTheme.fixIconsRunning": false,
+  "material-icon-theme.folders.color": "#ef5350",
+  "workbench.statusBar.feedback.visible": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
 }
