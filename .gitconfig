@@ -1,4 +1,6 @@
 [alias]
+  cb = checkout -b
+  co = checkout
   # List contributors with number of commits
   contributors = shortlog --summary --numbered
   # Pull in submodules as well
@@ -10,6 +12,7 @@
   # View abbreviated SHA, description, and history graph of the latest 20 commits
   l = log --pretty=oneline -n 20 --graph --abbrev-commit
   remotes = remote -v
+  sp = status --porcelain=v1
 [color]
   ui = true
 [color "branch"]
