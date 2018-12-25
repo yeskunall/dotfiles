@@ -1,7 +1,7 @@
 export NVM_DIR=$HOME/.nvm
 export ZSH=/Users/kimchi/.oh-my-zsh
-export DEV=$HOME/Documents/dev
-export GOPATH=$DEV/go
+export dev=$HOME/Documents/dev
+export GOPATH=$dev/go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
@@ -52,9 +52,9 @@ plugins=(
 # Ref: http://zsh.sourceforge.net/Doc/Release/Redirection.html#Multios
 unsetopt MULTIOS
 
-source $DEV/uses/.zsh/.aliases.zsh
-source $DEV/uses/.zsh/.exports
-source $DEV/uses/.zsh/.functions
+source $dev/uses/.zsh/.aliases.zsh
+source $dev/uses/.zsh/.exports
+source $dev/uses/.zsh/.functions
 source $NVM_DIR/nvm.sh
 source $ZSH/oh-my-zsh.sh
 # `zsh-autosuggestions` won't work if placed in
