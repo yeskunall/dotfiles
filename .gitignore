@@ -1,0 +1,4 @@
+# `.gitignore` specific to this project
+
+package-lock.json
+node_modules
