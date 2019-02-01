@@ -1,5 +1,7 @@
 <img width="900" src="media/uses-white-bg@2x.png" alt="kimchi-uses-white-bg" />
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 > _[Kimchi uses](https://kimchi.now.sh/uses)_
 
 ## Editor
