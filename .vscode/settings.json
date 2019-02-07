@@ -1,50 +1,31 @@
 {
   "editor.cursorBlinking": "phase",
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'Hasklig', 'Fira Code', Menlo, Consolas, 'Courier New', monospace",
-  "editor.fontLigatures": true,
+  "editor.fontFamily": "'IBM Plex Mono'",
+  // Enable this once I get Plex patched with ligature support
+  // "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.fontWeight": "500",
   "editor.lineHeight": 24,
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "boundary",
   "emmet.includeLanguages": {
-      "javascript": "javascriptreact",
+    "javascript": "javascriptreact",
   },
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.welcome.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "materialTheme.cache.workbench.settings": {
-      "themeColours": "Palenight",
-      "accentPrevious": "Acid Lime",
-      "accent": "Pink"
-  },
-  "todohighlight.keywords": [
-      "NOTE:",
-      {
-          "text": "NOTE:",
-          "color": "#fff",
-          "backgroundColor": "#00044f",
-          "overviewRulerColor": "grey"
-      },
-  ],
-  "workbench.colorTheme": "Night Owl",
-  "workbench.colorCustomizations": {
-      "activityBarBadge.background": "#FF4081",
-      "list.activeSelectionForeground": "#FF4081",
-      "list.inactiveSelectionForeground": "#FF4081",
-      "list.highlightForeground": "#FF4081",
-      "scrollbarSlider.activeBackground": "#FF408150",
-      "editorSuggestWidget.highlightForeground": "#FF4081",
-      "textLink.foreground": "#FF4081",
-      "progressBar.background": "#FF4081",
-      "pickerGroup.foreground": "#FF4081",
-      "tab.activeBorder": "#FF4081"
-  },
-  "telemetry.enableTelemetry": false,
-  "typescript.check.npmIsInstalled": false,
-  "materialTheme.fixIconsRunning": false,
-  "material-icon-theme.folders.color": "#ef5350",
-  "workbench.statusBar.feedback.visible": false,
+  "explorer.sortOrder": "filesFirst",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "todohighlight.keywords": [
+    "NOTE:",
+    {
+      "text": "NOTE:",
+      "color": "#fff",
+      "backgroundColor": "#00044f",
+      "overviewRulerColor": "grey"
+    },
+  ],
+  "workbench.colorTheme": "LaserWave Italic",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.statusBar.feedback.visible": false
 }
