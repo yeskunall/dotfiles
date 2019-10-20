@@ -7,6 +7,9 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 export ZPLUG_HOME=/usr/local/opt/zplug
 
+# TODO: `source` just one file, I already don’t like how this file is growing
+# large already
+
 # Pull-in `nvm`
 source $NVM_DIR/nvm.sh
 
@@ -21,10 +24,8 @@ source $dev/uses/.zsh/.aliases.zsh
 source $dev/uses/.zsh/.exports
 source $dev/uses/.zsh/.functions
 
-# `zsh-autosuggestions` won't work if placed in
-# $ZSH_CUSTOM/plugins/ or ~/.oh-my-zsh/plugins/
-# so `source`-ing it from Homebrew cellar instead
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# `fzf` is needed by `enhancd`. See `zplug/load.zsh` for more
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # `spaceship-prompt` stuff ↓
 
