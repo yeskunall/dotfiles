@@ -37,7 +37,7 @@
   untracked = cyan
 [core]
   # Use global `.gitignore` and `.gitattributes`
-  attributesfile = ~/.gitattributes
+  attributesfile = ~/.gitattributes_global
   autocrlf = false
   editor = code
   excludesfile = ~/.gitignore_global
@@ -47,5 +47,5 @@
 [mergetool "vscode"]
   cmd = "code --wait "
 [user]
-  email = yeskunall96@gmail.com
+  email = hey@kimchiii.space
   name = Kunall Banerjee
