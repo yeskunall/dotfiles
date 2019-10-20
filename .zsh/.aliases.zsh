@@ -14,20 +14,8 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 
-# Use `colorls` for a prettier `ls`. See:
-# https://github.com/athityakumar/colorls for more
-#
-# Sort directories first
-alias ls='colorls --sd'
-alias l1='colorls -1'
-
-# This doesn’t work ↓
-alias la='colorls --almost-all'
-
-alias lsd='colorls --dirs'
-alias lsf='colorls --files'
-alias lsg='colorls --git-status'
-alias lsr='colorls --report'
+# Use saner defaults for `ls`.
+# See: https://github.com/DarrinTisdale/zsh-aliases-exa/blob/master/zsh-aliases-exa.plugin.zsh for more
 
 # See: https://github.com/sindresorhus/trash-cli#cli-
 # & see: https://github.com/sindresorhus/trash-cli#tip
