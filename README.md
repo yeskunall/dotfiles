@@ -15,8 +15,6 @@ I use [VS Code](https://code.visualstudio.com/) with these [settings](https://gi
 
 <img src="media/editor.png" alt="editor.png" />
 
-<br /><br />
-
 #### Details
 
 - Extensions, quite a [few](#) of them
