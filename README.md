@@ -9,9 +9,6 @@
     <br />
 </div>
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
-
 ## Editor
 
 I use [VS Code](https://code.visualstudio.com/) with these [settings](https://github.com/yeskunall/uses/blob/master/.vscode.settings/settings.json)
