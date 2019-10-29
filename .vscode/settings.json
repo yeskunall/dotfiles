@@ -1,18 +1,17 @@
 {
   "editor.cursorBlinking": "phase",
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'IBM Plex Mono'",
-  // Enable this once I get Plex patched with ligature support
-  // "editor.fontLigatures": true,
+  "editor.fontFamily": "Hasklig",
+  "editor.fontLigatures": true,
   "editor.fontSize": 12,
-  "editor.fontWeight": "500",
   "editor.lineHeight": 24,
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80, 120],
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
   },
-  "explorer.sortOrder": "filesFirst",
+  "explorer.sortOrder": "default",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "todohighlight.keywords": [
     "NOTE:",
@@ -23,9 +22,8 @@
       "overviewRulerColor": "grey"
     },
   ],
-  "workbench.colorTheme": "LaserWave Italic",
+  "workbench.colorTheme": "Noctis Obscuro",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.tabSizing": "shrink",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.statusBar.feedback.visible": false
+  "workbench.iconTheme": "vs-seti"
 }
