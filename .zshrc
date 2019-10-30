@@ -24,9 +24,6 @@ source $dev/uses/.zsh/.aliases.zsh
 source $dev/uses/.zsh/.exports
 source $dev/uses/.zsh/.functions
 
-# `fzf` is needed by `enhancd`. See `zplug/load.zsh` for more
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # `spaceship-prompt` stuff ↓
 
 # Manually add options to the array. This should make the prompt a little faster
