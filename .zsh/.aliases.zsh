@@ -20,10 +20,3 @@ alias grep='grep --color=auto'
 # See: https://github.com/sindresorhus/trash-cli#cli-
 # & see: https://github.com/sindresorhus/trash-cli#tip
 alias rm='trash'
-
-# Some cool stuff ↓
-# List FIX/NOTE/TODO lines from the current project
-alias todos="ack -n --nogroup '(NOTE|TODO|FIX(ME)?):'"
-
-alias weather='curl -4 http://wttr.in/'
-alias week='echo "You’re on week $(date +%V)" of the year'
