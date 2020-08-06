@@ -1,2 +1,4 @@
-- name: ShellCheck
-  uses: ludeeus/action-shellcheck@0.5.0
+name: ShellCheck
+# This workflow is triggered ONLY on pushes to the repository
+on: push
+uses: ludeeus/action-shellcheck@0.5.0
