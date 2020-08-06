@@ -4,8 +4,9 @@ on: push
 jobs:
   shellcheck:
     name: ShellCheck
-    # Test against macOS and NOT Linux
-    runs-on: macos-latest
+    # Test against macOS and NOT Linux at some point. Currently,
+    # this is not possible
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Run ShellCheck
