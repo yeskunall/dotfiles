@@ -24,28 +24,9 @@ source $dev/uses/.zsh/.aliases.zsh
 source $dev/uses/.zsh/.exports
 source $dev/uses/.zsh/.functions
 
-# `spaceship-prompt` stuff ↓
-
-# Manually add options to the array. This should make the prompt a little faster
-SPACESHIP_PROMPT_ORDER=(
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  package       # Package version
-  git           # Git section (git_branch + git_status)
-  node          # Node.js section
-  golang        # Go section
-  docker        # Docker section
-  exec_time     # Execution time
-  line_sep      # Line break
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
-
-SPACESHIP_CHAR_SUFFIX=" "
-SPACESHIP_CHAR_SYMBOL="❯"
-
 # I don't want this enabled
 # Ref: http://zsh.sourceforge.net/Doc/Release/Redirection.html#Multios
 unsetopt MULTIOS
+
+# Init `starship`
+eval "$(starship init zsh)"

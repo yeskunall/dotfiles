@@ -1,0 +1,11 @@
+[character]
+# Indicate error status by changing the symbol
+use_symbol_for_status = true
+
+[git_commit]
+# Always show git commit hash
+only_detached = false
+
+[package]
+# Enable displaying version for packages marked as private
+display_private = true
