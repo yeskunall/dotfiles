@@ -1,4 +1,12 @@
-name: ShellCheck
+name: shellcheck@latest
 # This workflow is triggered ONLY on pushes to the repository
 on: push
-uses: ludeeus/action-shellcheck@0.5.0
+jobs:
+  shellcheck:
+    name: ShellCheck
+    # Test against macOS and NOT Linux
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run ShellCheck
+      uses: ludeeus/action-shellcheck@master
