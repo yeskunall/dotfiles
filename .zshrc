@@ -1,3 +1,10 @@
+#!/bin/zsh
+
+# The following check is needed to trigger `shellcheck` on
+# this file.
+# See https://github.com/koalaman/shellcheck/wiki/SC2148 for more
+# shellcheck shell=bash
+
 # Make these variables available everywhere
 export dev=$HOME/Documents/dev
 export GOPATH=$dev/go
