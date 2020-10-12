@@ -1,29 +1,65 @@
 {
   "editor.cursorBlinking": "phase",
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "Hasklig",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 12,
+  "editor.fontSize": 13,
+  "editor.fontWeight": "normal",
   "editor.lineHeight": 24,
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [80, 120],
+  "editor.rulers": [80, 100, 120],
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
   },
   "explorer.sortOrder": "default",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "todohighlight.keywords": [
-    "NOTE:",
-    {
-      "text": "NOTE:",
-      "color": "#fff",
-      "backgroundColor": "#00044f",
-      "overviewRulerColor": "grey"
-    },
-  ],
   "workbench.colorTheme": "Noctis Obscuro",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.tabSizing": "shrink",
-  "workbench.iconTheme": "vs-seti"
+  // Settings for various extensions
+  "todo-tree.general.tags": ["BUG", "FIXME", "HACK", "NOTE", "TODO"],
+  "todo-tree.highlights.customHighlight": {
+    "BUG": {
+      "background": "#f57340",
+      "fontStyle": "italic",
+      "fontWeight": "900",
+      "foreground": "#e3541c",
+      "icon": "bug",
+      "iconColour": "#f57340",
+      "opacity": 30,
+      "type": "line"
+    },
+    "FIXME": {
+      "background": "#ff7262",
+      "fontStyle": "italic",
+      "fontWeight": "900",
+      "foreground": "#fa6179",
+      "icon": "note",
+      "iconColour": "#ff7262",
+      "opacity": 30,
+      "type": "line"
+    },
+    "NOTE": {
+      "background": "#169fb1",
+      "fontStyle": "italic",
+      "fontWeight": "900",
+      "foreground": "#49d6e9",
+      "icon": "note",
+      "iconColour": "#169fb1",
+      "opacity": 30,
+      "type": "line"
+    },
+    "TODO": {
+      "background": "#edc595",
+      "fontWeight": "500",
+      "foreground": "#e4b781",
+      "icon": "todo",
+      "iconColour": "#edc595",
+      "opacity": 30,
+      "type": "line",
+    },
+  },
+  // FIXME: The regex should break on new-line. Currently, it does not
+  "todo-tree.regex.regex": "(\/\/|#)\\s*($TAGS).*(\\n\\s*(\/\/|#)\\s{1,}.*)*",
 }
