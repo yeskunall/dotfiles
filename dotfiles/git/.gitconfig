@@ -1,0 +1,30 @@
+[alias]
+  # List contributors with number of commits
+  contributors = "shortlog --summary --numbered"
+  # Pull in submodules as well
+  cr = "clone --recursive"
+  remotes = "remote -v"
+  sp = "status --porcelain=v1"
+[commit]
+  gpgsign = "true"
+  template = "~/.config/git/.default-commit-message"
+[core]
+  # Use global `.gitattributes` and `.gitignore`
+  attributesfile = "~/.config/git/.gitattributes_global"
+  autocrlf = "false"
+  editor = "code --wait"
+  excludesfile = "~/.config/git/.gitignore_global"
+  pager = "delta"
+[delta]
+  line-numbers = "true"
+  side-by-side = "true"
+  syntax-theme = "DarkNeon"
+[init]
+  defaultBranch = "main"
+[merge]
+  tool = "vscode"
+[mergetool "vscode"]
+  cmd = "code --wait"
+[user]
+  email = "hey@kimchiii.space"
+  name = "Kunall Banerjee"
