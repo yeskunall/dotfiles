@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+# The following check is needed to trigger `shellcheck` on
+# this file.
+# See https://github.com/koalaman/shellcheck/wiki/SC2148 for more
+# shellcheck shell=bash
+
+# Do not use this file if you tend to `ssh` into servers that still
+# make use of `motd` for announcements or if you really care about the last
+# login time and host displayed each time you log into a machine
