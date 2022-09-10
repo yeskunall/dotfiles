@@ -4,7 +4,10 @@
   # Pull in submodules as well
   cr = "clone --recursive"
   remotes = "remote -v"
-  sp = "status --porcelain=v1"
+[color]
+  branch = true
+  # Default is `auto`
+  ui = true
 [commit]
   gpgsign = "true"
   template = "~/.config/git/.default-commit-message"
@@ -17,8 +20,10 @@
   pager = "delta"
 [delta]
   line-numbers = "true"
-  side-by-side = "true"
+  side-by-side = "false"
   syntax-theme = "DarkNeon"
+[gpg]
+  program = "gpg2"
 [init]
   defaultBranch = "main"
 [merge]
