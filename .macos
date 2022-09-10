@@ -1,0 +1,121 @@
+#!/bin/zsh
+
+#  _______              ______                     __    __
+# /       \            /      \                   /  |  /  |
+# $$$$$$$  |  ______  /$$$$$$  |______   __    __ $$ | _$$ |_    _______
+# $$ |  $$ | /      \ $$ |_ $$//      \ /  |  /  |$$ |/ $$   |  /       |
+# $$ |  $$ |/$$$$$$  |$$   |   $$$$$$  |$$ |  $$ |$$ |$$$$$$/  /$$$$$$$/
+# $$ |  $$ |$$    $$ |$$$$/    /    $$ |$$ |  $$ |$$ |  $$ | __$$      \
+# $$ |__$$ |$$$$$$$$/ $$ |    /$$$$$$$ |$$ \__$$ |$$ |  $$ |/  |$$$$$$  |
+# $$    $$/ $$       |$$ |    $$    $$ |$$    $$/ $$ |  $$  $$//     $$/
+# $$$$$$$/   $$$$$$$/ $$/      $$$$$$$/  $$$$$$/  $$/    $$$$/ $$$$$$$/
+#
+#
+# https://macos-defaults.com
+
+defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"
+
+# Disable automatic capitalization as they can get annoying when typing code
+defaults write NSGlobalDomain "NSAutomaticCapitalizationEnabled" -bool false
+
+# Disable automatic period substitution as they can get annoying when typing code
+defaults write NSGlobalDomain "NSAutomaticPeriodSubstitutionEnabled" -bool false
+
+# Disable smart dashes as they can get annoying when typing code
+defaults write NSGlobalDomain "NSAutomaticDashSubstitutionEnabled" -bool false
+
+# Save screenshots to a dedicated folder
+defaults write com.apple.screencapture location -string "${HOME}/Pictures/Screenshots"
+
+# Set an insanely fast keyboard repeat rate
+# NOTE: This does not work for special keyboard keys that have
+# a ‘press-and-hold’ option
+defaults write NSGlobalDomain "KeyRepeat" -int 1
+defaults write NSGlobalDomain "InitialKeyRepeat" -int 10
+
+#  _______                       __
+# /       \                     /  |
+# $$$$$$$  |  ______    _______ $$ |   __
+# $$ |  $$ | /      \  /       |$$ |  /  |
+# $$ |  $$ |/$$$$$$  |/$$$$$$$/ $$ |_/$$/
+# $$ |  $$ |$$ |  $$ |$$ |      $$   $$<
+# $$ |__$$ |$$ \__$$ |$$ \_____ $$$$$$  \
+# $$    $$/ $$    $$/ $$       |$$ | $$  |
+# $$$$$$$/   $$$$$$/   $$$$$$$/ $$/   $$/
+
+# Hide the Dock by default
+defaults write com.apple.dock "autohide" -bool "true"
+
+# Remove the autohide delay
+defaults write com.apple.dock "autohide-delay" -float "0"
+
+# Remove the autohide animation
+defaults write com.apple.dock "autohide-time-modifier" -float "0"
+
+# Dock the dock to the left
+defaults write com.apple.dock "orientation" -string "left"
+
+# Hide the recently used apps section
+defaults write com.apple.dock "show-recents" -bool "false"
+
+# Smaller icons (default size is 48px)
+defaults write com.apple.dock "tilesize" -int "39"
+
+# Finally, kill the Dock to apply the changes
+killall Dock
+
+#  ________  __                  __
+# /        |/  |                /  |
+# $$$$$$$$/ $$/  _______    ____$$ |  ______    ______
+# $$ |__    /  |/       \  /    $$ | /      \  /      \
+# $$    |   $$ |$$$$$$$  |/$$$$$$$ |/$$$$$$  |/$$$$$$  |
+# $$$$$/    $$ |$$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$/
+# $$ |      $$ |$$ |  $$ |$$ \__$$ |$$$$$$$$/ $$ |
+# $$ |      $$ |$$ |  $$ |$$    $$ |$$       |$$ |
+# $$/       $$/ $$/   $$/  $$$$$$$/  $$$$$$$/ $$/
+
+# Keep folders on top when sorting
+defaults write com.apple.finder "_FXSortFoldersFirstOnDesktop" -bool "true"
+
+# Larger Finder icons to the left
+defaults write NSGlobalDomain "NSTableViewDefaultSizeMode" -int "3"
+
+# Show the path bar at the bottom of the Finder
+defaults write com.apple.finder "ShowPathbar" -bool "true"
+
+defaults write com.apple.universalaccess "showWindowTitlebarIcons" -bool "true"
+
+# Finally, kill the Finder to apply the changes
+killall Finder
+
+#  ________                     __      ________        __  __    __
+# /        |                   /  |    /        |      /  |/  |  /  |
+# $$$$$$$$/______   __    __  _$$ |_   $$$$$$$$/   ____$$ |$$/  _$$ |_
+#    $$ | /      \ /  \  /  |/ $$   |  $$ |__     /    $$ |/  |/ $$   |
+#    $$ |/$$$$$$  |$$  \/$$/ $$$$$$/   $$    |   /$$$$$$$ |$$ |$$$$$$/
+#    $$ |$$    $$ | $$  $$<    $$ | __ $$$$$/    $$ |  $$ |$$ |  $$ | __
+#    $$ |$$$$$$$$/  /$$$$  \   $$ |/  |$$ |_____ $$ \__$$ |$$ |  $$ |/  |
+#    $$ |$$       |/$$/ $$  |  $$  $$/ $$       |$$    $$ |$$ |  $$  $$/
+#    $$/  $$$$$$$/ $$/   $$/    $$$$/  $$$$$$$$/  $$$$$$$/ $$/    $$$$/
+
+# Set default document format for TextEdit to plain text (.txt)
+defaults write com.apple.TextEdit "RichText" -bool "false"
+
+# Finally, kill TextEdit
+killall TextEdit
+
+# Turn off font smoothing
+defaults write "AppleFontSmoothing" -int 0
+
+#  __  ________                                  ______
+# /  |/        |                                /      \
+# $$/ $$$$$$$$/______    ______   _____  ____  /$$$$$$  |
+# /  |   $$ | /      \  /      \ /     \/    \ $$____$$ |
+# $$ |   $$ |/$$$$$$  |/$$$$$$  |$$$$$$ $$$$  | /    $$/
+# $$ |   $$ |$$    $$ |$$ |  $$/ $$ | $$ | $$ |/$$$$$$/
+# $$ |   $$ |$$$$$$$$/ $$ |      $$ | $$ | $$ |$$ |_____
+# $$ |   $$ |$$       |$$ |      $$ | $$ | $$ |$$       |
+# $$/    $$/  $$$$$$$/ $$/       $$/  $$/  $$/ $$$$$$$$/
+
+# Default location otherwise is `/Library/Preferences/com.googlecode.iterm2.plist`
+defaults write com.googlecode.iterm2 "PrefsCustomFolder" "$XDG_CONFIG_HOME/iterm2"
