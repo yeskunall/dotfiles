@@ -1,4 +1,4 @@
-# http://editorconfig.org
+# See https://editorconfig-specification.readthedocs.io/en/latest/#supported-pairs for a list of supported pairs
 root = true
 
 [*]
@@ -7,15 +7,14 @@ end_of_line = lf
 indent_size = 2
 indent_style = space
 insert_final_newline = true
-max_line_length = 80
 trim_trailing_whitespace = true
 
-[*.py]
-indent_style = space
-trim_trailing_whitespace = true
+[*.{py}]
+end_of_line = lf
 indent_size = 4
-end_of_line = LF
+indent_style = space
 
-[*.md]
-max_line_length = 0
-trim_trailing_whitespace = false
+[*.{toml,yml}]
+end_of_line = lf
+indent_size = 2
+indent_style = space
