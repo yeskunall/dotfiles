@@ -54,6 +54,9 @@ disabled = true
 [nix_shell]
 disabled = true
 
+[nodejs]
+format = "via [⬢ $version](bold green) "
+
 [ocaml]
 disabled = true
 
