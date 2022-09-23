@@ -1,4 +1,6 @@
-# `.gitignore` specific to this project
+# Specific to this project
 
-package-lock.json
-node_modules
+**/.zcompcache
+**/.zcompdump
+**/.zsh_history
+**/.zsh_sessions
