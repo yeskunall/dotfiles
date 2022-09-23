@@ -40,6 +40,8 @@ export DENO_INSTALL_ROOT="${XDG_CONFIG_HOME}/deno";
 # Make VS Code the default editor
 export EDITOR="code --wait";
 
+export ENHANCD_DIR="${XDG_CONFIG_HOME}/enhancd";
+
 export FF_PROFILE_FOLDER_PATH="/Users/kimchi/Library/Application Support/Firefox/Profiles/dcxvqf4t.default-nightly";
 
 # Set `fd` as the default source for `fzf`
