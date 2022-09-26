@@ -1,6 +1,6 @@
 <a href="https://github.com/yeskunall/dotfiles">
 <picture>
-  <img src=".github/assets/banner.svg" />
+  <img src=".github/assets/banner@2x.png" />
 </picture>
 </a>
 
@@ -8,11 +8,11 @@
 
 This is my minimal config (setup), tailored to work with multiple operating systems with as little as possible, while providing the best possible DX, and performance possible.
 
-- __Minimal.__ A setup that is close to metal. Try to work with OS built-ins, and rely on very few applications, modules, packages, software, etcetera
-- __Performance is paramount.__ No matter the operating system, prioritize startup and run-time performance. Try not to _automatically_ install dependencies: binaries, modules, packages, etcetera. Lazy-load them wherever possible to make everything feel snappier
+- __Minimal.__ A setup that is close to metal. Try to work with OS built-ins, and rely on very few [applications & binaries](./brew/Brewfile)
+- __Performance is paramount.__ No matter the operating system, prioritize startup and run-time performance. Try not to _automatically_ install dependencies. Lazy-load them wherever possible to make everything feel snappier
 - __Replicable, and recognizable.__ Every environment should feel [familiar](#system), or as close to `$HOME` as possible
 
-## Developer Tools
+## 🛠 Developer Tools
 
 - [Browsers](#browsers)
   - [Brave](https://brave.com/)
@@ -22,7 +22,7 @@ This is my minimal config (setup), tailored to work with multiple operating syst
 - [Terminal Emulator](#terminal-emulator)
   - iTerm2
 
-### Browsers
+### 🌏 Browsers
 
 I use Sindre’s [Velja](https://sindresorhus.com/velja) as my default browser.[^1] to open links in a specific browser, or a matching application.
 
@@ -33,7 +33,7 @@ For the most part, I use FF Nightly with a very slightly extended [`user.js`](./
 > **Note**
 > However, some sites will just refuse to work no matter what should you choose to have strict privacy/security defaults
 
-### Editor
+### ⌨️ Editor
 
 <a href="https://vscodium.com/">
   <picture>
@@ -48,7 +48,7 @@ I use [VSCodium](https://vscodium.com/) instead of VS Code[^2].
 
 #### Extensions
 
-VSCodium comes with some built-in extensions, all of which are enabled by default. Hit <kbd>ctrl/⌘</kbd> + <kbd>⇧ Shift</kbd> + <kbd>x</kbd>, then search for `@builtin` to bring up the list. Instead of disabling these though, I would suggest installing extensions sparingly.
+VSCodium comes with some built-in extensions, all of which are enabled by default. Hit <kbd>⌘</kbd> + <kbd>⇧ shift</kbd> + <kbd>x</kbd>, then search for `@builtin` to bring up the list. Instead of disabling these though, I would suggest installing extensions sparingly.
 
 
 #### Details
@@ -57,7 +57,7 @@ VSCodium comes with some built-in extensions, all of which are enabled by defaul
 - Font is [Caskaydia Cove](https://github.com/Homebrew/homebrew-cask-fonts/blob/master/Casks/font-caskaydia-cove-nerd-font.rb)
 
 
-### Terminal Emulator
+### 🚟 Terminal Emulator
 
 <a href="https://iterm2.com/">
   <picture>
@@ -65,7 +65,7 @@ VSCodium comes with some built-in extensions, all of which are enabled by defaul
   </picture>
 </a>
 
-I use [iTerm2](https://www.iterm2.com/) with `zsh` as the `$SHELL`, backed by [zplug](https://github.com/zplug/zplug). Startup time is very paramount here, so I am constantly working on my shell config to make it feel more snappy. Here’s a handy [script](.config/zsh/conf.d/functions.zsh#L66) to measure your shell startup times. It is fairly accurate, but for more realistic benchmarks, use [`zsh-bench`](https://github.com/romkatv/zsh-bench).
+I use [iTerm2](https://www.iterm2.com/) with `zsh` as the `$SHELL`, backed by [zplug](https://github.com/zplug/zplug). Startup time is very paramount here, so I am constantly working on my shell config to make it feel more snappy. Here’s a handy [script](.config/zsh/conf.d/functions.zsh#L66-L68) to measure your shell startup times. It is fairly accurate, but for more realistic benchmarks, use [`zsh-bench`](https://github.com/romkatv/zsh-bench).
 
 
 
