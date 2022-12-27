@@ -1,57 +1,131 @@
+tap "1password/tap"
 tap "hashicorp/tap"
 tap "homebrew/autoupdate"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "railwayapp/railway"
+tap "twitchdev/twitch"
+# Search tool like grep, but optimized for programmers
 brew "ack"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Library for command-line editing
+brew "readline"
+# Command-line interface for SQLite
 brew "sqlite"
+# Official Amazon AWS command-line interface
 brew "awscli"
+# Light UNIX download accelerator
 brew "axel"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Parser generator
+brew "bison"
+# Deduplicating archiver with compression and authenticated encryption
 brew "borgbackup"
+# Simple wrapper script for the Borg backup software
 brew "borgmatic"
+# Ruby environment tool
+brew "chruby"
+# Secure runtime for JavaScript and TypeScript
 brew "deno"
+# Lightweight DNS forwarder and DHCP server
+brew "dnsmasq"
+# Modern replacement for 'ls'
 brew "exa"
+# Simple, fast and user-friendly alternative to find
 brew "fd"
+# Command-line tools for fly.io services
 brew "flyctl"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# GNU database manager
+brew "gdbm"
+# GitHub command-line tool
 brew "gh"
+# Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Core application library for C
 brew "glib"
+# Tool for glamorous shell scripts
 brew "gum"
+# Image manipulation library
 brew "jpeg", link: true
+# Lightweight and flexible command-line JSON processor
 brew "jq"
-brew "lazygit"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Implementation of JSON Schema for Python
+brew "jsonschema"
+# Portable Foreign Function Interface library
+brew "libffi"
+# Generic library support script
 brew "libtool"
+# YAML Parser
+brew "libyaml"
+# Move files and folders to the trash
+brew "macos-trash"
+# Open source relational database management system
 brew "mysql-client@5.7"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Port scanning utility for large networks
 brew "nmap"
+# CLI for Postgres with auto-completion and syntax highlighting
 brew "pgcli"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Manage compile and link flags for libraries
 brew "pkg-config"
+# Perl-powered file rename script with many helpful built-ins
 brew "rename"
-brew "shellcheck"
-brew "sphinx-doc"
+# Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
+brew "ruby-install"
+# Cross-shell prompt for astronauts
 brew "starship"
-brew "terraform"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
+# Next-generation plugin manager for zsh
 brew "zplug"
+# Develop and deploy code with zero configuration
 brew "railwayapp/railway/railway"
+# Command-line helper for the 1Password password manager
+cask "1password-cli"
+# Securely stores and accesses AWS credentials in a development environment
 cask "aws-vault"
-cask "bitwarden"
+# Web browser focusing on privacy
 cask "brave-browser"
+# Screen saver based on animations presented during Apple Special Event Brooklyn
 cask "brooklyn"
-cask "cron"
+# Web browser
 cask "firefox-nightly"
+# Developer targeted fonts with a high number of glyphs
+cask "font-caskaydia-cove-nerd-font"
+# YouTube player focusing on privacy
 cask "freetube"
+# Tools to protect your files
 cask "gpg-suite-no-mail"
+# Free and open-source media player
 cask "iina"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# VPN client for secure internet access and private browsing
 cask "nordvpn"
+# Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
+# Control your tools with a few keystrokes
 cask "raycast"
+# Instant messaging application focusing on security
 cask "signal"
-cask "visual-studio-code"
+# Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
