@@ -26,3 +26,6 @@ user_pref("privacy.clearOnShutdown.history", false);
 
 // Do not ask to save logins and passwords for websites
 user_pref("signon.rememberSignons", false);
+
+// Disable Container Tabs
+user_pref("privacy.userContext.enabled", false);
