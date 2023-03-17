@@ -10,7 +10,7 @@
 # $$ |  $$ $$       / $$   $$ |  $$ $$    $$/$$       $$    $$/  /$$      /     $$/$$ |  $$ |
 # $$/   $$/$$$$$$$$/$$$$$$/$$/   $$/ $$$$$$/ $$$$$$$$/ $$$$$$/$$/$$$$$$$$/$$$$$$$/ $$/   $$/
 
-# AWS Vault short-hands
+# AWS Vault shorthands
 alias aw="aws-vault";
 alias awe="aws-vault exec";
 
@@ -51,6 +51,15 @@ alias ls="exa";
 alias lx="exa -lbhHigUmuSa@ --time-style=long-iso --git --color-scale";
 alias lt="exa --tree --level=2";
 alias lS="exa -1";
+
+# Expected `pnpx` (`pnpm dlx`) to operate _exactly_ like `npx`,
+# but it does not.
+# Usage:
+# pnpe prettier --write . # this will use `prettier` installed in your project root
+# For everything else:
+# pnpx sort-package-json@latest
+# See https://pnpm.io/cli/exec for more
+alias pnpe="pnpm exec";
 
 # See: https://github.com/sindresorhus/trash-cli#cli-
 # & see: https://github.com/sindresorhus/trash-cli#tip
