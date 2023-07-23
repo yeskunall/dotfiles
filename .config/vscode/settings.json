@@ -1,4 +1,5 @@
 {
+  "breadcrumbs.enabled": false,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "block",
@@ -8,7 +9,7 @@
   "editor.fontWeight": "normal",
   "editor.letterSpacing": 0.3,
   "editor.lineHeight": 24,
-  "editor.renderLineHighlight": "none",
+  "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [
     80,
@@ -16,10 +17,9 @@
     120
   ],
   "editor.smoothScrolling": true,
-  "explorer.sortOrder": "default",
-  // I update using Homebrew instead
   // See https://github.com/VSCodium/vscodium/blob/master/DOCS.md#replacements-to-microsoft-online-services for more
   "extensions.autoCheckUpdates": false,
+  // I update using Homebrew instead
   "extensions.autoUpdate": false,
   "files.associations": {
     ".env": "ini"
@@ -27,15 +27,13 @@
   "git.autofetch": false,
   "git.enableCommitSigning": true,
   "git.enableStatusBarSync": false,
-  "json.schemaDownload.enable": true,
   "npm.fetchOnlinePackageInfo": false,
   "telemetry.telemetryLevel": "off",
   "update.mode": "manual",
   "update.showReleaseNotes": false,
-  // This is the only way to increase the font size of the file explorer
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0.7,
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "One Hunter Theme Vercel",
+  "workbench.colorTheme": "Deep Rainforest Theme",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.tabSizing": "shrink",
   "workbench.enableExperiments": false,
