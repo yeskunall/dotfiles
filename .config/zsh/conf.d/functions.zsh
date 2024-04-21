@@ -64,7 +64,7 @@ _set_current_node_version() {
 # Quick utility tool to benchmark shell performance
 # For better benchmarks, use [`zsh-bench`](https://github.com/romkatv/zsh-bench)
 _time_zsh() {
-  for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done
+  for i in $(seq 1 10); do /usr/bin/time $SHELL -ilc exit; done
 }
 
 # Auto-expand `...` to `../..` and so on
@@ -77,7 +77,7 @@ _zsh_dot() {
 }
 
 # See https://github.com/mroth/evalcache/blob/master/evalcache.plugin.zsh
-_zsh_eval_cache () {
+_zsh_eval_cache() {
   # Default cache directory
   local zsh_eval_cache_dir=${zsh_eval_cache_dir:-"${XDG_CACHE_HOME}/zsh_eval_cache"};
   local cache_file="$zsh_eval_cache_dir/init-${1##*/}.zsh";
