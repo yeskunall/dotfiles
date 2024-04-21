@@ -20,7 +20,7 @@ unset conf_file;
 source /usr/local/opt/zplug/init.zsh;
 
 # Load all plugins
-source "${XDG_CONFIG_HOME}"/zplug/load.zsh;
+source "${XDG_CONFIG_HOME}/zplug/load.zsh";
 
 # Init `starship`
 _zsh_eval_cache starship init zsh;

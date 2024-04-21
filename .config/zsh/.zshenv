@@ -13,10 +13,8 @@
 #
 # There exists a `.zshenv` located in `$HOME/.zshenv` that simply
 # `exports` `ZDOTDIR` and `source`s THIS `.zshenv`
-# This redundancy is required as ZSH only looks/loads `.zshenv`
+# This redundancy is required as ZSH only loads `.zshenv`
 # from `$HOME`
-
-export OS_TYPE=$(uname -s);
 
 # Setup system folders according to the XDG Base Directory spec
 # See https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html for more
@@ -31,4 +29,4 @@ export XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share};
 # See https://lists.freedesktop.org/archives/xdg/2016-December/013803.html for more
 export XDG_STATE_HOME=${XDG_STATE_HOME:-$HOME/.local/state};
 
-export ZPLUG_HOME=${ZPLUG_HOME:-"/usr/local/opt/zplug/"};
+export ZPLUG_HOME=${ZPLUG_HOME:-"/usr/local/opt/zplug"};
