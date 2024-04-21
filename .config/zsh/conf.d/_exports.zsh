@@ -21,12 +21,19 @@
 #
 # tl;dr: the order (and therefore the file name) in which
 # the configuration is loaded matters
+# Disable Astro telemetry across all projects using an environment variable
+# See https://astro.build/telemetry/ for more
+export ASTRO_TELEMETRY_DISABLED="1";
 
 export AWS_CONFIG_FILE="${XDG_CONFIG_HOME}/aws/config.ini";
 export AWS_SHARED_CREDENTIALS_FILE="${XDG_CONFIG_HOME}/aws/credentials.ini";
 export AWS_VAULT_BACKEND="keychain";
 
 export BAT_THEME="OneHalfDark";
+
+export BUN_BIN_DIR="${XDG_CACHE_HOME}/.bun/bin";
+
+export BUNDLE_APP_CONFIG="${XDG_CONFIG_HOME}/bundler/config";
 
 export CARGO_BIN="${XDG_CONFIG_HOME}/cargo/bin";
 export CARGO_HOME="${XDG_CONFIG_HOME}/cargo";
@@ -52,15 +59,29 @@ export FZF_DEFAULT_OPTS="--ansi";
 
 export GNUPGHOME="${XDG_CONFIG_HOME}/gnupg";
 
+export HEX_HOME="${XDG_CONFIG_HOME}/hex";
+
 export HISTFILE="${XDG_DATA_HOME}/.zsh_history";
 export LESSHISTFILE="${XDG_DATA_HOME}/.lesshst";
 # Both of these need to be set to the same value
 export HISTSIZE="30000";
 export SAVEHIST="30000";
 
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X";
+# Colorize `man` pages
+export MANROFFOPT="-c";
+
+export MIX_HOME="${XDG_CONFIG_HOME}/mix";
+# Specifies the directory where `Mix.install/2` keeps install cache
+export MIX_INSTALL_DIR="${XDG_CACHE_HOME/mix}";
+
+# Disable Mozilla Breakpad crash reporting entirely
+export MOZ_CRASHREPORTER_DISABLE="1";
+
 # Disable Next.js telemetry
 # See https://nextjs.org/telemetry for more
-export NEXT_TELEMETRY_DISABLED=1;
+export NEXT_TELEMETRY_DISABLED="1";
 
 # Use persistent REPL history when available (Node >= 8)
 export NODE_REPL_HISTORY="${XDG_DATA_HOME}/.node_history";
@@ -73,21 +94,16 @@ export NPM_CONFIG_GLOBALCONFIG="${XDG_CONFIG_HOME}/npm/.npmrc";
 # Set per-user `npm` configuration file
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/user/.npmrc";
 
-# Don’t clear the screen after quitting a manual page
-export MANPAGER="less -X";
-
-# Colorize `man` pages
-export MANROFFOPT="-c";
-
-# `mysql-client@5.7` is keg-only, which means it is not symlinked into
-# `/usr/local`, because this is an alternate version of another formula
-export MYSQL_CLIENT_KEG_ONLY="/usr/local/opt/mysql-client@5.7/bin";
-
-# NOTE: Maybe turn this off?
-export NVM_AUTO_USE="true";
 export NVM_COMPLETION="true";
 export NVM_DIR="${XDG_CONFIG_HOME}/nvm";
 export NVM_LAZY_LOAD="true";
+
+# Postgres is keg-only, which means it is not symlinked into
+# `/usr/local`, because this is an alternate version of another formula
+export PSQL_CLIENT_KEG_ONLY="/usr/local/opt/postgresql@16/bin";
+export PKG_CONFIG_PATH="/usr/local/opt/postgresql@16/lib/pkgconfig";
+
+export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
 
 export PYENV_ROOT="${XDG_CONFIG_HOME}/pyenv";
 
@@ -95,10 +111,12 @@ export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/.pythonrc.py";
 # Store Pylint analysis data in `${HOME}/.local/share`
 export PYLINTHOME="${XDG_DATA_HOME}";
 
-# Link Rubies to Homebrew’s OpenSSL 1.1 (which is automatically upgraded)
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)";
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)";
 
 export RUSTUP_HOME="${XDG_CONFIG_HOME}/rustup";
+
+# See https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-telemetry.html for more
+export SAM_CLI_TELEMETRY="0";
 
 export STARSHIP_CONFIG="${XDG_CONFIG_HOME}/starship/config.toml";
 
@@ -112,6 +130,5 @@ export ZSH_AUTOSUGGEST_USE_ASYNC="true";
 # Enable all available highlighter modes in `zsh-syntax-highlighting`
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor);
 
-# NOTE(yeskunall): Should this be here?
-# Ultimately, export `PATH`
-export PATH="${PATH}:${HOME}/.local/bin:${CARGO_BIN}":${XDG_CONFIG_HOME}/deno/bin:${MYSQL_CLIENT_KEG_ONLY};
+# ... Finally, export `PATH`
+export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${PSQL_CLIENT_KEG_ONLY}:/usr/local/opt/ruby/bin:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.2.0/bin:${PATH}";
