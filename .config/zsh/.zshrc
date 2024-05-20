@@ -16,11 +16,11 @@ for conf_file in "${ZDOTDIR}"/conf.d/*.zsh; do
 done
 unset conf_file;
 
-# Pull-in `zplug`
-source /usr/local/opt/zplug/init.zsh;
+source "${XDG_CONFIG_HOME}/zinit/init.zsh"
 
 # Load all plugins
-source "${XDG_CONFIG_HOME}/zplug/load.zsh";
+source "${XDG_CONFIG_HOME}/zinit/plugins.zsh";
 
-# Init `starship`
+# Init plugins
 _zsh_eval_cache starship init zsh;
+_zsh_eval_cache zoxide init zsh;

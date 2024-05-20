@@ -29,4 +29,4 @@ export XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share};
 # See https://lists.freedesktop.org/archives/xdg/2016-December/013803.html for more
 export XDG_STATE_HOME=${XDG_STATE_HOME:-$HOME/.local/state};
 
-export ZPLUG_HOME=${ZPLUG_HOME:-"/usr/local/opt/zplug"};
+export ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git";
