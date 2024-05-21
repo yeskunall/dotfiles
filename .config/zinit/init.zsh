@@ -7,6 +7,3 @@
 
 # Init `zinit`
 source "${ZINIT_HOME}/zinit.zsh";
-
-# Self update
-zinit self-update;
