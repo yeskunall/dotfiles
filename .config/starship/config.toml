@@ -1,104 +1,191 @@
-# Disable most modules
+[aws]
+format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
+
+[bun]
+format = '\[[$symbol($version)]($style)\]'
+
+[c]
+format = '\[[$symbol($version(-$name))]($style)\]'
+
 [cmake]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[cmd_duration]
+format = '\[[⏱ $duration]($style)\]'
+
+[cobol]
+format = '\[[$symbol($version)]($style)\]'
 
 [conda]
-disabled = true
+format = '\[[$symbol$environment]($style)\]'
 
 [crystal]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[daml]
+format = '\[[$symbol($version)]($style)\]'
 
 [dart]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[deno]
+format = '\[[$symbol($version)]($style)\]'
+
+[docker_context]
+format = '\[[$symbol$context]($style)\]'
 
 [dotnet]
-disabled = true
+format = '\[[$symbol($version)(🎯 $tfm)]($style)\]'
 
 [elixir]
-disabled = true
+format = '\[[$symbol($version \(OTP $otp_version\))]($style)\]'
 
 [elm]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
 
 [erlang]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[fennel]
+format = '\[[$symbol($version)]($style)\]'
+
+[fossil_branch]
+format = '\[[$symbol$branch]($style)\]'
 
 [gcloud]
-disabled = true
+format = '\[[$symbol$account(@$domain)(\($region\))]($style)\]'
 
-[git_commit]
-# Always show git commit hash
-only_detached = false
+[git_branch]
+format = '\[[$symbol$branch]($style)\]'
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
 
 [golang]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[gradle]
+format = '\[[$symbol($version)]($style)\]'
+
+[guix_shell]
+format = '\[[$symbol]($style)\]'
+
+[haskell]
+format = '\[[$symbol($version)]($style)\]'
+
+[haxe]
+format = '\[[$symbol($version)]($style)\]'
 
 [helm]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[hg_branch]
+format = '\[[$symbol$branch]($style)\]'
 
 [java]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
 
 [julia]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
 
 [kotlin]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[kubernetes]
+format = '\[[$symbol$context( \($namespace\))]($style)\]'
 
 [lua]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[memory_usage]
+format = '\[$symbol[$ram( | $swap)]($style)\]'
+
+[meson]
+format = '\[[$symbol$project]($style)\]'
 
 [nim]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
 
 [nix_shell]
-disabled = true
+format = '\[[$symbol$state( \($name\))]($style)\]'
 
 [nodejs]
-format = "via [⬢ $version](bold green) "
+format = '\[[$symbol($version)]($style)\]'
 
 [ocaml]
-disabled = true
+format = '\[[$symbol($version)(\($switch_indicator$switch_name\))]($style)\]'
+
+[opa]
+format = '\[[$symbol($version)]($style)\]'
 
 [openstack]
-disabled = true
+format = '\[[$symbol$cloud(\($project\))]($style)\]'
+
+[os]
+format = '\[[$symbol]($style)\]'
 
 [package]
-# Enable displaying version for packages marked as private
-display_private = true
+format = '\[[$symbol$version]($style)\]'
 
 [perl]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
 
 [php]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[pijul_channel]
+format = '\[[$symbol$channel]($style)\]'
+
+[pulumi]
+format = '\[[$symbol$stack]($style)\]'
 
 [purescript]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[python]
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+
+[raku]
+format = '\[[$symbol($version-$vm_version)]($style)\]'
 
 [red]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
 
 [ruby]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[rust]
+format = '\[[$symbol($version)]($style)\]'
 
 [scala]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
 
-[singularity]
-disabled = true
+[spack]
+format = '\[[$symbol$environment]($style)\]'
+
+[sudo]
+format = '\[[as $symbol]($style)\]'
 
 [swift]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[terraform]
+format = '\[[$symbol$workspace]($style)\]'
+
+[time]
+format = '\[[$time]($style)\]'
+
+[username]
+format = '\[[$user]($style)\]'
 
 [vagrant]
-disabled = true
-
-[vcsh]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
 
 [vlang]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
 
 [zig]
-disabled = true
+format = '\[[$symbol($version)]($style)\]'
+
+[solidity]
+format = '\[[$symbol($version)]($style)\]'
