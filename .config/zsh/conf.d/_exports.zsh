@@ -118,8 +118,6 @@ export RUSTUP_HOME="${XDG_CONFIG_HOME}/rustup";
 # See https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-telemetry.html for more
 export SAM_CLI_TELEMETRY="0";
 
-export STARSHIP_CONFIG="${XDG_CONFIG_HOME}/starship/config.toml";
-
 export SQLITE_HISTORY="${XDG_DATA_HOME}/.sqlite_history";
 
 export WRANGLER_HOME="${XDG_CONFIG_HOME}/wrangler";

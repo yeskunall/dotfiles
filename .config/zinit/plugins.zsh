@@ -4,4 +4,6 @@ zi wait lucid for  \
   bezhermoso/zsh-escape-backtick  \
   lukechilds/zsh-nvm  \
   zdharma-continuum/fast-syntax-highlighting  \
-  zsh-users/zsh-autosuggestions
+
+# Add in Powerlevel10k without wait mode
+zi ice depth=1; zinit light romkatv/powerlevel10k
