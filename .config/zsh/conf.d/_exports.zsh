@@ -61,6 +61,7 @@ export GNUPGHOME="${XDG_CONFIG_HOME}/gnupg";
 
 export HEX_HOME="${XDG_CONFIG_HOME}/hex";
 
+export HISTDUP="erase";
 export HISTFILE="${XDG_DATA_HOME}/.zsh_history";
 export LESSHISTFILE="${XDG_DATA_HOME}/.lesshst";
 # Both of these need to be set to the same value
