@@ -21,7 +21,8 @@
 #
 # tl;dr: the order (and therefore the file name) in which
 # the configuration is loaded matters
-# Disable Astro telemetry across all projects using an environment variable
+
+# Disable Astro telemetry
 # See https://astro.build/telemetry/ for more
 export ASTRO_TELEMETRY_DISABLED="1";
 
@@ -44,8 +45,8 @@ export CHECKPOINT_DISABLE="1";
 export DENO_DIR="${XDG_CACHE_HOME}/deno";
 export DENO_INSTALL_ROOT="${XDG_CONFIG_HOME}/deno";
 
-# Make VS Code the default editor
-export EDITOR="code --wait";
+# Make VS Codium the default editor
+export EDITOR="codium --wait";
 
 export ENHANCD_DIR="${XDG_CONFIG_HOME}/enhancd";
 
@@ -58,6 +59,8 @@ export FF_PROFILE_FOLDER_PATH="/Users/kimchi/Library/Application Support/Firefox
 export FZF_DEFAULT_OPTS="--ansi";
 
 export GNUPGHOME="${XDG_CONFIG_HOME}/gnupg";
+
+export GOMODCACHE="${XDG_CACHE_HOME}/go/pkg/mod";
 
 export HEX_HOME="${XDG_CONFIG_HOME}/hex";
 
