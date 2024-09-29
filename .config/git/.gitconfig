@@ -1,35 +1,33 @@
-[alias]
-  # List contributors with number of commits
-  contributors = "shortlog --summary --numbered"
-  # Pull in submodules as well
-  cr = "clone --recursive"
-  remotes = "remote -v"
 [color]
   branch = true
   # Default is `auto`
   ui = true
 [commit]
   gpgsign = "true"
-  template = "~/.config/git/.default-commit-message"
 [core]
   # Use global `.gitattributes` and `.gitignore`
   attributesfile = "~/.config/git/.gitattributes_global"
   autocrlf = "false"
-  editor = "code --wait"
+  editor = "codium --wait"
   excludesfile = "~/.config/git/.gitignore_global"
   pager = "delta"
 [delta]
-  line-numbers = "true"
-  side-by-side = "false"
+  line-numbers = true
+  navigate = true
+  side-by-side = true
   syntax-theme = "DarkNeon"
 [gpg]
   program = "gpg2"
 [init]
   defaultBranch = "main"
+[interactive]
+  diffFilter = delta --color-only
 [merge]
+  conflictstyle = diff3
   tool = "vscode"
 [mergetool "vscode"]
-  cmd = "code --wait"
+  cmd = "codium --wait"
 [user]
   email = "hey@kimchiii.space"
   name = "Kunall Banerjee"
+  signingkey = "72F05240006B05DC"
