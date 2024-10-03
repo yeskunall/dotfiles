@@ -1,170 +1,102 @@
-tap "1password/tap"
-tap "aws/tap"
-tap "homebrew/autoupdate"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/services"
-tap "localsend/localsend"
-tap "oven-sh/bun"
-tap "railwayapp/tap"
-# Search tool like grep, but optimized for programmers
-brew "ack"
-# Tool for generating GNU Standards-compliant Makefiles
-brew "automake"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# Library for command-line editing
+brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
-# Official Amazon AWS command-line interface
-brew "awscli"
-# Light UNIX download accelerator
-brew "axel"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2"
-# Clone of cat(1) with syntax highlighting and Git integration
-brew "bat"
-# Parser generator
-brew "bison"
+# Download with resuming and segmented downloading
+brew "aria2"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
-# Zstandard is a real-time compression algorithm
-brew "zstd"
-# Deduplicating archiver with compression and authenticated encryption
-brew "borgbackup"
-# Simple wrapper script for the Borg backup software
-brew "borgmatic"
-# YAML Parser
-brew "libyaml"
-# Validate CloudFormation templates against the CloudFormation spec
-brew "cfn-lint"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
-# Generic library support script
-brew "libtool"
-# Programming language for highly scalable real-time systems
-brew "erlang"
-# Functional metaprogramming aware language built on Erlang VM
-brew "elixir"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Core application library for C
+brew "glib"
+# Vector graphics library with cross-device output support
+brew "cairo"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Modern, maintained replacement for ls
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Command-line tools for fly.io services
 brew "flyctl"
+# Library for manipulating fonts
+brew "fonttools"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# GNU database manager
-brew "gdbm"
 # GitHub command-line tool
 brew "gh"
-# Distributed revision control system
-brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
-# Quickly rewrite git repository history
-brew "git-filter-repo"
-# Core application library for C
-brew "glib"
-# Render markdown on the CLI
-brew "glow"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Tool for glamorous shell scripts
 brew "gum"
-# User-friendly cURL replacement (command-line HTTP client)
-brew "httpie"
-# Image manipulation library
-brew "jpeg", link: true
-# Lightweight and flexible command-line JSON processor
-brew "jq"
-# Network authentication protocol
-brew "krb5"
-# Portable Foreign Function Interface library
-brew "libffi"
 # Move files and folders to the trash
 brew "macos-trash"
-# Parser generator tool and incremental parsing library
-brew "tree-sitter"
-# Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Port scanning utility for large networks
 brew "nmap"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
-# Manage compile and link flags for libraries
-brew "pkg-config"
-# Object-relational database system
-brew "postgresql@16", restart_service: true
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
-# Perl-powered file rename script with many helpful built-ins
-brew "rename"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
-# Cross-shell prompt for astronauts
-brew "starship"
 # CLI for extracting streams from various websites to a video player
 brew "streamlink"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
+# Utilities to create and convert Web Open Font File (WOFF) files
+brew "woff2"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
-# Next-generation plugin manager for zsh
-brew "zplug"
-# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
-brew "oven-sh/bun/bun"
-# Develop and deploy code with zero configuration
-brew "railwayapp/tap/rlwy"
-# Transfer files from and to an Android smartphone
-cask "android-file-transfer"
-# Securely stores and accesses AWS credentials in a development environment
-cask "aws-vault"
-# Web browser focusing on privacy
-cask "brave-browser"
+# Flexible and fast Zsh plugin manager
+brew "zinit"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
 # Screen saver based on animations presented during Apple Special Event Brooklyn
 cask "brooklyn"
-# Column-oriented database management system
-cask "clickhouse"
 # Collaborative team software
 cask "figma"
 # Web browser
-cask "firefox-nightly"
-# Developer targeted fonts with a high number of glyphs
-cask "font-lilex-nerd-font"
+cask "firefox@nightly"
+cask "font-commit-mono-nerd-font"
+# Font viewer for various font formats
+cask "fontgoggles"
+# Apple Mail plugin for GnuPG encrypted e-mails
+cask "free-gpgmail"
 # YouTube player focusing on privacy
 cask "freetube"
+# Web browser
+cask "google-chrome@canary"
 # Tools to protect your files
 cask "gpg-suite-no-mail"
 # Free and open-source media player
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# An open source cross-platform alternative to AirDrop
-cask "localsend"
-# Free and open-source RSS reader
-cask "netnewswire"
+# Tool to show what is persistently installed on the computer
+cask "knockknock"
+# Monitors and reports any microphone and camera activity
+cask "micro-snitch"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
-# Verify system files structure, run miscellaneous maintenance and more
-cask "onyx"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Collection of apps available by subscription
+cask "setapp"
 # Instant messaging application focusing on security
 cask "signal"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
-# Multiplayer code editor
-cask "zed"
