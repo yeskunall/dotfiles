@@ -1,4 +1,10 @@
+tap "charmbracelet/tap"
 tap "homebrew/bundle"
+tap "knqyf263/pet"
+tap "natesales/repo", "https://github.com/natesales/repo"
+tap "neilotoole/sq"
+# New file format for still image compression
+brew "jpeg-xl"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Library for command-line editing
@@ -17,6 +23,10 @@ brew "bat"
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# Secure runtime for JavaScript and TypeScript
+brew "deno"
+# Disk Usage/Free Utility - a better 'df' alternative
+brew "duf"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Modern, maintained replacement for ls
@@ -37,10 +47,18 @@ brew "fzf"
 brew "gh"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# High-level command-line interface for Git
+brew "git-town"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Tool for glamorous shell scripts
 brew "gum"
+# Uses CSS selectors to extract bits content from HTML files
+brew "htmlq"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Official CLI for the IPinfo IP Address API
+brew "ipinfo-cli"
 # Move files and folders to the trash
 brew "macos-trash"
 # Polyglot runtime manager (asdf rust clone)
@@ -51,6 +69,8 @@ brew "nmap"
 brew "pinentry-mac"
 # CLI for extracting streams from various websites to a video player
 brew "streamlink"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Utilities to create and convert Web Open Font File (WOFF) files
 brew "woff2"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
@@ -61,6 +81,11 @@ brew "yt-dlp"
 brew "zinit"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Simple command-line snippet manager
+brew "knqyf263/pet/pet"
+brew "natesales/repo/q"
+# sq data wrangler
+brew "neilotoole/sq/sq"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Screen saver based on animations presented during Apple Special Event Brooklyn
@@ -100,3 +125,5 @@ cask "setapp"
 cask "signal"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
+# REST, GraphQL and gRPC client
+cask "yaak"
