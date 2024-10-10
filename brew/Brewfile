@@ -49,8 +49,6 @@ brew "gh"
 brew "git-delta"
 # High-level command-line interface for Git
 brew "git-town"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
 # Tool for glamorous shell scripts
 brew "gum"
 # Uses CSS selectors to extract bits content from HTML files
