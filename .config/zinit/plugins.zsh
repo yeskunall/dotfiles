@@ -3,7 +3,6 @@ zi wait lucid for  \
   Aloxaf/fzf-tab  \
   ajeetdsouza/zoxide  \
   bezhermoso/zsh-escape-backtick  \
-  lukechilds/zsh-nvm  \
   make"PREFIX=$ZPFX" tj/git-extras \
   zdharma-continuum/fast-syntax-highlighting  \
   zsh-users/zsh-autosuggestions \

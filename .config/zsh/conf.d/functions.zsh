@@ -57,7 +57,7 @@ fgl() {
 
 _set_current_node_version() {
   if command -v node &> /dev/null; then
-    export CURRENT_NODE_VERSION=`node -v`;
+    export CURRENT_NODE_VERSION=`node -v | sed 's/^v//'`;
   fi
 }
 

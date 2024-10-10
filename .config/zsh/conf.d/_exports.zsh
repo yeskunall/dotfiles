@@ -62,6 +62,8 @@ export GNUPGHOME="${XDG_CONFIG_HOME}/gnupg";
 
 export GOMODCACHE="${XDG_CACHE_HOME}/go/pkg/mod";
 
+export GPG_TTY=$(tty);
+
 export HEX_HOME="${XDG_CONFIG_HOME}/hex";
 
 export HISTDUP="erase";
@@ -75,6 +77,8 @@ export SAVEHIST="30000";
 export MANPAGER="less -X";
 # Colorize `man` pages
 export MANROFFOPT="-c";
+
+export MISE_NODE_DEFAULT_PACKAGES_FILE="${XDG_CONFIG_HOME/npm/.default-npm-packages}";
 
 export MIX_HOME="${XDG_CONFIG_HOME}/mix";
 # Specifies the directory where `Mix.install/2` keeps install cache
