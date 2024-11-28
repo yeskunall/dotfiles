@@ -1,8 +1,10 @@
 tap "charmbracelet/tap"
 tap "homebrew/bundle"
 tap "knqyf263/pet"
+tap "libsql/sqld"
 tap "natesales/repo", "https://github.com/natesales/repo"
 tap "neilotoole/sq"
+tap "tursodatabase/tap"
 # New file format for still image compression
 brew "jpeg-xl"
 # Cryptography and SSL/TLS Toolkit
@@ -13,6 +15,8 @@ brew "readline"
 brew "sqlite"
 # Download with resuming and segmented downloading
 brew "aria2"
+# Securely store and access AWS credentials in development environments
+brew "aws-vault"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # Official Amazon AWS command-line interface
@@ -35,6 +39,8 @@ brew "eza"
 brew "fd"
 # OpenType text shaping engine
 brew "harfbuzz"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line tools for fly.io services
@@ -81,9 +87,12 @@ brew "zinit"
 brew "zoxide"
 # Simple command-line snippet manager
 brew "knqyf263/pet/pet"
+# The libsql-server application
+brew "libsql/sqld/sqld"
 brew "natesales/repo/q"
 # sq data wrangler
 brew "neilotoole/sq/sq"
+brew "tursodatabase/tap/turso"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Screen saver based on animations presented during Apple Special Event Brooklyn
@@ -99,8 +108,6 @@ cask "fontgoggles"
 cask "free-gpgmail"
 # YouTube player focusing on privacy
 cask "freetube"
-# Web browser
-cask "google-chrome@canary"
 # Tools to protect your files
 cask "gpg-suite-no-mail"
 # Free and open-source media player
@@ -111,6 +118,8 @@ cask "iterm2"
 cask "knockknock"
 # Monitors and reports any microphone and camera activity
 cask "micro-snitch"
+# Free and open-source RSS reader
+cask "netnewswire"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
 # Control your tools with a few keystrokes
@@ -121,7 +130,7 @@ cask "rectangle"
 cask "setapp"
 # Instant messaging application focusing on security
 cask "signal"
+# Mesh VPN based on WireGuard
+cask "tailscale"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
-# REST, GraphQL and gRPC client
-cask "yaak"
