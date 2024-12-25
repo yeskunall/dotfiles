@@ -35,10 +35,13 @@ return {
 
   {
     "nvim-tree/nvim-tree.lua",
-    filters = {
-      dotfiles = true,
-      enable = true,
-      git_ignored = true,
+    opts = {
+      filters = {
+        dotfiles = true,
+      },
+      view = {
+        side = "right",
+      },
     },
   },
 
