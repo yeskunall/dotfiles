@@ -37,7 +37,12 @@ return {
     "nvim-tree/nvim-tree.lua",
     opts = {
       filters = {
-        dotfiles = true,
+        dotfiles = false,
+        custom = {
+          ".DS_Store$",
+          "^.git$",
+        },
+        git_ignored = false,
       },
       view = {
         side = "right",
