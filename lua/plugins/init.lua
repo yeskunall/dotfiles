@@ -1,5 +1,11 @@
 return {
   {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gotham",
+    },
+  },
+  {
     "folke/snacks.nvim",
     priority = 1000,
     lazy = false,
@@ -20,16 +26,39 @@ return {
       },
     },
     opts = {
+      dim = { enabled = true, scope = { min_size = 3, siblings = false } },
       lazygit = { configure = true, enabled = true },
-      scroll = { enabled = true },
+      scroll = { animate = { duration = { total = 150 } }, enabled = true },
+      words = { enabled = false },
       zen = { enabled = true },
     },
+  },
+
+  {
+    "folke/ts-comments.nvim",
+    opts = {
+      langs = {
+        dts = "// %s",
+      },
+    },
+    event = "VeryLazy",
+    enabled = vim.fn.has "nvim-0.10.0" == 1,
   },
 
   {
     "hrsh7th/cmp-nvim-lsp",
     sources = {
       { name = "nvim_lsp" },
+    },
+  },
+
+  {
+    "mfussenegger/nvim-lint",
+    event = { "BufWritePost" },
+    opts = {
+      linters_by_ft = {
+        markdown = { "vale" },
+      },
     },
   },
 
@@ -61,12 +90,30 @@ return {
         lsp_format = "fallback",
       },
       formatters_by_ft = {
+        ["javascript"] = { "prettierd", "prettier", stop_after_first = true },
+        ["javascriptreact"] = {
+          "prettierd",
+          "prettier",
+          stop_after_first = true,
+        },
+        lua = { "stylua" },
+        ["typescript"] = { "prettierd", "prettier", stop_after_first = true },
+        ["typescriptreact"] = {
+          "prettierd",
+          "prettier",
+          stop_after_first = true,
+        },
+      },
+      formatters_by_ft = {
         lua = { "stylua" },
         javascript = { "prettierd", "prettier", stop_after_first = true },
         typescript = { "prettierd", "prettier", stop_after_first = true },
       },
-      format_on_save = { timeout_ms = 500 },
     },
+  },
+
+  {
+    "whatyouhide/vim-gotham",
   },
 
   {
@@ -74,8 +121,9 @@ return {
     opts = {
       ensure_installed = {
         "astro-language-server",
-        "biome",
         "css-lp",
+        "prettier",
+        "prettierd",
         "tailwindcss-language-server",
         "typescript-language-server",
         "stylua",
@@ -86,7 +134,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require "configs.lspconfig"
+      require "config.lspconfig"
     end,
   },
 

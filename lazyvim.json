@@ -1,0 +1,11 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.editor.illuminate",
+    "lazyvim.plugins.extras.editor.inc-rename",
+    "lazyvim.plugins.extras.editor.mini-files"
+  ],
+  "news": {
+    "NEWS.md": "10960"
+  },
+  "version": 7
+}
