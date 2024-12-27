@@ -121,7 +121,7 @@ return {
     opts = {
       ensure_installed = {
         "astro-language-server",
-        "css-lp",
+        "css-lsp",
         "prettier",
         "prettierd",
         "tailwindcss-language-server",
