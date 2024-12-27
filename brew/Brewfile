@@ -1,4 +1,5 @@
 tap "charmbracelet/tap"
+tap "fastly/tap"
 tap "homebrew/bundle"
 tap "knqyf263/pet"
 tap "libsql/sqld"
@@ -63,18 +64,28 @@ brew "htmlq"
 brew "httpie"
 # Official CLI for the IPinfo IP Address API
 brew "ipinfo-cli"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Move files and folders to the trash
-brew "macos-trash"
+brew "macos-trash", link: true
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Port scanning utility for large networks
 brew "nmap"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Rsync for cloud storage
+brew "rclone"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # CLI for extracting streams from various websites to a video player
 brew "streamlink"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Syntax-aware linter for prose
+brew "vale"
 # Utilities to create and convert Web Open Font File (WOFF) files
 brew "woff2"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
@@ -85,6 +96,8 @@ brew "yt-dlp"
 brew "zinit"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# A CLI for interacting with the Fastly platform
+brew "fastly/tap/fastly"
 # Simple command-line snippet manager
 brew "knqyf263/pet/pet"
 # The libsql-server application
@@ -108,6 +121,8 @@ cask "fontgoggles"
 cask "free-gpgmail"
 # YouTube player focusing on privacy
 cask "freetube"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Tools to protect your files
 cask "gpg-suite-no-mail"
 # Free and open-source media player
@@ -116,12 +131,16 @@ cask "iina"
 cask "iterm2"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
+# Free cross-platform office suite, fresh version
+cask "libreoffice"
 # Monitors and reports any microphone and camera activity
 cask "micro-snitch"
 # Free and open-source RSS reader
 cask "netnewswire"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
