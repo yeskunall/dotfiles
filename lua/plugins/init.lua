@@ -5,6 +5,9 @@ return {
       colorscheme = "gotham",
     },
   },
+
+  { "fei6409/log-highlight.nvim", event = "BufRead *.log", opts = {} },
+
   {
     "folke/snacks.nvim",
     priority = 1000,
@@ -46,18 +49,22 @@ return {
   },
 
   {
-    "hrsh7th/cmp-nvim-lsp",
-    sources = {
-      { name = "nvim_lsp" },
-    },
-  },
-
-  {
     "mfussenegger/nvim-lint",
     event = { "BufWritePost" },
     opts = {
       linters_by_ft = {
         markdown = { "vale" },
+      },
+    },
+  },
+
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+          hide_dotfiles = false,
+        },
       },
     },
   },
@@ -122,20 +129,48 @@ return {
       ensure_installed = {
         "astro-language-server",
         "css-lsp",
+        "html-lsp",
+        "lua-language-server",
         "prettier",
         "prettierd",
+        "stylua",
         "tailwindcss-language-server",
         "typescript-language-server",
-        "stylua",
+        "vale-ls",
+        "yaml-language-server",
       },
     },
   },
 
   {
+    "windwp/nvim-ts-autotag",
+    event = "InsertEnter",
+    opts = {},
+  },
+
+  {
     "neovim/nvim-lspconfig",
-    config = function()
-      require "config.lspconfig"
-    end,
+    opts = {
+      capabilities = {
+        workspace = {
+          didChangeWatchedFiles = {
+            dynamicRegistration = false,
+          },
+        },
+      },
+      diagnostics = { virtual_text = { prefix = "icons" } },
+      servers = {
+        "astro",
+        "biome",
+        "cssls",
+        "html",
+        "lua_ls",
+        "tailwindcss",
+        "ts_ls",
+        "vale_ls",
+        "yamlls",
+      },
+    },
   },
 
   {
@@ -146,6 +181,9 @@ return {
         "css",
         "dockerfile",
         "editorconfig",
+        "git_config",
+        "git_rebase",
+        "gitattributes",
         "gitignore",
         "go",
         "html",
@@ -154,10 +192,15 @@ return {
         "json",
         "json5",
         "lua",
+        "markdown",
         "markdown_inline",
+        "regex",
         "sql",
         "ssh_config",
+        "toml",
         "typescript",
+        "yaml",
+        "yaml",
         "xml",
       },
       highlight = { enable = true },
