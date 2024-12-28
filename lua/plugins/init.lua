@@ -146,24 +146,16 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      capabilities = {
-        workspace = {
-          didChangeWatchedFiles = {
-            dynamicRegistration = false,
-          },
-        },
-      },
-      diagnostics = { virtual_text = { prefix = "icons" } },
       servers = {
-        "astro",
-        "biome",
-        "cssls",
-        "html",
-        "lua_ls",
-        "tailwindcss",
-        "ts_ls",
-        "vale_ls",
-        "yamlls",
+        astro = {},
+        biome = {},
+        cssls = {},
+        html = {},
+        lua_ls = {},
+        tailwindcss = {},
+        ts_ls = {},
+        vale_ls = {},
+        yamlls = {},
       },
     },
   },
