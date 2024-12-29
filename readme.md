@@ -18,8 +18,8 @@ This is my opinionated minimal config (setup), tailored to work with macOS with 
 - Terminal Emulator
   - [iTerm2](https://iterm2.com/)
 
-###### You can find my default applications on macOS [here](https://kimchiii.space/defaults?utm_source=dotfiles-readme&utm_medium=github-profile-readme&utm_campaign=hits).
+###### You can find my default applications on macOS [here](https://kimchiii.space/defaults?ref=github.com/yeskunall/dotfiles).
 
 #### License
 
-[MIT](./license) © [Kunall Banerjee](https://kimchiii.space/)
+[MIT](./license) © [Kunall Banerjee](https://kunall.dev/)

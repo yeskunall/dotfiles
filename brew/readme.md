@@ -19,4 +19,4 @@ brew bundle
 
 #### License
 
-[MIT](../license) © [Kunall Banerjee](https://kimchiii.space/)
+[MIT](../license) © [Kunall Banerjee](https://kunall.dev/)
