@@ -53,7 +53,11 @@ return {
     event = { "BufWritePost" },
     opts = {
       linters_by_ft = {
+        javascript = { "eslint_d" },
+        javascriptreact = { "eslint_d" },
         markdown = { "vale" },
+        typescript = { "eslint_d" },
+        typescriptreact = { "eslint_d" },
       },
     },
   },
@@ -148,8 +152,15 @@ return {
     opts = {
       servers = {
         astro = {},
-        biome = {},
         cssls = {},
+        eslint = {
+          settings = {
+            useFlatConfig = true,
+            experimental = {
+              useFlatConfig = nil,
+            },
+          },
+        },
         html = {},
         lua_ls = {},
         tailwindcss = {},
