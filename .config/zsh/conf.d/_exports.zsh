@@ -46,7 +46,7 @@ export DENO_DIR="${XDG_CACHE_HOME}/deno";
 export DENO_INSTALL_ROOT="${XDG_CONFIG_HOME}/deno";
 
 # Make VS Codium the default editor
-export EDITOR="codium --wait";
+export EDITOR="nvim";
 
 export ENHANCD_DIR="${XDG_CONFIG_HOME}/enhancd";
 
@@ -66,6 +66,7 @@ export GPG_TTY=$(tty);
 
 export HEX_HOME="${XDG_CONFIG_HOME}/hex";
 
+export HISTCONTROL="ignoreboth";
 export HISTDUP="erase";
 export HISTFILE="${XDG_DATA_HOME}/.zsh_history";
 export LESSHISTFILE="${XDG_DATA_HOME}/.lesshst";
@@ -93,6 +94,10 @@ export NEXT_TELEMETRY_DISABLED="1";
 
 # Use persistent REPL history when available (Node >= 8)
 export NODE_REPL_HISTORY="${XDG_DATA_HOME}/.node_history";
+# Allow 32³ entries
+export NODE_REPL_HISTORY_SIZE="32768";
+# Use sloppy mode by default, matching web browsers
+export NODE_REPL_MODE="sloppy";
 
 # Set location of `npm`’s cache directory
 export NPM_CONFIG_CACHE="${XDG_CACHE_HOME}/npm";
@@ -105,6 +110,8 @@ export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/user/.npmrc";
 export NVM_COMPLETION="true";
 export NVM_DIR="${XDG_CONFIG_HOME}/nvm";
 export NVM_LAZY_LOAD="true";
+
+export PRETTIERD_LOCAL_PRETTIER_ONLY="1";
 
 # Postgres is keg-only, which means it is not symlinked into
 # `/usr/local`, because this is an alternate version of another formula
@@ -128,6 +135,9 @@ export SAM_CLI_TELEMETRY="0";
 
 export SQLITE_HISTORY="${XDG_DATA_HOME}/.sqlite_history";
 
+# https://docs.trunk.io/cli/configuration/telemetry#can-i-disable-usage-data
+export TRUNK_TELEMETRY="off";
+
 export WRANGLER_HOME="${XDG_CONFIG_HOME}/wrangler";
 
 # Fetch suggestions asynchronously
@@ -137,4 +147,4 @@ export ZSH_AUTOSUGGEST_USE_ASYNC="true";
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor);
 
 # ... Finally, export `PATH`
-export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${PSQL_CLIENT_KEG_ONLY}:/usr/local/opt/ruby/bin:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.2.0/bin:${PATH}";
+export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${PSQL_CLIENT_KEG_ONLY}:/usr/local/opt/ruby/bin:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.2.0/bin:${CARGO_BIN}:${PATH}";
