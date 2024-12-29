@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - main
+    types: [opened, synchronize]
   push:
     branches:
       - main
@@ -11,6 +12,8 @@ on:
 jobs:
   conform:
     name: Conform
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - uses: siderolabs/conform@v0.1.0-alpha.29
