@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  conform:
+    name: Conform
+    runs-on: ubuntu-latest
+    steps:
+      - uses: siderolabs/conform@v0.1.0-alpha.29
