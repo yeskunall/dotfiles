@@ -12,6 +12,8 @@ on:
 jobs:
   conform:
     name: Conform
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: read
     runs-on: ubuntu-latest
