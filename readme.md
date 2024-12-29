@@ -12,7 +12,7 @@ This is my opinionated minimal config (setup), tailored to work with macOS with 
 
 - Browsers
   - [Brave](https://brave.com/)
-  - [Firefox Nightly](https://wiki.mozilla.org/Nightly)
+  - [Mullvad Browser](https://mullvad.net/en/browser)
 - Editor
   - [VSCodium](https://vscodium.com/) in [portable mode](https://code.visualstudio.com/docs/editor/portable)
 - Terminal Emulator
@@ -23,4 +23,3 @@ This is my opinionated minimal config (setup), tailored to work with macOS with 
 #### License
 
 [MIT](./license) © [Kunall Banerjee](https://kimchiii.space/)
-
