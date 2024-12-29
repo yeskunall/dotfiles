@@ -23,6 +23,7 @@ export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config};
 export XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share};
 # Do not enable this. A lot of applications _could_ break if you do.
 # See https://github.com/microsoft/vscode/issues/22593#issuecomment-336099304
+# & https://github.com/ibhagwan/fzf-lua/issues/1243
 # for more
 # export XDG_RUNTIME_DIR="${TMPDIR:-/tmp}/runtime-${USER}";
 
