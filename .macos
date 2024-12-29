@@ -13,6 +13,10 @@
 #
 # https://macos-defaults.com
 
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e "tell application 'System Preferences' to quit"
+
 defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"
 
 # Disable automatic capitalization as they can get annoying when typing code
@@ -32,6 +36,10 @@ defaults write com.apple.screencapture location -string "${HOME}/Pictures/Screen
 # a ‘press-and-hold’ option
 defaults write NSGlobalDomain "KeyRepeat" -int 1
 defaults write NSGlobalDomain "InitialKeyRepeat" -int 10
+
+# Avoid creating .DS_Store files on network or USB volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 #  _______                       __
 # /       \                     /  |
@@ -90,6 +98,36 @@ defaults write com.apple.universalaccess "showWindowTitlebarIcons" -bool "true"
 
 # Finally, kill the Finder to apply the changes
 killall Finder
+
+#
+#  __       __            __  __
+# /  \     /  |          /  |/  |
+# $$  \   /$$ |  ______  $$/ $$ |
+# $$$  \ /$$$ | /      \ /  |$$ |
+# $$$$  /$$$$ | $$$$$$  |$$ |$$ |
+# $$ $$ $$/$$ | /    $$ |$$ |$$ |
+# $$ |$$$/ $$ |/$$$$$$$ |$$ |$$ |
+# $$ | $/  $$ |$$    $$ |$$ |$$ |
+#$$/      $$/  $$$$$$$/ $$/ $$/
+#
+
+# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+# Disable send and reply animations in Mail.app
+defaults write com.apple.mail DisableReplyAnimations -bool true
+defaults write com.apple.mail DisableSendAnimations -bool true
+
+# Display emails in threaded mode, sorted by date (oldest at the top)
+defaults write com.apple.mail DraftsViewerAttributes -dict-add "DisplayInThreadedMode" -string "yes"
+defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortedDescending" -string "yes"
+defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -string "received-date"
+
+# Disable signing emails by default
+defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
+
+# Finally, kill all instances of the Mail app to apply the changes
+killall Mail
 
 #  ________                     __      ________        __  __    __
 # /        |                   /  |    /        |      /  |/  |  /  |
