@@ -12,8 +12,6 @@ on:
 jobs:
   conform:
     name: Conform
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: read
     runs-on: ubuntu-latest
@@ -21,4 +19,4 @@ jobs:
       - name: Conform
         uses: siderolabs/conform@v0.1.0-alpha.29
         with:
-          token: ${{ secrets.INPUT_TOKEN }}
+          token: ${{ secrets.TOKEN }}
