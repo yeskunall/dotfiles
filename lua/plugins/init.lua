@@ -101,16 +101,28 @@ return {
         lsp_format = "fallback",
       },
       formatters_by_ft = {
-        ["javascript"] = { "prettierd", "prettier", stop_after_first = true },
+        ["javascript"] = {
+          ---"prettierd",
+          "eslint_d",
+          "prettier",
+          stop_after_first = true,
+        },
         ["javascriptreact"] = {
-          "prettierd",
+          ---"prettierd",
+          "eslint_d",
           "prettier",
           stop_after_first = true,
         },
         lua = { "stylua" },
-        ["typescript"] = { "prettierd", "prettier", stop_after_first = true },
+        ["typescript"] = {
+          ---"prettierd",
+          "eslint_d",
+          "prettier",
+          stop_after_first = true,
+        },
         ["typescriptreact"] = {
-          "prettierd",
+          ---"prettierd",
+          "eslint_d",
           "prettier",
           stop_after_first = true,
         },
