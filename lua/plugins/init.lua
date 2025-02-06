@@ -209,6 +209,7 @@ return {
         "ssh_config",
         "toml",
         "typescript",
+        "vento",
         "yaml",
         "yaml",
         "xml",
