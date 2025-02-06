@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gotham",
+      colorscheme = "tokyonight",
     },
   },
 
@@ -35,6 +35,13 @@ return {
       words = { enabled = false },
       zen = { enabled = true },
     },
+  },
+
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = { style = "night" },
   },
 
   {
@@ -128,10 +135,6 @@ return {
         },
       },
     },
-  },
-
-  {
-    "whatyouhide/vim-gotham",
   },
 
   {
