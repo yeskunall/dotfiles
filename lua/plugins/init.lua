@@ -18,14 +18,12 @@ return {
         function()
           Snacks.lazygit.open()
         end,
-        desc = "Launch lazygit, properly configured to use the current colorscheme and integrate with the current neovim instance",
       },
       {
         "<leader>z",
         function()
           Snacks.zen()
         end,
-        desc = "Toggle Zen mode",
       },
     },
     opts = {
@@ -75,6 +73,9 @@ return {
       filesystem = {
         filtered_items = {
           hide_dotfiles = false,
+        },
+        window = {
+          position = "right",
         },
       },
     },
