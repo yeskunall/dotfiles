@@ -34,7 +34,8 @@ export BAT_THEME="OneHalfDark";
 
 export BUN_BIN_DIR="${XDG_CACHE_HOME}/.bun/bin";
 
-export BUNDLE_APP_CONFIG="${XDG_CONFIG_HOME}/bundler/config";
+# https://bundler.io/man/bundle-config.1.html#CONFIGURE-BUNDLER-DIRECTORIES
+export BUNDLE_USER_HOME="${XDG_CONFIG_HOME}/bundler";
 
 export CARGO_BIN="${XDG_CONFIG_HOME}/cargo/bin";
 export CARGO_HOME="${XDG_CONFIG_HOME}/cargo";
@@ -126,8 +127,6 @@ export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/.pythonrc.py";
 # Store Pylint analysis data in `${HOME}/.local/share`
 export PYLINTHOME="${XDG_DATA_HOME}";
 
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)";
-
 export RUSTUP_HOME="${XDG_CONFIG_HOME}/rustup";
 
 # See https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-telemetry.html for more
@@ -147,4 +146,4 @@ export ZSH_AUTOSUGGEST_USE_ASYNC="true";
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor);
 
 # ... Finally, export `PATH`
-export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${PSQL_CLIENT_KEG_ONLY}:/usr/local/opt/ruby/bin:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.2.0/bin:${CARGO_BIN}:${PATH}";
+export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${PSQL_CLIENT_KEG_ONLY}:${CARGO_BIN}:${PATH}";
