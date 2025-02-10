@@ -1,0 +1,10 @@
+[tools]
+node = "22.13.0"
+go = "latest"
+erlang = "27"
+elixir = "latest"
+elixir-ls = "latest"
+ruby = "3.4.1"
+
+[settings]
+experimental = true
