@@ -16,6 +16,8 @@ brew "readline"
 brew "sqlite"
 # Download with resuming and segmented downloading
 brew "aria2"
+# Automatic configure script builder
+brew "autoconf"
 # Securely store and access AWS credentials in development environments
 brew "aws-vault"
 # Interpreted, interactive, object-oriented programming language
@@ -30,6 +32,8 @@ brew "glib"
 brew "cairo"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
+# Pluggable and configurable code formatting platform written in Rust
+brew "dprint"
 # Disk Usage/Free Utility - a better 'df' alternative
 brew "duf"
 # Perl lib for reading and writing EXIF metadata
@@ -58,6 +62,8 @@ brew "git-delta"
 brew "git-town"
 # Tool for glamorous shell scripts
 brew "gum"
+# Post-modern modal text editor
+brew "helix"
 # Uses CSS selectors to extract bits content from HTML files
 brew "htmlq"
 # User-friendly cURL replacement (command-line HTTP client)
@@ -66,6 +72,8 @@ brew "httpie"
 brew "ipinfo-cli"
 # Simple terminal UI for git commands
 brew "lazygit"
+# YAML Parser
+brew "libyaml"
 # Move files and folders to the trash
 brew "macos-trash", link: true
 # Polyglot runtime manager (asdf rust clone)
@@ -84,6 +92,8 @@ brew "ripgrep"
 brew "streamlink"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Markup-based typesetting system
+brew "typst"
 # Syntax-aware linter for prose
 brew "vale"
 # Utilities to create and convert Web Open Font File (WOFF) files
@@ -135,6 +145,8 @@ cask "knockknock"
 cask "libreoffice"
 # Monitors and reports any microphone and camera activity
 cask "micro-snitch"
+# Web browser focused on privacy and on minimizing tracking and fingerprinting
+cask "mullvad-browser"
 # Free and open-source RSS reader
 cask "netnewswire"
 # VPN client for secure internet access and private browsing
@@ -153,3 +165,5 @@ cask "signal"
 cask "tailscale"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
+# WordPress local development environment
+cask "wordpresscom-studio"
