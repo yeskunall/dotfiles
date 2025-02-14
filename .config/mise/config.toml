@@ -1,5 +1,5 @@
 [tools]
-node = "22.13.0"
+node = "22.14.0"
 go = "latest"
 erlang = "27"
 elixir = "latest"
