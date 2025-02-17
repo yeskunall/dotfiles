@@ -60,9 +60,47 @@ return {
     enabled = vim.fn.has "nvim-0.10.0" == 1,
   },
 
+  -- https://github.com/mfussenegger/nvim-lint/issues/679
+  -- https://github.com/mfussenegger/nvim-lint/issues/685
   {
     "mfussenegger/nvim-lint",
     event = { "BufWritePost" },
+    config = function()
+      local lint = require "lint"
+      local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
+
+      vim.api.nvim_create_autocmd(
+        { "BufEnter", "BufWritePost", "InsertLeave" },
+        {
+          group = lint_augroup,
+          callback = function(args)
+            local filetype =
+              vim.api.nvim_get_option_value("filetype", { buf = args.buf })
+            local override = nil
+
+            if
+              vim.tbl_contains({
+                "javascript",
+                "javascriptreact",
+                "typescript",
+                "typescriptreact",
+              }, filetype)
+            then
+              if
+                require("lspconfig.util").root_pattern(
+                  "deno.json",
+                  "deno.jsonc"
+                )(args.buf)
+              then
+                override = { "deno" }
+              end
+            end
+
+            lint.try_lint(override)
+          end,
+        }
+      )
+    end,
     opts = {
       linters_by_ft = {
         javascript = { "eslint_d" },
