@@ -174,31 +174,37 @@ return {
       default_format_opts = {
         lsp_format = "fallback",
       },
+      formatters = {
+        eslint_d = {
+          cwd = require("conform.util").root_file { "eslint.config.mjs" },
+          require_cwd = true,
+        },
+        prettier = {
+          cwd = require("conform.util").root_file { ".prettierignore" },
+          require_cwd = true,
+        },
+      },
       formatters_by_ft = {
-        ["javascript"] = {
-          ---"prettierd",
+        javascript = {
           "eslint_d",
-          "prettier",
+          "prettierd",
           stop_after_first = true,
         },
-        ["javascriptreact"] = {
-          ---"prettierd",
+        javascriptreact = {
           "eslint_d",
-          "prettier",
+          "prettierd",
           stop_after_first = true,
         },
         lua = { "stylua" },
-        ["typescript"] = {
-          ---"prettierd",
         ruby = { "rubocop" },
+        typescript = {
           "eslint_d",
-          "prettier",
+          "prettierd",
           stop_after_first = true,
         },
-        ["typescriptreact"] = {
-          ---"prettierd",
+        typescriptreact = {
           "eslint_d",
-          "prettier",
+          "prettierd",
           stop_after_first = true,
         },
       },
@@ -213,7 +219,6 @@ return {
         "css-lsp",
         "html-lsp",
         "lua-language-server",
-        "prettier",
         "prettierd",
         "stylua",
         "tailwindcss-language-server",
