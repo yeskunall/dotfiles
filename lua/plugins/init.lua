@@ -6,6 +6,13 @@ return {
     },
   },
 
+  {
+    "chomosuke/typst-preview.nvim",
+    ft = { "typ" },
+    version = "1.*",
+    opts = {},
+  },
+
   { "fei6409/log-highlight.nvim", event = "BufRead *.log", opts = {} },
 
   {
@@ -170,6 +177,7 @@ return {
         "prettierd",
         "stylua",
         "tailwindcss-language-server",
+        "tinymist",
         "typescript-language-server",
         "vale-ls",
         "yaml-language-server",
