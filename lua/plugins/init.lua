@@ -75,6 +75,44 @@ return {
   },
 
   {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        astro = {},
+        cssls = {},
+        denols = {
+          filetypes = { "typescript", "typescriptreact" },
+
+          root_dir = function(...)
+            return require("lspconfig.util").root_pattern(
+              "deno.jsonc",
+              "deno.json"
+            )(...)
+          end,
+        },
+        eslint = {
+          settings = {
+            useFlatConfig = true,
+            experimental = {
+              useFlatConfig = nil,
+            },
+          },
+        },
+        html = {},
+        lua_ls = {},
+        ruby_lsp = {},
+        tailwindcss = {},
+        ts_ls = {},
+        vale_ls = {},
+        vtsls = {
+          root_dir = require("lspconfig.util").root_pattern "package.json",
+        },
+        yamlls = {},
+      },
+    },
+  },
+
+  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       filesystem = {
@@ -192,29 +230,4 @@ return {
     event = "InsertEnter",
     opts = {},
   },
-
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        astro = {},
-        cssls = {},
-        eslint = {
-          settings = {
-            useFlatConfig = true,
-            experimental = {
-              useFlatConfig = nil,
-            },
-          },
-        },
-        html = {},
-        lua_ls = {},
-        tailwindcss = {},
-        ts_ls = {},
-        vale_ls = {},
-        yamlls = {},
-      },
-    },
-  },
-
 }
