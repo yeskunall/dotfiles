@@ -217,7 +217,7 @@ return {
           cwd = require("conform.util").root_file { "eslint.config.mjs" },
           require_cwd = true,
         },
-        prettier = {
+        prettierd = {
           cwd = require("conform.util").root_file { ".prettierignore" },
           require_cwd = true,
         },
