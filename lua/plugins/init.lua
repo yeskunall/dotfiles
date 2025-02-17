@@ -152,6 +152,7 @@ return {
         lua = { "stylua" },
         ["typescript"] = {
           ---"prettierd",
+        ruby = { "rubocop" },
           "eslint_d",
           "prettier",
           stop_after_first = true,
