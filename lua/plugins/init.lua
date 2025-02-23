@@ -146,6 +146,11 @@ return {
           root_dir = require("lspconfig.util").root_pattern "package.json",
         },
         yamlls = {},
+        zls = {
+          settings = {
+            semantic_tokens = "partial",
+          },
+        },
       },
     },
   },
@@ -196,6 +201,7 @@ return {
         "yaml",
         "yaml",
         "xml",
+        "zig",
       },
       highlight = { enable = true },
       sync_install = false,
@@ -264,6 +270,7 @@ return {
         "typescript-language-server",
         "vale-ls",
         "yaml-language-server",
+        "zls",
       },
     },
   },
