@@ -8,9 +8,11 @@ return {
 
   {
     "chomosuke/typst-preview.nvim",
-    ft = { "typ" },
+    ft = { "typst" },
     version = "1.*",
-    opts = {},
+    opts = {
+      dependencies_bin = { ["tinymist"] = "tinymist" },
+    },
   },
 
   { "fei6409/log-highlight.nvim", event = "BufRead *.log", opts = {} },
@@ -140,6 +142,11 @@ return {
         lua_ls = {},
         ruby_lsp = {},
         tailwindcss = {},
+        tinymist = {
+          settings = {
+            formatterMode = "typstyle",
+          },
+        },
         ts_ls = {},
         vale_ls = {},
         vtsls = {
