@@ -6,6 +6,9 @@ vim.env.FZF_DEFAULT_OPTS = ""
 
 vim.g.lazyvim_prettier_needs_config = false
 
+-- vim.cmd "colorscheme material"
+vim.g.material_style = "deep ocean"
+
 vim.filetype.add {
   extension = {
     vto = "vento",
