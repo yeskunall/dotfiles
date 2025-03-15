@@ -67,8 +67,15 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
+      lualine_style = "stealth",
       plugins = {
+        "gitsigns",
+        "mini",
         "neo-tree",
+        "noice",
+        "nvim-notify",
+        "trouble",
+        "which-key",
       },
     },
   },
