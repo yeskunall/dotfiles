@@ -45,6 +45,7 @@ export CHECKPOINT_DISABLE="1";
 
 export DENO_DIR="${XDG_CACHE_HOME}/deno";
 export DENO_INSTALL_ROOT="${XDG_CONFIG_HOME}/deno";
+export DENO_BIN_DIR="${DENO_INSTALL_ROOT}/bin";
 
 # Make VS Codium the default editor
 export EDITOR="nvim";
@@ -149,4 +150,4 @@ export ZSH_AUTOSUGGEST_USE_ASYNC="true";
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor);
 
 # ... Finally, export `PATH`
-export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${PSQL_CLIENT_KEG_ONLY}:${CARGO_BIN}:${PATH}";
+export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${DENO_BIN_DIR}:${PSQL_CLIENT_KEG_ONLY}:${CARGO_BIN}:${PATH}";
