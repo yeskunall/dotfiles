@@ -138,6 +138,8 @@ export SQLITE_HISTORY="${XDG_DATA_HOME}/.sqlite_history";
 # https://docs.trunk.io/cli/configuration/telemetry#can-i-disable-usage-data
 export TRUNK_TELEMETRY="off";
 
+export VERCEL_TELEMETRY_DISABLED="1";
+
 export WRANGLER_HOME="${XDG_CONFIG_HOME}/wrangler";
 
 # Fetch suggestions asynchronously
