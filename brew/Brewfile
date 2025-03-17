@@ -1,6 +1,7 @@
 tap "charmbracelet/tap"
 tap "fastly/tap"
 tap "homebrew/bundle"
+tap "homebrew/services"
 tap "knqyf263/pet"
 tap "libsql/sqld"
 tap "natesales/repo", "https://github.com/natesales/repo"
@@ -30,6 +31,8 @@ brew "bat"
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# Suite of command-line tools for converting to and working with CSV
+brew "csvkit"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Pluggable and configurable code formatting platform written in Rust
@@ -68,6 +71,8 @@ brew "helix"
 brew "htmlq"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Full-rich client for the Registry Data Access Protocol (RDAP) sponsored by ICANN
+brew "icann-rdap"
 # Official CLI for the IPinfo IP Address API
 brew "ipinfo-cli"
 # Simple terminal UI for git commands
@@ -84,6 +89,10 @@ brew "neovim"
 brew "nmap"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Object-relational database system
+brew "postgresql@17", restart_service: :changed, link: true
+# Ultra-fast CSV data-wrangling toolkit
+brew "qsv"
 # Rsync for cloud storage
 brew "rclone"
 # Search tool like grep and The Silver Searcher
@@ -125,6 +134,7 @@ cask "figma"
 # Web browser
 cask "firefox@nightly"
 cask "font-commit-mono-nerd-font"
+cask "font-new-computer-modern"
 # Font viewer for various font formats
 cask "fontgoggles"
 # Apple Mail plugin for GnuPG encrypted e-mails
@@ -145,8 +155,6 @@ cask "knockknock"
 cask "libreoffice"
 # Monitors and reports any microphone and camera activity
 cask "micro-snitch"
-# Web browser focused on privacy and on minimizing tracking and fingerprinting
-cask "mullvad-browser"
 # Free and open-source RSS reader
 cask "netnewswire"
 # VPN client for secure internet access and private browsing
