@@ -31,6 +31,10 @@ brew "bat"
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# General-purpose scripting language
+brew "php"
+# Dependency Manager for PHP
+brew "composer"
 # Suite of command-line tools for converting to and working with CSV
 brew "csvkit"
 # Secure runtime for JavaScript and TypeScript
@@ -83,6 +87,8 @@ brew "libyaml"
 brew "macos-trash", link: true
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
+# Open source relational database management system
+brew "mysql"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Port scanning utility for large networks
