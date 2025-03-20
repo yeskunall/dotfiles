@@ -254,6 +254,7 @@ return {
         },
       },
       formatters_by_ft = {
+        blade = { "blade-formatter" },
         javascript = {
           "eslint_d",
           "prettierd",
