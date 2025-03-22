@@ -148,6 +148,23 @@ return {
             )(...)
           end,
         },
+        emmet_language_server = {
+          -- TODO: find a way to extend the existing filetypes instead of
+          -- rewriting them
+          filetypes = {
+            "css",
+            "eruby",
+            "html",
+            "javascript",
+            "javascriptreact",
+            "less",
+            "sass",
+            "scss",
+            "pug",
+            "typescriptreact",
+            "vento",
+          },
+        },
         eslint = {
           settings = {
             useFlatConfig = true,
