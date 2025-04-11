@@ -10,10 +10,11 @@
   # Use global `.gitattributes` and `.gitignore`
   attributesfile = "~/.config/git/.gitattributes_global"
   autocrlf = "false"
-  editor = "codium --wait"
   editor = "nvim"
   excludesfile = "~/.config/git/.gitignore_global"
   pager = "delta"
+  # https://git-scm.com/docs/git-update-index#_untracked_cache
+  untrackedCache = true
 [delta]
   line-numbers = true
   navigate = true
