@@ -44,13 +44,6 @@ return {
     },
   },
 
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = { style = "night" },
-  -- },
-
   {
     "folke/ts-comments.nvim",
     opts = {
@@ -248,6 +241,10 @@ return {
       highlight = { enable = true },
       sync_install = false,
     },
+  },
+
+  {
+    "sindrets/diffview.nvim",
   },
 
   {
