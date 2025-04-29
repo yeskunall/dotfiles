@@ -12,9 +12,8 @@ This is my opinionated minimal config (setup), tailored to work with macOS with 
 
 - Browsers
   - [Brave](https://brave.com/)
-  - [Mullvad Browser](https://mullvad.net/en/browser)
 - Editor
-  - [VSCodium](https://vscodium.com/) in [portable mode](https://code.visualstudio.com/docs/editor/portable)
+  - [Neovim](https://neovim.io/)
 - Terminal Emulator
   - [iTerm2](https://iterm2.com/)
 
