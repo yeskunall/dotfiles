@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "material",
+      colorscheme = "tokyonight",
     },
   },
 
@@ -45,6 +45,15 @@ return {
   },
 
   {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      style = "night",
+    },
+  },
+
+  {
     "folke/ts-comments.nvim",
     opts = {
       langs = {
@@ -53,24 +62,6 @@ return {
     },
     event = "VeryLazy",
     enabled = vim.fn.has "nvim-0.10.0" == 1,
-  },
-
-  {
-    "marko-cerovac/material.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {
-      lualine_style = "stealth",
-      plugins = {
-        "gitsigns",
-        "mini",
-        "neo-tree",
-        "noice",
-        "nvim-notify",
-        "trouble",
-        "which-key",
-      },
-    },
   },
 
   -- https://github.com/mfussenegger/nvim-lint/issues/679
