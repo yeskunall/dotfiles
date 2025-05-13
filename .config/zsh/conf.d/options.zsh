@@ -29,9 +29,17 @@ setopt HIST_REDUCE_BLANKS;
 
 setopt HIST_SAVE_NO_DUPS;
 
+# Wait 10 seconds until executing `rm` with a star
+# Example: rm folder/*
+setopt RM_STAR_WAIT;
+
 # Import new commands from other sessions
 setopt SHARE_HISTORY;
 
 # I don't want this enabled
 # Ref: http://zsh.sourceforge.net/Doc/Release/Redirection.html#Multios
 unsetopt MULTIOS;
+
+# Ask before executing `rm` with a star
+# Example: rm folder/*
+unsetopt RM_STAR_SILENT;
