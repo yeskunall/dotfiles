@@ -113,10 +113,6 @@ export NPM_CONFIG_GLOBALCONFIG="${XDG_CONFIG_HOME}/npm/.npmrc";
 # Set per-user `npm` configuration file
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/user/.npmrc";
 
-export NVM_COMPLETION="true";
-export NVM_DIR="${XDG_CONFIG_HOME}/nvm";
-export NVM_LAZY_LOAD="true";
-
 export PRETTIERD_LOCAL_PRETTIER_ONLY="1";
 
 # Postgres is keg-only, which means it is not symlinked into
