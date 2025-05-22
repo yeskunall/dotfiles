@@ -119,7 +119,6 @@ export PRETTIERD_LOCAL_PRETTIER_ONLY="1";
 # `/usr/local`, because this is an alternate version of another formula
 export PSQL_CLIENT_KEG_ONLY="/usr/local/opt/postgresql@17/bin";
 export PSQL_HISTORY="${XDG_DATA_HOME}/postgresql/.psql_history"
-export PKG_CONFIG_PATH="/usr/local/opt/postgresql@16/lib/pkgconfig";
 
 export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
 
