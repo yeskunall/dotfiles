@@ -6,5 +6,3 @@
 *.md linguist-documentation=false
 
 *.toml linguist-detectable=true
-
-.config/vscode/settings.json linguist-language=jsonc
