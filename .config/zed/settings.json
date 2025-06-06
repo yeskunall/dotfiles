@@ -1,0 +1,76 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent": {
+    "model_parameters": [],
+    "dock": "left",
+    "version": "2"
+  },
+  "auto_update": false,
+  "buffer_font_size": 14,
+  "buffer_font_family": "Liga SFMono Nerd Font",
+  "collaboration_panel": {
+    "button": false
+  },
+  "cursor_shape": "block",
+  "icon_theme": "Catppuccin Macchiato",
+  "languages": {
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      },
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      }
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      },
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      }
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      },
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      }
+    }
+  },
+  "notification_panel": {
+    "button": false,
+    "dock": "left"
+  },
+  "project_panel": {
+    "dock": "right",
+    "button": false
+  },
+  "redact_private_values": true,
+  "show_whitespaces": "selection",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "theme": {
+    "mode": "system",
+    "light": "macOS Classic Light",
+    "dark": "macOS Classic Light"
+  },
+  "ui_font_family": "Zed Plex Mono",
+  "ui_font_size": 14
+}
