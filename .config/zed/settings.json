@@ -8,17 +8,28 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "agent": {
-    "model_parameters": [],
     "dock": "left",
+    "enabled": false,
+    "model_parameters": [],
     "version": "2"
   },
   "auto_update": false,
   "buffer_font_size": 14,
   "buffer_font_family": "Liga SFMono Nerd Font",
+  "chat_panel": {
+    "button": "never"
+  },
   "collaboration_panel": {
     "button": false
   },
   "cursor_shape": "block",
+  "diagnostics": {
+    "button": false
+  },
+  "git_panel": {
+    "button": false
+  },
+  "hover_popover_delay": 150,
   "icon_theme": "Catppuccin Macchiato",
   "languages": {
     "JavaScript": {
@@ -56,20 +67,35 @@
     "button": false,
     "dock": "left"
   },
+  "outline_panel": {
+    "button": false
+  },
   "project_panel": {
     "dock": "right",
     "button": false
   },
   "redact_private_values": true,
+  "search": {
+    "button": false
+  },
   "show_whitespaces": "selection",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
+  "terminal": {
+    "button": false
+  },
   "theme": {
     "mode": "system",
     "light": "macOS Classic Light",
     "dark": "macOS Classic Light"
+  },
+  "title_bar": {
+    "show_sign_in": false
+  },
+  "toolbar": {
+    "quick_actions": false
   },
   "ui_font_family": "Zed Plex Mono",
   "ui_font_size": 14
