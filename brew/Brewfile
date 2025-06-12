@@ -6,6 +6,8 @@ tap "knqyf263/pet"
 tap "libsql/sqld"
 tap "natesales/repo", "https://github.com/natesales/repo"
 tap "neilotoole/sq"
+tap "oven-sh/bun"
+tap "shaunsingh/sfmono-nerd-font-ligaturized"
 tap "tursodatabase/tap"
 # New file format for still image compression
 brew "jpeg-xl"
@@ -21,8 +23,6 @@ brew "aria2"
 brew "autoconf"
 # Securely store and access AWS credentials in development environments
 brew "aws-vault"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -31,6 +31,8 @@ brew "bat"
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
 # General-purpose scripting language
 brew "php"
 # Dependency Manager for PHP
@@ -39,6 +41,8 @@ brew "composer"
 brew "csvkit"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # Pluggable and configurable code formatting platform written in Rust
 brew "dprint"
 # Disk Usage/Free Utility - a better 'df' alternative
@@ -75,8 +79,12 @@ brew "helix"
 brew "htmlq"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Configurable static site generator
+brew "hugo"
 # Full-rich client for the Registry Data Access Protocol (RDAP) sponsored by ICANN
 brew "icann-rdap"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # Official CLI for the IPinfo IP Address API
 brew "ipinfo-cli"
 # Simple terminal UI for git commands
@@ -97,6 +105,8 @@ brew "nmap"
 brew "pinentry-mac"
 # Object-relational database system
 brew "postgresql@17", restart_service: :changed, link: true
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Ultra-fast CSV data-wrangling toolkit
 brew "qsv"
 # Rsync for cloud storage
@@ -130,6 +140,8 @@ brew "libsql/sqld/sqld"
 brew "natesales/repo/q"
 # sq data wrangler
 brew "neilotoole/sq/sq"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
 brew "tursodatabase/tap/turso"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
@@ -141,6 +153,7 @@ cask "figma"
 cask "firefox@nightly"
 cask "font-commit-mono-nerd-font"
 cask "font-new-computer-modern"
+cask "font-sf-mono-nerd-font-ligaturized"
 # Font viewer for various font formats
 cask "fontgoggles"
 # Apple Mail plugin for GnuPG encrypted e-mails
@@ -181,6 +194,8 @@ cask "tailscale"
 cask "vscodium"
 # WordPress local development environment
 cask "wordpresscom-studio"
+# Multiplayer code editor
+cask "zed"
 vscode "antfu.theme-vitesse"
 vscode "astro-build.astro-vscode"
 vscode "be5invis.vscode-custom-css"
