@@ -55,8 +55,6 @@ export EDITOR="nvim";
 
 export ENHANCD_DIR="${XDG_CONFIG_HOME}/enhancd";
 
-export FF_PROFILE_FOLDER_PATH="/Users/kimchi/Library/Application Support/Firefox/Profiles/dcxvqf4t.default-nightly";
-
 # Set `fd` as the default source for `fzf`
 # export FZF_DEFAULT_COMMAND="fd --type file --follow --hidden --exclude .git --color=always";
 
