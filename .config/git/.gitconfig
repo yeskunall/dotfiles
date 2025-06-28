@@ -19,7 +19,6 @@
   line-numbers = true
   navigate = true
   side-by-side = true
-  syntax-theme = "OneHalfLight"
 [gpg]
   program = "gpg2"
 [init]
