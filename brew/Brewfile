@@ -9,14 +9,18 @@ tap "neilotoole/sq"
 tap "oven-sh/bun"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 tap "tursodatabase/tap"
-# New file format for still image compression
-brew "jpeg-xl"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# YAML Parser
+brew "libyaml"
 # Library for command-line editing
 brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# New file format for still image compression
+brew "jpeg-xl"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Automatic configure script builder
@@ -45,6 +49,8 @@ brew "deno"
 brew "docker"
 # Pluggable and configurable code formatting platform written in Rust
 brew "dprint"
+# Embeddable SQL OLAP Database Management System
+brew "duckdb"
 # Disk Usage/Free Utility - a better 'df' alternative
 brew "duf"
 # Perl lib for reading and writing EXIF metadata
@@ -63,6 +69,8 @@ brew "ffmpeg"
 brew "flyctl"
 # Library for manipulating fonts
 brew "fonttools"
+# Terminal JSON viewer
+brew "fx"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -89,8 +97,6 @@ brew "imagemagick"
 brew "ipinfo-cli"
 # Simple terminal UI for git commands
 brew "lazygit"
-# YAML Parser
-brew "libyaml"
 # Move files and folders to the trash
 brew "macos-trash", link: true
 # Polyglot runtime manager (asdf rust clone)
@@ -145,10 +151,16 @@ brew "oven-sh/bun/bun"
 brew "tursodatabase/tap/turso"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
 # Screen saver based on animations presented during Apple Special Event Brooklyn
 cask "brooklyn"
+# Matrix collaboration client
+cask "element"
 # Collaborative team software
 cask "figma"
+# Web browser
+cask "firefox@developer-edition"
 # Web browser
 cask "firefox@nightly"
 cask "font-commit-mono-nerd-font"
@@ -180,6 +192,8 @@ cask "netnewswire"
 cask "nordvpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# WebKit based web browser
+cask "orion"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -189,30 +203,6 @@ cask "setapp"
 # Instant messaging application focusing on security
 cask "signal"
 # Mesh VPN based on WireGuard
-cask "tailscale"
-# Binary releases of VS Code without MS branding/telemetry/licensing
-cask "vscodium"
-# WordPress local development environment
-cask "wordpresscom-studio"
+cask "tailscale-app"
 # Multiplayer code editor
 cask "zed"
-vscode "antfu.theme-vitesse"
-vscode "astro-build.astro-vscode"
-vscode "be5invis.vscode-custom-css"
-vscode "biomejs.biome"
-vscode "bradlc.vscode-tailwindcss"
-vscode "bungcip.better-toml"
-vscode "catppuccin.catppuccin-vsc-icons"
-vscode "chrischinchilla.vale-vscode"
-vscode "davidanson.vscode-markdownlint"
-vscode "dbaeumer.vscode-eslint"
-vscode "editorconfig.editorconfig"
-vscode "elixir-lsp.elixir-ls"
-vscode "esbenp.prettier-vscode"
-vscode "mgmcdermott.vscode-language-babel"
-vscode "rust-lang.rust-analyzer"
-vscode "streetsidesoftware.code-spell-checker"
-vscode "tamasfe.even-better-toml"
-vscode "unifiedjs.vscode-mdx"
-vscode "usernamehw.errorlens"
-vscode "vue.volar"
