@@ -20,7 +20,10 @@
   navigate = true
   side-by-side = true
 [gpg]
-  program = "gpg2"
+  format = "ssh"
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+  allowedSignersFile = "/Users/admin/.ssh/allowed_signers"
 [init]
   defaultBranch = "main"
 [interactive]
@@ -28,4 +31,4 @@
 [user]
   email = "hey@kimchiii.space"
   name = "Kunall Banerjee"
-  signingkey = "72F05240006B05DC"
+  signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINyz3Q6dVT/RdLbF5TeO66gF1L6ZKTIikn/uxBZGvwh6"
