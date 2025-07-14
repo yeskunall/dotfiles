@@ -1,0 +1,15 @@
+clipboard-paste-protection = true
+clipboard-trim-trailing-spaces = true
+copy-on-select = clipboard
+cursor-click-to-move = true
+cursor-style = block
+cursor-style-blink = true
+font-family = Liga SFMono Nerd Font
+macos-titlebar-style = tabs
+shell-integration-features = no-cursor,sudo,no-title
+theme = github-dark
+title = " "
+window-colorspace = display-p3
+window-height = 60
+window-width = 190
+window-subtitle = false
