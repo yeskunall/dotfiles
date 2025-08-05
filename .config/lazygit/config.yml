@@ -6,3 +6,4 @@ git:
 gui:
   language: en
   nerdFontsVersion: "3"
+  useHunkModeInStagingView: false
