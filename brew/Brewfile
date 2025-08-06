@@ -1,7 +1,5 @@
 tap "charmbracelet/tap"
 tap "fastly/tap"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "knqyf263/pet"
 tap "libsql/sqld"
 tap "natesales/repo", "https://github.com/natesales/repo"
@@ -13,8 +11,6 @@ tap "tursodatabase/tap"
 brew "openssl@3"
 # YAML Parser
 brew "libyaml"
-# Library for command-line editing
-brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
 # Automate deployment, configuration, and upgrading
@@ -47,6 +43,8 @@ brew "csvkit"
 brew "deno"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
+# Isolated development environments using Docker
+brew "docker-compose"
 # Pluggable and configurable code formatting platform written in Rust
 brew "dprint"
 # Embeddable SQL OLAP Database Management System
@@ -107,6 +105,8 @@ brew "mysql"
 brew "neovim"
 # Port scanning utility for large networks
 brew "nmap"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Object-relational database system
@@ -119,6 +119,8 @@ brew "qsv"
 brew "rclone"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Cross-platform application to monitor your network traffic
+brew "sniffnet"
 # CLI for extracting streams from various websites to a video player
 brew "streamlink"
 # Display directories as trees (with optional color/HTML output)
@@ -168,8 +170,6 @@ cask "font-new-computer-modern"
 cask "font-sf-mono-nerd-font-ligaturized"
 # Font viewer for various font formats
 cask "fontgoggles"
-# Apple Mail plugin for GnuPG encrypted e-mails
-cask "free-gpgmail"
 # YouTube player focusing on privacy
 cask "freetube"
 # Terminal emulator that uses platform-native UI and GPU acceleration
@@ -182,8 +182,8 @@ cask "iina"
 cask "iterm2"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
-# Free cross-platform office suite, fresh version
-cask "libreoffice"
+# Markdown editor
+cask "markedit"
 # Monitors and reports any microphone and camera activity
 cask "micro-snitch"
 # Free and open-source RSS reader
@@ -198,11 +198,13 @@ cask "orion"
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# Collection of apps available by subscription
-cask "setapp"
 # Instant messaging application focusing on security
 cask "signal"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
+# Google Chromium, sans integration with Google
+cask "ungoogled-chromium"
 # Multiplayer code editor
 cask "zed"
+# Video communication and virtual meeting platform
+cask "zoom"
