@@ -10,8 +10,7 @@
   "agent": {
     "dock": "left",
     "enabled": false,
-    "model_parameters": [],
-    "version": "2"
+    "model_parameters": []
   },
   "auto_update": false,
   "buffer_font_size": 14,
@@ -26,11 +25,12 @@
   "diagnostics": {
     "button": false
   },
+  "disable_ai": true,
   "git_panel": {
     "button": false
   },
   "hover_popover_delay": 150,
-  "icon_theme": "Catppuccin Macchiato",
+  "icon_theme": "Catppuccin Frappé",
   "languages": {
     "JavaScript": {
       "code_actions_on_format": {
@@ -41,6 +41,15 @@
           "source.fixAll.eslint": true
         }
       }
+    },
+    "Templ": {
+      "language_servers": [
+        "templ",
+        "tailwindcss-language-server",
+        "emmet-language-server",
+        "vscode-html-language-server",
+        "..."
+      ]
     },
     "TSX": {
       "code_actions_on_format": {
@@ -59,6 +68,18 @@
       "formatter": {
         "code_actions": {
           "source.fixAll.eslint": true
+        }
+      }
+    }
+  },
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "includeLanguages": {
+          "templ": "html"
+        },
+        "experimental": {
+          "classRegex": ["class=\"([^\"]*)\"", "className=\"([^\"]*)\""]
         }
       }
     }
@@ -89,7 +110,7 @@
   "theme": {
     "mode": "system",
     "light": "macOS Classic Light",
-    "dark": "macOS Classic Light"
+    "dark": "GitHub Dark Default"
   },
   "title_bar": {
     "show_sign_in": false
