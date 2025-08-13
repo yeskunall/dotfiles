@@ -35,12 +35,6 @@ fgl() {
     grep -o "[a-f0-9]\{7,\}"
 }
 
-_set_current_node_version() {
-  if command -v node &> /dev/null; then
-    export CURRENT_NODE_VERSION=`node -v | sed 's/^v//'`;
-  fi
-}
-
 # Quick utility tool to benchmark shell performance
 # For better benchmarks, use [`zsh-bench`](https://github.com/romkatv/zsh-bench)
 _time_zsh() {
