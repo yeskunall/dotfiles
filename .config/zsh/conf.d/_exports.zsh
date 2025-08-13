@@ -140,7 +140,8 @@ export TRUNK_TELEMETRY="off";
 
 export VERCEL_TELEMETRY_DISABLED="1";
 
-export WRANGLER_HOME="${XDG_CONFIG_HOME}/wrangler";
+# Enable once this is implemented: https://github.com/cloudflare/workers-sdk/blob/e87198a6f43a52ff3b1509e99023932e62de97fe/packages/create-cloudflare/src/helpers/global-wrangler-config-path.ts#L17
+# export WRANGLER_HOME="${XDG_CONFIG_HOME}/wrangler";
 
 # Fetch suggestions asynchronously
 export ZSH_AUTOSUGGEST_USE_ASYNC="true";
