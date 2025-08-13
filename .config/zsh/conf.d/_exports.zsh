@@ -78,6 +78,8 @@ export LESSHISTFILE="${XDG_DATA_HOME}/.lesshst";
 export HISTSIZE="30000";
 export SAVEHIST="30000";
 
+export HOMEBREW_CASK_OPTS="${HOMEBREW_CASK_OPTS:---appdir=/Applications}";
+
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X";
 # Colorize `man` pages
