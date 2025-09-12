@@ -16,6 +16,8 @@ brew "openssl@3"
 brew "libyaml"
 # Command-line interface for SQLite
 brew "sqlite"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # New file format for still image compression
@@ -34,6 +36,8 @@ brew "bat"
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# Sexy ANSI fonts for the console
+brew "cfonts"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
 # General-purpose scripting language
@@ -134,8 +138,6 @@ brew "ripgrep"
 brew "sniffnet"
 # CLI for extracting streams from various websites to a video player
 brew "streamlink"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
 # Markup-based typesetting system
 brew "typst"
 # Syntax-aware linter for prose
@@ -168,6 +170,8 @@ brew "tursodatabase/tap/turso"
 cask "1password"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
+# Screen recording software
+cask "cap"
 # Matrix collaboration client
 cask "element"
 # Collaborative team software
