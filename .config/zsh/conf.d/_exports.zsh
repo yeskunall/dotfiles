@@ -82,6 +82,7 @@ export HOMEBREW_CASK_OPTS="${HOMEBREW_CASK_OPTS:---appdir=/Applications}";
 export HOMEBREW_BIN="${HOMEBREW_PREFIX:-/opt/homebrew}/bin";
 export HOMEBREW_SBIN="${HOMEBREW_PREFIX:-/opt/homebrew}/sbin";
 
+export LLVM_PATH="$(brew --prefix)/opt/llvm/bin";
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X";
 # Colorize `man` pages
@@ -153,4 +154,4 @@ export ZSH_AUTOSUGGEST_USE_ASYNC="true";
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor);
 
 # ... Finally, export `PATH`
-export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${COMPOSER_BIN_DIR}:${DENO_BIN_DIR}:${CARGO_BIN}:${PSQL_CLIENT_KEG_ONLY}:${HOMEBREW_BIN}:${HOMEBREW_SBIN}:${PATH}";
+export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${COMPOSER_BIN_DIR}:${DENO_BIN_DIR}:${CARGO_BIN}:${PSQL_CLIENT_KEG_ONLY}:${HOMEBREW_BIN}:${HOMEBREW_SBIN}:${LLVM_PATH}:${PATH}";
