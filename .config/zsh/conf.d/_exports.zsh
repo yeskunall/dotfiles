@@ -50,7 +50,9 @@ export DENO_DIR="${XDG_CACHE_HOME}/deno";
 export DENO_INSTALL_ROOT="${XDG_CONFIG_HOME}/deno";
 export DENO_BIN_DIR="${DENO_INSTALL_ROOT}/bin";
 
-# Make VS Codium the default editor
+export DUCKDB_HISTORY="${XDG_CONFIG_HOME}/duckdb/.duckdb_history";
+
+# Make Neovim the default editor
 export EDITOR="nvim";
 
 export ENHANCD_DIR="${XDG_CONFIG_HOME}/enhancd";
