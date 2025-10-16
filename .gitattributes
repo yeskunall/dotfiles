@@ -6,3 +6,5 @@
 *.md linguist-documentation=false
 
 *.toml linguist-detectable=true
+
+.config/zed/*.json linguist-language=jsonc
