@@ -1,8 +1,8 @@
 git:
   autoForwardBranches: none
-  paging:
-    colorArg: always
-    pager: delta --detect-dark-light always --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}" --line-numbers --paging=never
+  pagers:
+    - pager: delta --detect-dark-light always --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}" --line-numbers --paging=never
+      colorArg: always
 gui:
   language: en
   nerdFontsVersion: "3"
