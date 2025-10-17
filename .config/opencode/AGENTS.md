@@ -43,6 +43,7 @@ Additionally:
 - No period at the end of the commit summary.
 - The commit summary should not exceed 75 characters (if at all possible).
 - You can write a longer commit body in addition to the
+- Always use smart quotes
 
 ### Examples
 
