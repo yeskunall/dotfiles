@@ -1,6 +1,3 @@
-# Specific to this project
-
-**/.zcompcache
-**/.zcompdump
-**/.zsh_history
-**/.zsh_sessions
+*.bak
+.config/amp/settings.json
+.config/opencode/opencode.jsonc
