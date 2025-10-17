@@ -158,4 +158,4 @@ export ZSH_AUTOSUGGEST_USE_ASYNC="true";
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor);
 
 # ... Finally, export `PATH`
-export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${COMPOSER_BIN_DIR}:${DENO_BIN_DIR}:${CARGO_BIN}:${PSQL_CLIENT_KEG_ONLY}:${HOMEBREW_BIN}:${HOMEBREW_SBIN}:${LLVM_PATH}:${PATH}";
+export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${COMPOSER_BIN_DIR}:${DENO_BIN_DIR}:${CARGO_BIN}:${PSQL_CLIENT_KEG_ONLY}:${HOMEBREW_BIN}:${HOMEBREW_SBIN}:${LLVM_PATH}:${PNPM_HOME}:${PATH}";
