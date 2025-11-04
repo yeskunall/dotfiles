@@ -10,7 +10,7 @@
   "agent": {
     "default_model": {
       "provider": "ollama",
-      "model": "qwen2.5-coder:1.5b"
+      "model": "qwen2.5-coder:0.5b"
     },
     "default_profile": "ask",
     "dock": "left",
@@ -18,20 +18,33 @@
     "play_sound_when_agent_done": true
   },
   "auto_update": false,
+  "base_keymap": "VSCode",
   "buffer_font_size": 14,
   "buffer_font_family": "Liga SFMono Nerd Font",
+  "buffer_line_height": "comfortable",
   "collaboration_panel": {
     "button": false
   },
   "cursor_shape": "block",
+  "debugger": {
+    "format_dap_log_messages": true,
+    "log_dap_communications": true
+  },
   "diagnostics": {
     "button": false
   },
+  "edit_predictions": {
+    // TODO(yeskunall): fill ‘er up
+    "disabled_globs": [],
+    "mode": "subtle"
+  },
+  "fast_scroll_sensitivity": 10.0,
   "git_panel": {
     "button": false
   },
-  "features": {
-    "edit_prediction_provider": "copilot"
+  "file_types": {
+    "Git Ignore": [".dockerignore", ".prettierignore"],
+    "JSON": [".prettierrc"]
   },
   "hover_popover_delay": 50,
   "icon_theme": "Catppuccin Frappé",
@@ -39,11 +52,6 @@
     "JavaScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
-      },
-      "formatter": {
-        "code_actions": {
-          "source.fixAll.eslint": true
-        }
       }
     },
     "Templ": {
@@ -58,21 +66,11 @@
     "TSX": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
-      },
-      "formatter": {
-        "code_actions": {
-          "source.fixAll.eslint": true
-        }
       }
     },
     "TypeScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
-      },
-      "formatter": {
-        "code_actions": {
-          "source.fixAll.eslint": true
-        }
       }
     }
   },
@@ -80,6 +78,12 @@
     "ollama": {
       "api_url": "http://localhost:11434",
       "available_models": [
+        {
+          "name": "qwen2.5-coder:0.5b",
+          "display_name": "Qwen2.5 Coder 0.5B",
+          "max_tokens": 32768,
+          "supports_tools": true
+        },
         {
           "name": "qwen2.5-coder:1.5b",
           "display_name": "Qwen2.5 Coder 1.5B",
@@ -107,6 +111,10 @@
       }
     }
   },
+  "minimap": {
+    "display_in": "active_editor",
+    "show": "auto"
+  },
   "notification_panel": {
     "button": false,
     "dock": "left"
@@ -115,10 +123,12 @@
     "button": false
   },
   "project_panel": {
-    "dock": "right",
-    "button": false
+    "button": false,
+    "default_width": 300,
+    "dock": "right"
   },
   "redact_private_values": true,
+  "scroll_sensitivity": 1.5,
   "search": {
     "button": false
   },
@@ -137,6 +147,8 @@
     "dark": "GitHub Dark Default"
   },
   "title_bar": {
+    "show_branch_name": false,
+    "show_project_items": false,
     "show_sign_in": false
   },
   "toolbar": {
