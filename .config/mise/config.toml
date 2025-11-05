@@ -4,7 +4,7 @@ go = "1.25.1"
 ruby = "3.4.3"
 python = "3.14.0"
 uv = "0.8.6"
-rust = { version = "stable", profile = "default" }
+rust = { version = "stable", profile = "default", components = "rust-analyzer" }
 
 [settings]
 experimental = true
