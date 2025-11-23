@@ -168,7 +168,7 @@
   "theme": {
     "mode": "system",
     "light": "macOS Classic Light",
-    "dark": "macOS Classic Light"
+    "dark": "GitHub Dark Default"
   },
   "title_bar": {
     "show_branch_name": false,
