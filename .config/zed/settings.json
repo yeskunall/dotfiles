@@ -9,19 +9,29 @@
 {
   "agent": {
     "default_model": {
-      "provider": "ollama",
-      "model": "qwen2.5-coder:0.5b"
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-5"
     },
-    "default_profile": "ask",
+    "default_profile": "write",
     "dock": "left",
     "model_parameters": [],
     "play_sound_when_agent_done": true
+  },
+  "audio": {
+    "experimental.rodio_audio": true
   },
   "auto_update": false,
   "base_keymap": "VSCode",
   "buffer_font_size": 14,
   "buffer_font_family": "Liga SFMono Nerd Font",
+  "buffer_font_weight": 500,
   "buffer_line_height": "comfortable",
+  "calls": {
+    "mute_on_join": true
+  },
+  "features": {
+    "edit_prediction_provider": "supermaven"
+  },
   "collaboration_panel": {
     "button": false
   },
@@ -52,6 +62,9 @@
     "JavaScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
+      },
+      "prettier": {
+        "allowed": false
       }
     },
     "Templ": {
@@ -100,6 +113,15 @@
     }
   },
   "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "preferences": {
+            "importModuleSpecifier": "non-relative"
+          }
+        }
+      }
+    },
     "tailwindcss-language-server": {
       "settings": {
         "includeLanguages": {
@@ -123,6 +145,7 @@
     "button": false
   },
   "project_panel": {
+    "starts_open": false,
     "button": false,
     "default_width": 300,
     "dock": "right"
@@ -139,12 +162,13 @@
     "metrics": false
   },
   "terminal": {
-    "button": false
+    "button": false,
+    "working_directory": "current_project_directory"
   },
   "theme": {
     "mode": "system",
     "light": "macOS Classic Light",
-    "dark": "GitHub Dark Default"
+    "dark": "macOS Classic Light"
   },
   "title_bar": {
     "show_branch_name": false,
@@ -155,5 +179,8 @@
     "quick_actions": false
   },
   "ui_font_family": ".ZedMono",
-  "ui_font_size": 14
+  "ui_font_size": 14,
+  "preview_tabs": {
+    "enabled": false
+  }
 }
