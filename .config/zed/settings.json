@@ -29,12 +29,6 @@
   "calls": {
     "mute_on_join": true
   },
-  "features": {
-    "edit_prediction_provider": "supermaven"
-  },
-  "collaboration_panel": {
-    "button": false
-  },
   "cursor_shape": "block",
   "debugger": {
     "format_dap_log_messages": true,
@@ -49,13 +43,14 @@
     "mode": "subtle"
   },
   "fast_scroll_sensitivity": 10.0,
-  "git_panel": {
-    "button": false
+  "features": {
+    "edit_prediction_provider": "supermaven"
   },
   "file_types": {
     "Git Ignore": [".dockerignore", ".prettierignore"],
     "JSON": [".prettierrc"]
   },
+  "git_hosting_providers": [],
   "hover_popover_delay": 50,
   "icon_theme": "Catppuccin Frappé",
   "languages": {
@@ -79,11 +74,17 @@
     "TSX": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
+      },
+      "prettier": {
+        "allowed": false
       }
     },
     "TypeScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
+      },
+      "prettier": {
+        "allowed": false
       }
     }
   },
@@ -113,15 +114,6 @@
     }
   },
   "lsp": {
-    "vtsls": {
-      "settings": {
-        "typescript": {
-          "preferences": {
-            "importModuleSpecifier": "non-relative"
-          }
-        }
-      }
-    },
     "tailwindcss-language-server": {
       "settings": {
         "includeLanguages": {
@@ -129,6 +121,15 @@
         },
         "experimental": {
           "classRegex": ["class=\"([^\"]*)\"", "className=\"([^\"]*)\""]
+        }
+      }
+    },
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "preferences": {
+            "importModuleSpecifier": "non-relative"
+          }
         }
       }
     }
@@ -143,6 +144,9 @@
   },
   "outline_panel": {
     "button": false
+  },
+  "preview_tabs": {
+    "enabled": false
   },
   "project_panel": {
     "starts_open": false,
@@ -166,7 +170,7 @@
     "working_directory": "current_project_directory"
   },
   "theme": {
-    "mode": "system",
+    "mode": "light",
     "light": "macOS Classic Light",
     "dark": "GitHub Dark Default"
   },
@@ -176,11 +180,8 @@
     "show_sign_in": false
   },
   "toolbar": {
-    "quick_actions": false
+    "quick_actions": true
   },
   "ui_font_family": ".ZedMono",
-  "ui_font_size": 14,
-  "preview_tabs": {
-    "enabled": false
-  }
+  "ui_font_size": 14
 }
