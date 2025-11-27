@@ -5,12 +5,12 @@
   # Default is `auto`
   ui = true
 [commit]
-  gpgsign = "true"
+  gpgsign = true
 [core]
   # Use global `.gitattributes` and `.gitignore`
   attributesfile = "~/.config/git/.gitattributes_global"
-  autocrlf = "false"
-  editor = "nvim"
+  autocrlf = false
+  editor = nvim
   excludesfile = "~/.config/git/.gitignore_global"
   pager = "delta"
   # https://git-scm.com/docs/git-update-index#_untracked_cache
@@ -20,15 +20,15 @@
   navigate = true
   side-by-side = true
 [gpg]
-  format = "ssh"
+  format = ssh
 [gpg "ssh"]
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
   allowedSignersFile = "/Users/admin/.ssh/allowed_signers"
 [init]
-  defaultBranch = "main"
+  defaultBranch = main
 [interactive]
   diffFilter = delta --color-only
 [user]
-  email = "hey@kimchiii.space"
-  name = "Kunall Banerjee"
-  signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINyz3Q6dVT/RdLbF5TeO66gF1L6ZKTIikn/uxBZGvwh6"
+  email = hey@kimchiii.space
+  name = Kunall Banerjee
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINyz3Q6dVT/RdLbF5TeO66gF1L6ZKTIikn/uxBZGvwh6
