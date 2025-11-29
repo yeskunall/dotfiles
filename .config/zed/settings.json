@@ -25,7 +25,6 @@
   "buffer_font_size": 14,
   "buffer_font_family": "Liga SFMono Nerd Font",
   "buffer_font_weight": 500,
-  "buffer_line_height": "comfortable",
   "calls": {
     "mute_on_join": true
   },
@@ -45,7 +44,7 @@
   },
   "fast_scroll_sensitivity": 10.0,
   "features": {
-    "edit_prediction_provider": "supermaven"
+    "edit_prediction_provider": "zed"
   },
   "file_types": {
     "Git Ignore": [".dockerignore", ".prettierignore"],
