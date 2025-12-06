@@ -15,7 +15,8 @@
     "default_profile": "write",
     "dock": "left",
     "model_parameters": [],
-    "play_sound_when_agent_done": true
+    "play_sound_when_agent_done": true,
+    "preferred_completion_mode": "burn"
   },
   "audio": {
     "experimental.rodio_audio": true
@@ -29,6 +30,12 @@
     "mute_on_join": true
   },
   "colorize_brackets": true,
+  "context_servers": {
+    "Context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    }
+  },
   "cursor_shape": "block",
   "debugger": {
     "format_dap_log_messages": true,
@@ -38,7 +45,6 @@
     "button": false
   },
   "edit_predictions": {
-    // TODO(yeskunall): fill ‘er up
     "disabled_globs": [],
     "mode": "subtle"
   },
@@ -62,14 +68,8 @@
         "allowed": false
       }
     },
-    "Templ": {
-      "language_servers": [
-        "templ",
-        "tailwindcss-language-server",
-        "emmet-language-server",
-        "vscode-html-language-server",
-        "..."
-      ]
+    "Markdown": {
+      "format_on_save": "on"
     },
     "TSX": {
       "code_actions_on_format": {
@@ -91,26 +91,7 @@
   "language_models": {
     "ollama": {
       "api_url": "http://localhost:11434",
-      "available_models": [
-        {
-          "name": "qwen2.5-coder:0.5b",
-          "display_name": "Qwen2.5 Coder 0.5B",
-          "max_tokens": 32768,
-          "supports_tools": true
-        },
-        {
-          "name": "qwen2.5-coder:1.5b",
-          "display_name": "Qwen2.5 Coder 1.5B",
-          "max_tokens": 32768,
-          "supports_tools": true
-        },
-        {
-          "name": "qwen3:4b",
-          "display_name": "Qwen3",
-          "max_tokens": 32768,
-          "supports_thinking": true
-        }
-      ]
+      "available_models": []
     }
   },
   "lsp": {
