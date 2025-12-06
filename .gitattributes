@@ -8,4 +8,5 @@
 *.toml linguist-detectable=true
 
 .config/ghostty/config linguist-language=ini
+.config/ghostty/themes/* linguist-language=ini
 .config/zed/*.json linguist-language=jsonc
