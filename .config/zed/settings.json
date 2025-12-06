@@ -12,7 +12,7 @@
       "provider": "zed.dev",
       "model": "claude-opus-4-5"
     },
-    "default_profile": "ask",
+    "default_profile": "write",
     "dock": "left",
     "play_sound_when_agent_done": true,
     "preferred_completion_mode": "burn",
@@ -69,6 +69,10 @@
         "enable_all_context_servers": true
       },
       "write": {
+        "default_model": {
+          "provider": "zed.dev",
+          "model": "claude-opus-4-5-thinking"
+        },
         "name": "Write",
         "enable_all_context_servers": true,
         "tools": {
