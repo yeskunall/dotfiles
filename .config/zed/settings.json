@@ -10,19 +10,89 @@
   "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4-5"
+      "model": "claude-opus-4-5"
     },
     "default_profile": "write",
     "dock": "left",
-    "model_parameters": [],
     "play_sound_when_agent_done": true,
-    "preferred_completion_mode": "burn"
+    "preferred_completion_mode": "burn",
+    "profiles": {
+      "ask": {
+        "name": "Ask",
+        "context_servers": {
+          "Context7": {
+            "tools": {
+              "get-library-docs": true,
+              "resolve-library-id": true
+            }
+          },
+          "Sequential thinking": {
+            "tools": {
+              "sequentialthinking": true
+            }
+          }
+        },
+        "enable_all_context_servers": false,
+        "tools": {
+          "diagnostics": true,
+          "fetch": true,
+          "list_directory": true,
+          "project_notifications": false,
+          "now": true,
+          "find_path": true,
+          "read_file": true,
+          "open": true,
+          "grep": true,
+          "thinking": true,
+          "web_search": true
+        }
+      },
+      "minimal": {
+        "default_model": {
+          "provider": "zed.dev",
+          "model": "gpt-5.1"
+        },
+        "name": "Minimal",
+        "tools": {},
+        "enable_all_context_servers": false
+      },
+      "sequential_thinking": {
+        "name": "Sequential thinking",
+        "default_model": {
+          "provider": "zed.dev",
+          "model": "claude-opus-4-5-thinking"
+        },
+        "enable_all_context_servers": true
+      },
+      "write": {
+        "name": "Write",
+        "enable_all_context_servers": true,
+        "tools": {
+          "copy_path": true,
+          "create_directory": true,
+          "delete_path": true,
+          "diagnostics": true,
+          "edit_file": true,
+          "fetch": true,
+          "list_directory": true,
+          "project_notifications": false,
+          "move_path": true,
+          "now": true,
+          "find_path": true,
+          "read_file": true,
+          "open": true,
+          "grep": true,
+          "terminal": true,
+          "thinking": true,
+          "web_search": true
+        }
+      }
+    }
   },
   "audio": {
     "experimental.rodio_audio": true
   },
   "auto_update": false,
-  "base_keymap": "VSCode",
   "buffer_font_size": 14,
   "buffer_font_family": "Liga SFMono Nerd Font",
   "buffer_font_weight": 500,
@@ -34,6 +104,11 @@
     "Context7": {
       "command": "npx",
       "args": ["-y", "@upstash/context7-mcp"]
+    },
+    // An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.
+    "Sequential thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
     }
   },
   "cursor_shape": "block",
