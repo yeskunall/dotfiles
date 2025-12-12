@@ -10,7 +10,7 @@
   "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-opus-4-5"
+      "model": "claude-opus-4-5",
     },
     "default_profile": "write",
     "dock": "left",
@@ -20,21 +20,21 @@
       "ask": {
         "default_model": {
           "provider": "zed.dev",
-          "model": "claude-opus-4-5-thinking"
+          "model": "claude-opus-4-5-thinking",
         },
         "name": "Ask",
         "context_servers": {
           "Context7": {
             "tools": {
               "get-library-docs": true,
-              "resolve-library-id": true
-            }
+              "resolve-library-id": true,
+            },
           },
           "Sequential thinking": {
             "tools": {
-              "sequentialthinking": true
-            }
-          }
+              "sequentialthinking": true,
+            },
+          },
         },
         "enable_all_context_servers": false,
         "tools": {
@@ -48,30 +48,30 @@
           "open": true,
           "grep": true,
           "thinking": true,
-          "web_search": true
-        }
+          "web_search": true,
+        },
       },
       "minimal": {
         "default_model": {
           "provider": "zed.dev",
-          "model": "gpt-5.1"
+          "model": "gpt-5.1",
         },
         "name": "Minimal",
         "tools": {},
-        "enable_all_context_servers": false
+        "enable_all_context_servers": false,
       },
       "sequential_thinking": {
         "name": "Sequential thinking",
         "default_model": {
           "provider": "zed.dev",
-          "model": "claude-opus-4-5-thinking"
+          "model": "claude-opus-4-5-thinking",
         },
-        "enable_all_context_servers": true
+        "enable_all_context_servers": true,
       },
       "write": {
         "default_model": {
           "provider": "zed.dev",
-          "model": "claude-opus-4-5-thinking"
+          "model": "claude-opus-4-5-thinking",
         },
         "name": "Write",
         "enable_all_context_servers": true,
@@ -92,160 +92,164 @@
           "grep": true,
           "terminal": true,
           "thinking": true,
-          "web_search": true
-        }
-      }
-    }
+          "web_search": true,
+        },
+      },
+    },
   },
   "audio": {
-    "experimental.rodio_audio": true
+    "experimental.rodio_audio": true,
   },
   "auto_update": false,
   "buffer_font_size": 14,
   "buffer_font_family": "Liga SFMono Nerd Font",
   "buffer_font_weight": 500,
   "calls": {
-    "mute_on_join": true
+    "mute_on_join": true,
   },
   "colorize_brackets": true,
   "context_servers": {
     "Context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@upstash/context7-mcp"],
     },
     // An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.
     "Sequential thinking": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
-    }
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+    },
   },
   "cursor_shape": "block",
   "debugger": {
     "format_dap_log_messages": true,
-    "log_dap_communications": true
+    "log_dap_communications": true,
   },
   "diagnostics": {
-    "button": false
+    "button": false,
   },
   "edit_predictions": {
     "disabled_globs": [],
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "fast_scroll_sensitivity": 10.0,
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "zed",
   },
   "file_types": {
     "Git Ignore": [".dockerignore", ".prettierignore"],
-    "JSON": [".prettierrc"]
+    "JSON": [".prettierrc"],
   },
   "git_hosting_providers": [],
   "hover_popover_delay": 50,
   "icon_theme": "Catppuccin Frappé",
+  "indent_guides": {
+    "coloring": "indent_aware",
+    "active_line_width": 3,
+  },
   "languages": {
     "JavaScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
       "prettier": {
-        "allowed": false
-      }
+        "allowed": false,
+      },
     },
     "Markdown": {
-      "format_on_save": "on"
+      "format_on_save": "on",
     },
     "TSX": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
       "prettier": {
-        "allowed": false
-      }
+        "allowed": false,
+      },
     },
     "TypeScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
       "prettier": {
-        "allowed": false
-      }
-    }
+        "allowed": false,
+      },
+    },
   },
   "language_models": {
     "ollama": {
       "api_url": "http://localhost:11434",
-      "available_models": []
-    }
+      "available_models": [],
+    },
   },
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
         "includeLanguages": {
-          "templ": "html"
+          "templ": "html",
         },
         "experimental": {
-          "classRegex": ["class=\"([^\"]*)\"", "className=\"([^\"]*)\""]
-        }
-      }
+          "classRegex": ["class=\"([^\"]*)\"", "className=\"([^\"]*)\""],
+        },
+      },
     },
     "vtsls": {
       "settings": {
         "typescript": {
           "preferences": {
-            "importModuleSpecifier": "non-relative"
-          }
-        }
-      }
-    }
+            "importModuleSpecifier": "non-relative",
+          },
+        },
+      },
+    },
   },
   "minimap": {
     "display_in": "active_editor",
-    "show": "auto"
+    "show": "auto",
   },
   "notification_panel": {
     "button": false,
-    "dock": "left"
+    "dock": "left",
   },
   "outline_panel": {
-    "button": false
+    "button": false,
   },
   "preview_tabs": {
-    "enabled": false
+    "enabled": false,
   },
   "project_panel": {
     "starts_open": false,
     "button": false,
     "default_width": 300,
-    "dock": "right"
+    "dock": "right",
   },
   "redact_private_values": true,
   "scroll_sensitivity": 1.5,
   "search": {
-    "button": false
+    "button": false,
   },
   "show_whitespaces": "selection",
   "soft_wrap": "none",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "terminal": {
     "button": false,
-    "working_directory": "current_project_directory"
+    "working_directory": "current_project_directory",
   },
   "theme": {
     "mode": "light",
     "light": "macOS Classic Light",
-    "dark": "GitHub Dark Default"
+    "dark": "GitHub Dark Default",
   },
   "title_bar": {
     "show_branch_name": false,
     "show_project_items": false,
-    "show_sign_in": false
+    "show_sign_in": false,
   },
   "toolbar": {
-    "quick_actions": true
+    "quick_actions": true,
   },
   "ui_font_family": ".ZedMono",
-  "ui_font_size": 14
+  "ui_font_size": 14,
 }
