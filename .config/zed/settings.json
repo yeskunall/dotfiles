@@ -12,7 +12,7 @@
       "provider": "zed.dev",
       "model": "claude-opus-4-5",
     },
-    "default_profile": "write",
+    "default_profile": "ask",
     "dock": "left",
     "play_sound_when_agent_done": true,
     "preferred_completion_mode": "burn",
