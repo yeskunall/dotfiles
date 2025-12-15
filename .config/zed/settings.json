@@ -8,9 +8,13 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "agent": {
+    "commit_message_model": {
+      "provider": "google",
+      "model": "gemini-pro",
+    },
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-opus-4-5",
+      "model": "claude-opus-4-5-thinking",
     },
     "default_profile": "ask",
     "dock": "left",
