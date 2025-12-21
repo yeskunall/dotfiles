@@ -28,7 +28,6 @@ export ASTRO_TELEMETRY_DISABLED="1";
 
 export AWS_CONFIG_FILE="${XDG_CONFIG_HOME}/aws/config.ini";
 export AWS_SHARED_CREDENTIALS_FILE="${XDG_CONFIG_HOME}/aws/credentials.ini";
-export AWS_VAULT_BACKEND="keychain";
 
 export BAT_THEME="OneHalfDark";
 

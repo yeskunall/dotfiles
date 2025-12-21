@@ -10,11 +10,6 @@
 # $$ |  $$ $$       / $$   $$ |  $$ $$    $$/$$       $$    $$/  /$$      /     $$/$$ |  $$ |
 # $$/   $$/$$$$$$$$/$$$$$$/$$/   $$/ $$$$$$/ $$$$$$$$/ $$$$$$/$$/$$$$$$$$/$$$$$$$/ $$/   $$/
 
-# AWS Vault shorthands
-alias aw="aws-vault";
-
-alias awe="aws-vault exec";
-
 # Copy the working directory path
 alias cpwd="pwd | tr -d "\n" | pbcopy";
 
