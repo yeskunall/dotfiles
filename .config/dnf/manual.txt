@@ -1,0 +1,51 @@
+# Packages requiring manual installation
+# These are not available in DNF, COPR, or Flatpak
+# The install script will attempt to install these via their official methods
+
+# AWS tools
+aws-vault  # Securely store and access AWS credentials - https://github.com/99designs/aws-vault
+
+# JavaScript/TypeScript
+bun  # Incredibly fast JavaScript runtime - https://bun.sh
+
+# CLI tools
+cfonts  # Sexy ANSI fonts for the console - npm install -g cfonts
+dprint  # Pluggable code formatting platform - https://dprint.dev
+fx  # Terminal JSON viewer - npm install -g fx or go install
+htmlq  # Uses CSS selectors to extract content from HTML - cargo install htmlq
+qsv  # Ultra-fast CSV data-wrangling toolkit - https://github.com/jqnatividad/qsv
+
+# DNS/Network tools
+q  # DNS client with DoH/DoT support - https://github.com/natesales/q
+icann-rdap  # RDAP client - cargo install icann-rdap
+ipinfo-cli  # Official CLI for IPinfo API - https://github.com/ipinfo/cli
+
+# Cloud/Platform CLIs
+flyctl  # Command-line tools for fly.io - https://fly.io/docs/hands-on/install-flyctl/
+fastly  # CLI for Fastly platform - https://github.com/fastly/cli
+
+# Database tools
+sqld  # libSQL server - https://github.com/tursodatabase/libsql
+turso  # Turso CLI - https://docs.turso.tech/cli/installation
+sq  # sq data wrangler - https://sq.io
+
+# Git tools
+git-town  # High-level CLI for Git - https://www.git-town.com
+
+# Prose/writing
+vale  # Syntax-aware linter for prose - https://vale.sh
+
+# Docker tools
+lazydocker  # Lazier way to manage docker - https://github.com/jesseduffield/lazydocker
+
+# AI/Dev tools
+opencode  # AI coding agent for terminal - https://github.com/sst/opencode
+
+# Zsh
+zinit  # Zsh plugin manager - https://github.com/zdharma-continuum/zinit
+
+# Network monitoring
+sniffnet  # Cross-platform network monitor - cargo install sniffnet or https://sniffnet.net
+
+# Fonts
+font-sf-mono-nerd-font-ligaturized  # Nerd font - manual download from GitHub
