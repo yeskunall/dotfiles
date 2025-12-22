@@ -51,6 +51,9 @@ export DENO_BIN_DIR="${DENO_INSTALL_ROOT}/bin";
 
 export DUCKDB_HISTORY="${XDG_CONFIG_HOME}/duckdb/.duckdb_history";
 
+# https://code.claude.com/docs/en/setup#auto-updates
+export DISABLE_AUTOUPDATER="1";
+
 # Make Neovim the default editor
 export EDITOR="nvim";
 
