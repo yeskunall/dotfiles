@@ -6,6 +6,7 @@ cursor-style = block
 cursor-style-blink = true
 font-family = Liga SFMono Nerd Font
 macos-titlebar-style = tabs
+keybind = super+k=clear_screen
 shell-integration-features = no-cursor,sudo,no-title
 theme = github-dark
 title = " "
