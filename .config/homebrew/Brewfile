@@ -1,6 +1,5 @@
 tap "charmbracelet/tap"
 tap "fastly/tap"
-tap "knqyf263/pet"
 tap "libsql/sqld"
 tap "natesales/repo", "https://github.com/natesales/repo"
 tap "neilotoole/sq"
@@ -164,8 +163,6 @@ brew "zinit"
 brew "zoxide"
 # A CLI for interacting with the Fastly platform
 brew "fastly/tap/fastly"
-# Simple command-line snippet manager
-brew "knqyf263/pet/pet"
 # The libsql-server application
 brew "libsql/sqld/sqld"
 brew "natesales/repo/q"
@@ -192,7 +189,6 @@ cask "figma"
 cask "firefox@developer-edition"
 # Web browser
 cask "firefox@nightly"
-cask "font-commit-mono-nerd-font"
 cask "font-sf-mono-nerd-font-ligaturized"
 # Font viewer for various font formats
 cask "fontgoggles"
