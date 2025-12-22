@@ -38,6 +38,10 @@ brew "glib"
 brew "cairo"
 # Sexy ANSI fonts for the console
 brew "cfonts"
+# Statistics utility to count lines of code
+brew "cloc"
+# Cross-platform make
+brew "cmake"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
 # General-purpose scripting language
@@ -52,6 +56,8 @@ brew "deno"
 brew "dive"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
+# Docker CLI plugin for extended build capabilities with BuildKit
+brew "docker-buildx"
 # Isolated development environments using Docker
 brew "docker-compose"
 # Pluggable and configurable code formatting platform written in Rust
@@ -106,6 +112,8 @@ brew "ipinfo-cli"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Next-gen compiler infrastructure
+brew "llvm"
 # Move files and folders to the trash
 brew "macos-trash", link: true
 # Polyglot runtime manager (asdf rust clone)
@@ -124,6 +132,8 @@ brew "pinentry-mac"
 brew "pipx"
 # Object-relational database system
 brew "postgresql@17", link: true
+# Modern replacement for ps written in Rust
+brew "procs"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # Ultra-fast CSV data-wrangling toolkit
@@ -172,6 +182,8 @@ cask "1password"
 cask "adobe-acrobat-reader"
 # Screen recording software
 cask "cap"
+# Voice and text chat software
+cask "discord"
 # Matrix collaboration client
 cask "element"
 # Collaborative team software
@@ -181,7 +193,6 @@ cask "firefox@developer-edition"
 # Web browser
 cask "firefox@nightly"
 cask "font-commit-mono-nerd-font"
-cask "font-new-computer-modern"
 cask "font-sf-mono-nerd-font-ligaturized"
 # Font viewer for various font formats
 cask "fontgoggles"
@@ -195,6 +206,8 @@ cask "gpg-suite-no-mail"
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Open-source keystroke visualiser
+cask "keycastr"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
 # Markdown editor
@@ -213,6 +226,8 @@ cask "raycast"
 cask "rectangle"
 # Instant messaging application focusing on security
 cask "signal"
+# Team communication and collaboration software
+cask "slack"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
 # Google Chromium, sans integration with Google
