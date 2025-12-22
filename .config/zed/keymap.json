@@ -5,11 +5,4 @@
 //
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
-[
-  {
-    "context": "Workspace",
-    "bindings": {
-      "cmd-b": "workspace::ToggleRightDock"
-    }
-  }
-]
+[]
