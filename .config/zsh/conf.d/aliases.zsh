@@ -10,26 +10,14 @@
 # $$ |  $$ $$       / $$   $$ |  $$ $$    $$/$$       $$    $$/  /$$      /     $$/$$ |  $$ |
 # $$/   $$/$$$$$$$$/$$$$$$/$$/   $$/ $$$$$$/ $$$$$$$$/ $$$$$$/$$/$$$$$$$$/$$$$$$$/ $$/   $$/
 
-# Copy the working directory path
-alias cpwd="pwd | tr -d "\n" | pbcopy";
-
-# It’s all about saving keystrokes ↓
-# PS: The white-space before `clear` makes it so that ZSH does not record it in `HISTFILE`
-alias c=" clear";
-
 # A cat(1) clone with wings.
 # https://github.com/sharkdp/bat
 alias cat="bat";
 
 # Always enable colored `grep` output (`GREP_OPTIONS="--color=auto"` is deprecated)
 alias egrep="egrep --color=auto";
-
 alias fgrep="fgrep --color=auto";
-
 alias grep="grep --color=auto";
-
-# https://github.com/charmbracelet/glow?tab=readme-ov-file#word-wrapping
-alias glow="glow -p -w 65";
 
 # The command in the alias will most likely slow down
 # over time as $HISTFILE grows in size
