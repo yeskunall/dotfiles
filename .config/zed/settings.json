@@ -107,7 +107,7 @@
   "auto_update": false,
   "buffer_font_size": 14,
   "buffer_font_family": "Liga SFMono Nerd Font",
-  "buffer_font_weight": 500,
+  "buffer_font_weight": 500.0,
   "calls": {
     "mute_on_join": true,
   },
@@ -161,6 +161,7 @@
     },
     "Markdown": {
       "format_on_save": "on",
+      "remove_trailing_whitespace_on_save": false,
     },
     "TSX": {
       "code_actions_on_format": {
@@ -177,12 +178,6 @@
       "prettier": {
         "allowed": false,
       },
-    },
-  },
-  "language_models": {
-    "ollama": {
-      "api_url": "http://localhost:11434",
-      "available_models": [],
     },
   },
   "lsp": {
@@ -252,7 +247,7 @@
     "show_sign_in": false,
   },
   "toolbar": {
-    "quick_actions": true,
+    "quick_actions": false,
   },
   "ui_font_family": ".ZedMono",
   "ui_font_size": 14,
