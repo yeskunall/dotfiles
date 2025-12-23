@@ -83,10 +83,13 @@ export HISTSIZE="30000";
 export SAVEHIST="30000";
 
 export HOMEBREW_CASK_OPTS="${HOMEBREW_CASK_OPTS:---appdir=/Applications}";
-export HOMEBREW_BIN="${HOMEBREW_PREFIX:-/opt/homebrew}/bin";
-export HOMEBREW_SBIN="${HOMEBREW_PREFIX:-/opt/homebrew}/sbin";
+export HOMEBREW_BIN="$(brew --prefix)/bin";
+export HOMEBREW_SBIN="$(brew --prefix)/sbin";
 
 export LLVM_PATH="$(brew --prefix)/opt/llvm/bin";
+export CPPFLAGS="-I$(brew --prefix)/opt/llvm/include";
+export LDFLAGS="-L$(brew --prefix)/opt/llvm/lib";
+
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X";
 # Colorize `man` pages
