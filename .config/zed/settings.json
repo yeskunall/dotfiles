@@ -30,6 +30,7 @@
         "context_servers": {
           "Context7": {
             "tools": {
+              "query-docs": true,
               "get-library-docs": true,
               "resolve-library-id": true,
             },
