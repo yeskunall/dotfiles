@@ -58,7 +58,7 @@
       "minimal": {
         "default_model": {
           "provider": "zed.dev",
-          "model": "gpt-5.1",
+          "model": "gpt-5.2",
         },
         "name": "Minimal",
         "tools": {},
