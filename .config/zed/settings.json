@@ -19,7 +19,6 @@
     "default_profile": "ask",
     "dock": "left",
     "play_sound_when_agent_done": true,
-    "preferred_completion_mode": "burn",
     "profiles": {
       "ask": {
         "default_model": {
@@ -138,6 +137,7 @@
   },
   "fast_scroll_sensitivity": 10.0,
   "features": {
+    "experimental_edit_prediction_context_retrieval": true,
     "edit_prediction_provider": "zed",
   },
   "file_types": {
@@ -169,6 +169,9 @@
     "Markdown": {
       "format_on_save": "on",
       "remove_trailing_whitespace_on_save": false,
+      "prettier": {
+        "allowed": true,
+      },
     },
     "TSX": {
       "code_actions_on_format": {
