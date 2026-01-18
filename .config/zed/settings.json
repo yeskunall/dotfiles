@@ -253,8 +253,11 @@
   },
   "title_bar": {
     "show_branch_name": false,
+    "show_onboarding_banner": false,
     "show_project_items": false,
     "show_sign_in": false,
+    "show_user_menu": false,
+    "show_user_picture": false,
   },
   "toolbar": {
     "quick_actions": false,
