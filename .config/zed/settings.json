@@ -27,6 +27,13 @@
         },
         "name": "Ask",
         "context_servers": {
+          "Context7": {
+            "tools": {
+              "query-docs": true,
+              "get-library-docs": true,
+              "resolve-library-id": true,
+            },
+          },
           "Sentry": {
             "tools": {
               "analyze_issue_with_seer": false,
@@ -40,13 +47,6 @@
               "search_issue_events": true,
               "search_issues": true,
               "whoami": true,
-            },
-          },
-          "Context7": {
-            "tools": {
-              "query-docs": true,
-              "get-library-docs": true,
-              "resolve-library-id": true,
             },
           },
           "Sequential thinking": {
