@@ -27,6 +27,21 @@
         },
         "name": "Ask",
         "context_servers": {
+          "Sentry": {
+            "tools": {
+              "analyze_issue_with_seer": false,
+              "get_doc": true,
+              "get_event_attachment": true,
+              "get_issue_details": true,
+              "get_issue_tag_values": true,
+              "get_trace_details": true,
+              "search_docs": true,
+              "search_events": true,
+              "search_issue_events": true,
+              "search_issues": true,
+              "whoami": true,
+            },
+          },
           "Context7": {
             "tools": {
               "query-docs": true,
@@ -116,6 +131,10 @@
     "Context7": {
       "command": "npx",
       "args": ["-y", "@upstash/context7-mcp"],
+    },
+    "Sentry": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote@latest", "https://mcp.sentry.dev/mcp"],
     },
     // An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.
     "Sequential thinking": {
