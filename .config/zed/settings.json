@@ -18,6 +18,8 @@
     },
     "default_profile": "ask",
     "dock": "left",
+    "message_editor_min_lines": 8,
+    "notify_when_agent_waiting": "all_screens",
     "play_sound_when_agent_done": true,
     "profiles": {
       "ask": {
