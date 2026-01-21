@@ -18,6 +18,7 @@
     },
     "default_profile": "ask",
     "dock": "left",
+    "enable_feedback": false,
     "message_editor_min_lines": 8,
     "notify_when_agent_waiting": "all_screens",
     "play_sound_when_agent_done": true,
@@ -117,6 +118,7 @@
         },
       },
     },
+    "use_modifier_to_send": true,
   },
   "audio": {
     "experimental.rodio_audio": true,
