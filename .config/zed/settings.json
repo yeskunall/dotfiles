@@ -118,7 +118,6 @@
         },
       },
     },
-    "use_modifier_to_send": true,
   },
   "audio": {
     "experimental.rodio_audio": true,
@@ -129,6 +128,9 @@
   "buffer_font_weight": 500.0,
   "calls": {
     "mute_on_join": true,
+  },
+  "collaboration_panel": {
+    "button": false,
   },
   "colorize_brackets": true,
   "context_servers": {
@@ -168,6 +170,9 @@
     "JSON": [".prettierrc"],
   },
   "git_hosting_providers": [],
+  "git_panel": {
+    "button": false,
+  },
   "hover_popover_delay": 50,
   "icon_theme": "Catppuccin Frappé",
   "indent_guides": {
