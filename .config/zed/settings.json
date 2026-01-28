@@ -9,8 +9,8 @@
 {
   "agent": {
     "commit_message_model": {
-      "provider": "google",
-      "model": "gemini-pro",
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.5",
     },
     "default_model": {
       "provider": "zed.dev",
@@ -19,6 +19,12 @@
     "default_profile": "ask",
     "dock": "left",
     "enable_feedback": false,
+    "inline_alternatives": [
+      {
+        "provider": "copilot_chat",
+        "model": "claude-sonnet-4.5",
+      },
+    ],
     "message_editor_min_lines": 8,
     "notify_when_agent_waiting": "all_screens",
     "play_sound_when_agent_done": true,
@@ -162,8 +168,7 @@
   },
   "fast_scroll_sensitivity": 10.0,
   "features": {
-    "experimental_edit_prediction_context_retrieval": true,
-    "edit_prediction_provider": "zed",
+    "edit_prediction_provider": "copilot",
   },
   "file_types": {
     "Git Ignore": [".dockerignore", ".prettierignore"],
