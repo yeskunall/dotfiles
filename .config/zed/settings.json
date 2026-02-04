@@ -43,6 +43,13 @@
               "resolve-library-id": true,
             },
           },
+          "DeepWiki": {
+            "tools": {
+              "read_wiki_structure": true,
+              "read_wiki_contents": true,
+              "ask_question": true,
+            },
+          },
           "Sentry": {
             "tools": {
               "analyze_issue_with_seer": false,
@@ -125,6 +132,20 @@
       },
     },
   },
+  "agent_servers": {
+    "factory-droid": {
+      "type": "registry",
+    },
+    "github-copilot": {
+      "type": "registry",
+    },
+    "opencode": {
+      "type": "registry",
+    },
+    "qwen-code": {
+      "type": "registry",
+    },
+  },
   "audio": {
     "experimental.rodio_audio": true,
   },
@@ -143,6 +164,9 @@
     "Context7": {
       "command": "npx",
       "args": ["-y", "@upstash/context7-mcp"],
+    },
+    "DeepWiki": {
+      "url": "https://mcp.deepwiki.com/mcp",
     },
     "Sentry": {
       "command": "npx",
@@ -163,19 +187,18 @@
     "button": false,
   },
   "edit_predictions": {
+    "provider": "copilot",
     "disabled_globs": [],
     "mode": "subtle",
   },
   "fast_scroll_sensitivity": 10.0,
-  "features": {
-    "edit_prediction_provider": "copilot",
-  },
   "file_types": {
     "Git Ignore": [".dockerignore", ".prettierignore"],
     "JSON": [".prettierrc"],
   },
   "git_hosting_providers": [],
   "git_panel": {
+    "tree_view": true,
     "button": false,
   },
   "hover_popover_delay": 50,
