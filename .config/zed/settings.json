@@ -133,6 +133,12 @@
     },
   },
   "agent_servers": {
+    "auggie": {
+      "type": "registry",
+    },
+    "mistral-vibe": {
+      "type": "registry",
+    },
     "factory-droid": {
       "type": "registry",
     },
@@ -180,6 +186,7 @@
   },
   "cursor_shape": "block",
   "debugger": {
+    "button": false,
     "format_dap_log_messages": true,
     "log_dap_communications": true,
   },
@@ -187,7 +194,7 @@
     "button": false,
   },
   "edit_predictions": {
-    "provider": "copilot",
+    "provider": "sweep",
     "disabled_globs": [],
     "mode": "subtle",
     "sweep": {
