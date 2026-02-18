@@ -83,6 +83,7 @@
         },
         "enable_all_context_servers": false,
         "tools": {
+          "terminal": true,
           "diagnostics": true,
           "fetch": true,
           "list_directory": true,
@@ -146,13 +147,16 @@
     "auggie": {
       "type": "registry",
     },
-    "mistral-vibe": {
+    "cline": {
       "type": "registry",
     },
     "factory-droid": {
       "type": "registry",
     },
     "github-copilot": {
+      "type": "registry",
+    },
+    "kimi": {
       "type": "registry",
     },
     "mistral-vibe": {
