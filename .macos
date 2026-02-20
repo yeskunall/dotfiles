@@ -147,16 +147,3 @@ killall TextEdit
 
 # Turn off font smoothing
 defaults write "AppleFontSmoothing" -int 0
-
-#  __  ________                                  ______
-# /  |/        |                                /      \
-# $$/ $$$$$$$$/______    ______   _____  ____  /$$$$$$  |
-# /  |   $$ | /      \  /      \ /     \/    \ $$____$$ |
-# $$ |   $$ |/$$$$$$  |/$$$$$$  |$$$$$$ $$$$  | /    $$/
-# $$ |   $$ |$$    $$ |$$ |  $$/ $$ | $$ | $$ |/$$$$$$/
-# $$ |   $$ |$$$$$$$$/ $$ |      $$ | $$ | $$ |$$ |_____
-# $$ |   $$ |$$       |$$ |      $$ | $$ | $$ |$$       |
-# $$/    $$/  $$$$$$$/ $$/       $$/  $$/  $$/ $$$$$$$$/
-
-# Default location otherwise is `/Library/Preferences/com.googlecode.iterm2.plist`
-defaults write com.googlecode.iterm2 "PrefsCustomFolder" "$XDG_CONFIG_HOME/iterm2"
