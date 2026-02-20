@@ -230,7 +230,11 @@
     "button": false,
   },
   "hover_popover_delay": 50,
-  "icon_theme": "Catppuccin Frappé",
+  "icon_theme": {
+    "mode": "light",
+    "light": "VSCode Icons for Zed (Light Official Icons)",
+    "dark": "VSCode Icons for Zed (Dark Official Icons)",
+  },
   "indent_guides": {
     "coloring": "indent_aware",
     "active_line_width": 3,
