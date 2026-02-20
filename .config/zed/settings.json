@@ -8,6 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "agent": {
+    "button": false,
     "commit_message_model": {
       "provider": "copilot_chat",
       "model": "claude-sonnet-4.5",
