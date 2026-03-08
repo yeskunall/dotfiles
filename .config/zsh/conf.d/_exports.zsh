@@ -70,8 +70,6 @@ export GNUPGHOME="${XDG_CONFIG_HOME}/gnupg";
 export GOMODCACHE="${XDG_CACHE_HOME}/go/pkg/mod";
 export GOPATH="${XDG_DATA_HOME}/go";
 
-export GPG_TTY=$(tty);
-
 export HEX_HOME="${XDG_CONFIG_HOME}/hex";
 
 export HISTCONTROL="ignoreboth";

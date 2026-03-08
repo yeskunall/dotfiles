@@ -37,8 +37,6 @@ brew "glib"
 brew "cairo"
 # Sexy ANSI fonts for the console
 brew "cfonts"
-# Statistics utility to count lines of code
-brew "cloc"
 # Cross-platform make
 brew "cmake"
 # Container runtimes on MacOS (and Linux) with minimal setup
@@ -55,8 +53,6 @@ brew "deno"
 brew "dive"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
-# Docker CLI plugin for extended build capabilities with BuildKit
-brew "docker-buildx"
 # Isolated development environments using Docker
 brew "docker-compose"
 # Pluggable and configurable code formatting platform written in Rust
@@ -71,11 +67,7 @@ brew "exiftool"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# OpenType text shaping engine
-brew "harfbuzz"
-# OCR (Optical Character Recognition) engine
-brew "tesseract"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Command-line tools for fly.io services
 brew "flyctl"
@@ -91,8 +83,14 @@ brew "gh"
 brew "git-delta"
 # High-level command-line interface for Git
 brew "git-town"
+# Render markdown on the CLI
+brew "glow"
+# Fast linters runner for Go
+brew "golangci-lint"
 # Tool for glamorous shell scripts
 brew "gum"
+# OpenType text shaping engine
+brew "harfbuzz"
 # Post-modern modal text editor
 brew "helix"
 # Uses CSS selectors to extract bits content from HTML files
@@ -103,7 +101,7 @@ brew "httpie"
 brew "hugo"
 # Full-rich client for the Registry Data Access Protocol (RDAP) sponsored by ICANN
 brew "icann-rdap"
-# Tools and libraries to manipulate images in many formats
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Official CLI for the IPinfo IP Address API
 brew "ipinfo-cli"
@@ -113,8 +111,14 @@ brew "lazydocker"
 brew "lazygit"
 # Next-gen compiler infrastructure
 brew "llvm"
+# LLVM Project Linker
+brew "lld"
+# Lightning memory-mapped database: key-value data store
+brew "lmdb"
 # Move files and folders to the trash
 brew "macos-trash", link: true
+# Tools to facilitate the use of Microsoft Access databases
+brew "mdbtools"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
 # Open source relational database management system
@@ -125,16 +129,16 @@ brew "neovim"
 brew "nmap"
 # Create, run, and share large language models (LLMs)
 brew "ollama"
-# Pinentry for GPG on Mac
-brew "pinentry-mac"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Object-relational database system
 brew "postgresql@17", link: true
-# Modern replacement for ps written in Rust
-brew "procs"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # Ultra-fast CSV data-wrangling toolkit
 brew "qsv"
 # Rsync for cloud storage
@@ -147,6 +151,8 @@ brew "ripgrep"
 brew "sniffnet"
 # CLI for extracting streams from various websites to a video player
 brew "streamlink"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Markup-based typesetting system
 brew "typst"
 # Syntax-aware linter for prose
@@ -157,8 +163,12 @@ brew "woff2"
 brew "yq"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
 # Flexible and fast Zsh plugin manager
 brew "zinit"
+# Language Server for Zig
+brew "zls"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # A CLI for interacting with the Fastly platform
@@ -175,20 +185,21 @@ brew "sst/tap/opencode"
 brew "tursodatabase/tap/turso"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Command-line interface for 1Password
+cask "1password-cli"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
+# 3D creation suite
+cask "blender"
 # Screen recording software
 cask "cap"
-# Voice and text chat software
-cask "discord"
-# Matrix collaboration client
-cask "element"
 # Collaborative team software
 cask "figma"
 # Web browser
 cask "firefox@developer-edition"
 # Web browser
 cask "firefox@nightly"
+cask "font-commit-mono-nerd-font"
 cask "font-sf-mono-nerd-font-ligaturized"
 # Font viewer for various font formats
 cask "fontgoggles"
@@ -196,14 +207,8 @@ cask "fontgoggles"
 cask "freetube"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Tools to protect your files
-cask "gpg-suite-no-mail"
 # Free and open-source media player
 cask "iina"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
-# Open-source keystroke visualiser
-cask "keycastr"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
 # Markdown editor
@@ -222,13 +227,13 @@ cask "raycast"
 cask "rectangle"
 # Instant messaging application focusing on security
 cask "signal"
-# Team communication and collaboration software
-cask "slack"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
 # Google Chromium, sans integration with Google
 cask "ungoogled-chromium"
-# Multiplayer code editor
-cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
+go "github.com/air-verse/air"
+go "cmd/go"
+go "cmd/gofmt"
+uv "openai-whisper"
