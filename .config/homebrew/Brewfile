@@ -105,6 +105,8 @@ brew "icann-rdap"
 brew "imagemagick"
 # Official CLI for the IPinfo IP Address API
 brew "ipinfo-cli"
+# Interactive environments for writing and running code
+brew "jupyterlab"
 # Lazier way to manage everything docker
 brew "lazydocker"
 # Simple terminal UI for git commands
@@ -191,6 +193,8 @@ cask "1password-cli"
 cask "adobe-acrobat-reader"
 # 3D creation suite
 cask "blender"
+# Web browser focusing on privacy
+cask "brave-browser"
 # Screen recording software
 cask "cap"
 # Collaborative team software
@@ -209,8 +213,16 @@ cask "freetube"
 cask "ghostty"
 # Free and open-source media player
 cask "iina"
+# Java IDE by JetBrains
+cask "intellij-idea"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Open-source keystroke visualiser
+cask "keycastr"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
+# Free cross-platform office suite, fresh version
+cask "libreoffice"
 # Markdown editor
 cask "markedit"
 # Monitors and reports any microphone and camera activity
@@ -231,9 +243,14 @@ cask "signal"
 cask "tailscale-app"
 # Google Chromium, sans integration with Google
 cask "ungoogled-chromium"
+# Binary releases of VS Code without MS branding/telemetry/licensing
+cask "vscodium"
 # Video communication and virtual meeting platform
 cask "zoom"
 go "github.com/air-verse/air"
 go "cmd/go"
 go "cmd/gofmt"
 uv "openai-whisper"
+vscode "orta.vscode-jest"
+vscode "redhat.vscode-yaml"
+vscode "vue.volar"
