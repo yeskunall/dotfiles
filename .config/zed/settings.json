@@ -14,8 +14,10 @@
       "model": "claude-sonnet-4.5",
     },
     "default_model": {
+      "effort": "max",
+      "enable_thinking": true,
       "provider": "zed.dev",
-      "model": "claude-opus-4-6-thinking",
+      "model": "claude-opus-4-6",
     },
     "default_profile": "ask",
     "dock": "left",
@@ -32,8 +34,10 @@
     "profiles": {
       "ask": {
         "default_model": {
+          "effort": "max",
+          "enable_thinking": true,
           "provider": "zed.dev",
-          "model": "claude-opus-4-6-thinking",
+          "model": "claude-opus-4-6",
         },
         "name": "Ask",
         "context_servers": {
@@ -84,7 +88,7 @@
         },
         "enable_all_context_servers": false,
         "tools": {
-          "terminal": true,
+          "terminal": false,
           "diagnostics": true,
           "fetch": true,
           "list_directory": true,
@@ -117,8 +121,10 @@
       },
       "write": {
         "default_model": {
+          "effort": "max",
+          "enable_thinking": true,
           "provider": "zed.dev",
-          "model": "claude-opus-4-6-thinking",
+          "model": "claude-opus-4-6",
         },
         "name": "Write",
         "enable_all_context_servers": true,
@@ -148,9 +154,24 @@
     "auggie": {
       "type": "registry",
     },
+    "claude-acp": {
+      "type": "registry",
+    },
     "cline": {
       "type": "registry",
     },
+    "cursor": {
+      "type": "registry",
+    },
+    "codex-acp": {
+      "type": "registry",
+    },
+    "gemini": {
+      "type": "registry",
+    },
+    "github-copilot-cli": {
+      "type": "registry",
+    }
     "factory-droid": {
       "type": "registry",
     },
@@ -171,7 +192,8 @@
     },
   },
   "audio": {
-    "experimental.rodio_audio": true,
+    // 👁️👄👁️
+    "experimental.rodio_audio": false,
   },
   "auto_update": false,
   "buffer_font_size": 14,
@@ -222,7 +244,6 @@
   "fast_scroll_sensitivity": 10.0,
   "file_types": {
     "Git Ignore": [".dockerignore", ".prettierignore"],
-    "JSON": [".prettierrc"],
   },
   "git_hosting_providers": [],
   "git_panel": {
@@ -349,6 +370,31 @@
   "semantic_tokens": "combined",
   "show_whitespaces": "selection",
   "soft_wrap": "none",
+  "ssh_connections": [
+    {
+      "host": "192.168.2.45",
+      "username": "kimchi",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/kimchi/dev/remote/github.com/zed-industries/zed"],
+        },
+      ],
+    },
+    {
+      "host": "192.168.2.42",
+      "username": "kimchi",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/kimchi/dev/remote/github.com/zed-industries/zed"],
+        },
+      ],
+    },
+  ],
+  "status_bar": {
+    "cursor_position_button": false,
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
