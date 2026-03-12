@@ -234,12 +234,9 @@
     "button": false,
   },
   "edit_predictions": {
-    "provider": "sweep",
+    "provider": "zed",
     "disabled_globs": [],
     "mode": "subtle",
-    "sweep": {
-      "privacy_mode": true,
-    },
   },
   "fast_scroll_sensitivity": 10.0,
   "file_types": {
