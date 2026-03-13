@@ -22,10 +22,18 @@
     "default_profile": "ask",
     "dock": "left",
     "enable_feedback": false,
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.6",
+      "effort": "max",
+      "enable_thinking": true,
+    },
     "inline_alternatives": [
       {
-        "provider": "copilot_chat",
-        "model": "claude-sonnet-4.5",
+        "provider": "zed.dev",
+        "model": "claude-opus-4.6",
+        "effort": "max",
+        "enable_thinking": true,
       },
     ],
     "message_editor_min_lines": 8,
@@ -105,26 +113,41 @@
       "minimal": {
         "default_model": {
           "provider": "zed.dev",
-          "model": "gpt-5.2",
+          "model": "gpt-5.4-pro",
+          "effort": "xhigh",
+          "enable_thinking": true,
         },
         "name": "Minimal",
         "tools": {},
         "enable_all_context_servers": false,
       },
       "sequential_thinking": {
+        "tools": {
+          "spawn_agent": true,
+          "diagnostics": true,
+          "list_directory": true,
+          "grep": true,
+          "find_path": true,
+          "web_search": true,
+          "open": true,
+          "now": true,
+          "fetch": true,
+        },
         "name": "Sequential thinking",
         "default_model": {
           "provider": "zed.dev",
-          "model": "claude-opus-4-6-thinking",
+          "model": "claude-opus-4-6",
+          "effort": "max",
+          "enable_thinking": true,
         },
         "enable_all_context_servers": true,
       },
       "write": {
         "default_model": {
-          "effort": "max",
-          "enable_thinking": true,
           "provider": "zed.dev",
           "model": "claude-opus-4-6",
+          "effort": "max",
+          "enable_thinking": true,
         },
         "name": "Write",
         "enable_all_context_servers": true,
@@ -171,11 +194,11 @@
     },
     "github-copilot-cli": {
       "type": "registry",
-    }
-    "factory-droid": {
-      "type": "registry",
     },
     "github-copilot": {
+      "type": "registry",
+    },
+    "factory-droid": {
       "type": "registry",
     },
     "kimi": {
@@ -192,7 +215,6 @@
     },
   },
   "audio": {
-    // 👁️👄👁️
     "experimental.rodio_audio": false,
   },
   "auto_update": false,
