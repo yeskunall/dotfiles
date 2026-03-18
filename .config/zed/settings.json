@@ -14,10 +14,10 @@
       "model": "claude-sonnet-4.5",
     },
     "default_model": {
-      "effort": "max",
-      "enable_thinking": true,
       "provider": "zed.dev",
       "model": "claude-opus-4-6",
+      "effort": "max",
+      "enable_thinking": true,
     },
     "default_profile": "ask",
     "dock": "left",
@@ -42,10 +42,10 @@
     "profiles": {
       "ask": {
         "default_model": {
-          "effort": "max",
-          "enable_thinking": true,
           "provider": "zed.dev",
           "model": "claude-opus-4-6",
+          "effort": "max",
+          "enable_thinking": true,
         },
         "name": "Ask",
         "context_servers": {
@@ -172,6 +172,11 @@
         },
       },
     },
+    "show_turn_stats": true,
+    "tool_permissions": {
+      "default": "confirm",
+      "tools": {},
+    },
   },
   "agent_servers": {
     "auggie": {
@@ -225,6 +230,7 @@
     "mute_on_join": true,
   },
   "collaboration_panel": {
+    "default_width": 300.0,
     "button": false,
   },
   "colorize_brackets": true,
@@ -266,8 +272,12 @@
   },
   "git_hosting_providers": [],
   "git_panel": {
-    "tree_view": true,
     "button": false,
+    "scrollbar": {
+      "show": "system",
+    },
+    "show_count_badge": true,
+    "tree_view": true,
   },
   "hover_popover_delay": 50,
   "icon_theme": {
@@ -376,10 +386,13 @@
     "enabled": false,
   },
   "project_panel": {
-    "starts_open": false,
     "button": false,
     "default_width": 300,
     "dock": "right",
+    "scrollbar": {
+      "show": "system",
+    },
+    "starts_open": false,
   },
   "redact_private_values": true,
   "scroll_sensitivity": 1.5,
@@ -420,6 +433,7 @@
   },
   "terminal": {
     "button": false,
+    "copy_on_select": true,
     "working_directory": "current_project_directory",
   },
   "theme": {
