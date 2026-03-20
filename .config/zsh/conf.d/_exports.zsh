@@ -80,13 +80,17 @@ export LESSHISTFILE="${XDG_DATA_HOME}/.lesshst";
 export HISTSIZE="30000";
 export SAVEHIST="30000";
 
-export HOMEBREW_CASK_OPTS="${HOMEBREW_CASK_OPTS:---appdir=/Applications}";
-export HOMEBREW_BIN="$(brew --prefix)/bin";
-export HOMEBREW_SBIN="$(brew --prefix)/sbin";
+if command -v brew &>/dev/null; then
+  local brew_prefix="$(brew --prefix)";
 
-export LLVM_PATH="$(brew --prefix)/opt/llvm/bin";
-export CPPFLAGS="-I$(brew --prefix)/opt/llvm/include";
-export LDFLAGS="-L$(brew --prefix)/opt/llvm/lib";
+  export HOMEBREW_CASK_OPTS="${HOMEBREW_CASK_OPTS:---appdir=/Applications}";
+  export HOMEBREW_BIN="${brew_prefix}/bin";
+  export HOMEBREW_SBIN="${brew_prefix}/sbin";
+
+  export LLVM_PATH="${brew_prefix}/opt/llvm/bin";
+  export CPPFLAGS="-I${brew_prefix}/opt/llvm/include";
+  export LDFLAGS="-L${brew_prefix}/opt/llvm/lib";
+fi
 
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X";
@@ -160,5 +164,25 @@ export ZSH_AUTOSUGGEST_USE_ASYNC="true";
 # Enable all available highlighter modes in `zsh-syntax-highlighting`
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor);
 
-# ... Finally, export `PATH`
-export PATH="/usr/local/sbin:${HOME}/.local/bin:${BUN_BIN_DIR}:${COMPOSER_BIN_DIR}:${DENO_BIN_DIR}:${CARGO_BIN}:${PSQL_CLIENT_KEG_ONLY}:${HOMEBREW_BIN}:${HOMEBREW_SBIN}:${LLVM_PATH}:${PNPM_HOME}:${PATH}";
+# Build `$PATH`, skipping any empty entries
+_path_parts=(
+  "/usr/local/sbin"
+  "${HOME}/.local/bin"
+  "${BUN_BIN_DIR}"
+  "${COMPOSER_BIN_DIR}"
+  "${DENO_BIN_DIR}"
+  "${CARGO_BIN}"
+  "${PSQL_CLIENT_KEG_ONLY}"
+  "${HOMEBREW_BIN}"
+  "${HOMEBREW_SBIN}"
+  "${LLVM_PATH}"
+  "${PNPM_HOME}"
+)
+
+for _p in "${_path_parts[@]}"; do
+  [[ -n "$_p" ]] && PATH="$_p:$PATH"
+done
+unset _path_parts _p
+
+# ... Finally, export `$PATH`
+export PATH
