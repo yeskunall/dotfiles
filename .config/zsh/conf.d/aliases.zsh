@@ -19,12 +19,6 @@ alias egrep="egrep --color=auto";
 alias fgrep="fgrep --color=auto";
 alias grep="grep --color=auto";
 
-# The command in the alias will most likely slow down
-# over time as $HISTFILE grows in size
-alias hf="history -E -$(echo `wc -l < $HISTFILE | bc`) | fzf";
-alias hfr="history -E -$(echo `wc -l < $HISTFILE | bc`) | fzf --tac";
-alias hfh="fzf --history=$HISTFILE --history-size=$(echo `wc -l < $HISTFILE | bc`)";
-
 alias l="eza -lbF --git";
 alias la="eza -lbhHigUmuSa --time-style=long-iso --git --color-scale";
 alias ll="eza -lbGF --git";
