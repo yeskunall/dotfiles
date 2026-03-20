@@ -10,7 +10,7 @@
   "agent": {
     "button": false,
     "commit_message_model": {
-      "provider": "copilot_chat",
+      "provider": "zed.dev",
       "model": "claude-sonnet-4.5",
     },
     "default_model": {
@@ -23,7 +23,7 @@
     "dock": "left",
     "enable_feedback": false,
     "inline_assistant_model": {
-      "provider": "copilot_chat",
+      "provider": "zed.dev",
       "model": "claude-sonnet-4.6",
       "effort": "max",
       "enable_thinking": true,
