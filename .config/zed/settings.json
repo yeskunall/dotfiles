@@ -142,6 +142,76 @@
         },
         "enable_all_context_servers": true,
       },
+      "triage": {
+        "default_model": {
+          "provider": "zed.dev",
+          "model": "claude-opus-4-6",
+          "effort": "max",
+          "enable_thinking": true,
+        },
+        "name": "Triage",
+        "context_servers": {
+          "DuckDB (read-only)": {
+            "tools": {
+              "list_tables": true,
+              "list_databases": true,
+              "list_columns": true,
+              "execute_query": true,
+            },
+          },
+          "Context7": {
+            "tools": {
+              "query-docs": true,
+              "get-library-docs": true,
+              "resolve-library-id": true,
+            },
+          },
+          "DeepWiki": {
+            "tools": {
+              "read_wiki_structure": true,
+              "read_wiki_contents": true,
+              "ask_question": true,
+            },
+          },
+          "Sentry": {
+            "tools": {
+              "find_organizations": true,
+              "find_projects": true,
+              "analyze_issue_with_seer": false,
+              "get_doc": true,
+              "get_event_attachment": true,
+              "get_issue_details": true,
+              "get_issue_tag_values": true,
+              "get_trace_details": true,
+              "search_docs": true,
+              "search_events": true,
+              "search_issue_events": true,
+              "search_issues": true,
+              "whoami": true,
+            },
+          },
+          "Sequential thinking": {
+            "tools": {
+              "sequentialthinking": true,
+            },
+          },
+        },
+        "enable_all_context_servers": false,
+        "tools": {
+          "terminal": true,
+          "diagnostics": true,
+          "fetch": true,
+          "list_directory": true,
+          "project_notifications": false,
+          "now": true,
+          "find_path": true,
+          "read_file": true,
+          "open": true,
+          "grep": true,
+          "thinking": true,
+          "web_search": true,
+        },
+      },
       "write": {
         "default_model": {
           "provider": "zed.dev",
@@ -175,7 +245,28 @@
     "show_turn_stats": true,
     "tool_permissions": {
       "default": "confirm",
-      "tools": {},
+      "tools": {
+        "terminal": {
+          "always_allow": [
+            { "pattern": "^gh\\s+issue\\s+(list|view|status)(\\s|$)" },
+            { "pattern": "^gh\\s+pr\\s+(list|view|status|checks|diff)(\\s|$)" },
+            {
+              "pattern": "^gh\\s+search\\s+(issues|prs|repos|commits|code)(\\s|$)",
+            },
+            { "pattern": "^gh\\s+repo\\s+(list|view)(\\s|$)" },
+            { "pattern": "^gh\\s+run\\s+(list|view)(\\s|$)" },
+            { "pattern": "^gh\\s+workflow\\s+(list|view)(\\s|$)" },
+            { "pattern": "^gh\\s+release\\s+(list|view)(\\s|$)" },
+            {
+              "pattern": "^gh\\s+project\\s+(list|view|field-list|item-list)(\\s|$)",
+            },
+            { "pattern": "^gh\\s+ruleset\\s+(list|view|check)(\\s|$)" },
+            { "pattern": "^gh\\s+label\\s+list(\\s|$)" },
+            { "pattern": "^gh\\s+cache\\s+list(\\s|$)" },
+            { "pattern": "^gh\\s+status(\\s|$)" },
+          ],
+        },
+      },
     },
   },
   "agent_servers": {
