@@ -246,6 +246,15 @@
     "tool_permissions": {
       "default": "confirm",
       "tools": {
+        "mcp:Context7:get-library-docs": { "default": "allow" },
+        "mcp:Context7:query-docs": { "default": "allow" },
+        "mcp:Context7:resolve-library-id": { "default": "allow" },
+        "mcp:DeepWiki:ask_question": { "default": "allow" },
+        "mcp:DeepWiki:read_wiki_contents": { "default": "allow" },
+        "mcp:DeepWiki:read_wiki_structure": { "default": "allow" },
+        "mcp:Sequential thinking:sequentialthinking": { "default": "allow" },
+        "diagnostics": { "default": "allow" },
+        "now": { "default": "allow" },
         "terminal": {
           "always_allow": [
             { "pattern": "^gh\\s+issue\\s+(list|view|status)(\\s|$)" },
@@ -266,6 +275,7 @@
             { "pattern": "^gh\\s+status(\\s|$)" },
           ],
         },
+        "thinking": { "default": "allow" },
       },
     },
   },
