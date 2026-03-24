@@ -324,9 +324,6 @@
       "type": "registry",
     },
   },
-  "audio": {
-    "experimental.rodio_audio": false,
-  },
   "auto_update": false,
   "buffer_font_size": 14,
   "buffer_font_family": "Liga SFMono Nerd Font",
@@ -378,6 +375,7 @@
   "git_hosting_providers": [],
   "git_panel": {
     "button": false,
+    "dock": "left",
     "scrollbar": {
       "show": "system",
     },
