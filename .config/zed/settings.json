@@ -11,7 +11,7 @@
     "button": false,
     "commit_message_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4.5",
+      "model": "claude-haiku-4-5",
     },
     "default_model": {
       "provider": "zed.dev",
@@ -38,7 +38,7 @@
     ],
     "message_editor_min_lines": 8,
     "notify_when_agent_waiting": "all_screens",
-    "play_sound_when_agent_done": true,
+    "play_sound_when_agent_done": "always",
     "profiles": {
       "ask": {
         "default_model": {
@@ -384,8 +384,8 @@
   },
   "hover_popover_delay": 50,
   "icon_theme": {
-    "mode": "light",
-    "light": "VSCode Icons for Zed (Light Official Icons)",
+    "mode": "dark",
+    "light": "VSCode Icons for Zed (Dark Official Icons)",
     "dark": "VSCode Icons for Zed (Dark Official Icons)",
   },
   "indent_guides": {
@@ -540,9 +540,9 @@
     "working_directory": "current_project_directory",
   },
   "theme": {
-    "mode": "light",
+    "mode": "dark",
     "light": "macOS Classic Light",
-    "dark": "GitHub Dark Default",
+    "dark": "One Dark",
   },
   "title_bar": {
     "show_branch_name": false,
