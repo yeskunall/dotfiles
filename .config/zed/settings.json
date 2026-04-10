@@ -478,10 +478,6 @@
     "display_in": "active_editor",
     "show": "auto",
   },
-  "notification_panel": {
-    "button": false,
-    "dock": "left",
-  },
   "outline_panel": {
     "button": false,
   },
