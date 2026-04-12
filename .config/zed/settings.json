@@ -96,7 +96,7 @@
         },
         "enable_all_context_servers": false,
         "tools": {
-          "terminal": false,
+          "terminal": true,
           "diagnostics": true,
           "fetch": true,
           "list_directory": true,
@@ -332,6 +332,7 @@
     "mute_on_join": true,
   },
   "collaboration_panel": {
+    "dock": "left",
     "default_width": 300.0,
     "button": false,
   },
@@ -479,6 +480,7 @@
     "show": "auto",
   },
   "outline_panel": {
+    "dock": "left",
     "button": false,
   },
   "preview_tabs": {
