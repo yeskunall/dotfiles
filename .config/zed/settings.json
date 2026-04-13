@@ -198,6 +198,7 @@
         },
         "enable_all_context_servers": false,
         "tools": {
+          "spawn_agent": true,
           "terminal": true,
           "diagnostics": true,
           "fetch": true,
@@ -331,6 +332,7 @@
   "calls": {
     "mute_on_join": true,
   },
+  "cli_default_open_behavior": "existing_window",
   "collaboration_panel": {
     "dock": "left",
     "default_width": 300.0,
