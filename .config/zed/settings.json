@@ -96,6 +96,7 @@
         },
         "enable_all_context_servers": false,
         "tools": {
+          "spawn_agent": true,
           "terminal": true,
           "diagnostics": true,
           "fetch": true,
