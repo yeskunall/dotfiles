@@ -286,43 +286,10 @@
     },
   },
   "agent_servers": {
-    "auggie": {
-      "type": "registry",
-    },
     "claude-acp": {
       "type": "registry",
     },
-    "cline": {
-      "type": "registry",
-    },
-    "cursor": {
-      "type": "registry",
-    },
     "codex-acp": {
-      "type": "registry",
-    },
-    "gemini": {
-      "type": "registry",
-    },
-    "github-copilot-cli": {
-      "type": "registry",
-    },
-    "github-copilot": {
-      "type": "registry",
-    },
-    "factory-droid": {
-      "type": "registry",
-    },
-    "kimi": {
-      "type": "registry",
-    },
-    "mistral-vibe": {
-      "type": "registry",
-    },
-    "opencode": {
-      "type": "registry",
-    },
-    "qwen-code": {
       "type": "registry",
     },
   },
