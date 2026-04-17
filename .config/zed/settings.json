@@ -15,7 +15,7 @@
     },
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-opus-4-6",
+      "model": "claude-opus-4-7",
       "effort": "max",
       "enable_thinking": true,
     },
@@ -31,7 +31,7 @@
     "inline_alternatives": [
       {
         "provider": "zed.dev",
-        "model": "claude-opus-4.6",
+        "model": "claude-opus-4.7",
         "effort": "max",
         "enable_thinking": true,
       },
@@ -43,7 +43,7 @@
       "ask": {
         "default_model": {
           "provider": "zed.dev",
-          "model": "claude-opus-4-6",
+          "model": "claude-opus-4-7",
           "effort": "max",
           "enable_thinking": true,
         },
@@ -137,7 +137,7 @@
         "name": "Sequential thinking",
         "default_model": {
           "provider": "zed.dev",
-          "model": "claude-opus-4-6",
+          "model": "claude-opus-4-7",
           "effort": "max",
           "enable_thinking": true,
         },
@@ -146,7 +146,7 @@
       "triage": {
         "default_model": {
           "provider": "zed.dev",
-          "model": "claude-opus-4-6",
+          "model": "claude-opus-4-7",
           "effort": "max",
           "enable_thinking": true,
         },
@@ -217,7 +217,7 @@
       "write": {
         "default_model": {
           "provider": "zed.dev",
-          "model": "claude-opus-4-6",
+          "model": "claude-opus-4-7",
           "effort": "max",
           "enable_thinking": true,
         },
