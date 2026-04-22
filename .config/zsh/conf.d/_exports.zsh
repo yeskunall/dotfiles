@@ -67,6 +67,9 @@ export FZF_DEFAULT_OPTS="--ansi";
 
 export GNUPGHOME="${XDG_CONFIG_HOME}/gnupg";
 
+# https://cli.github.com/telemetry
+export GH_TELEMETRY="disabled";
+
 export GOMODCACHE="${XDG_CACHE_HOME}/go/pkg/mod";
 export GOPATH="${XDG_DATA_HOME}/go";
 
