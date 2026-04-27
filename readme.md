@@ -10,15 +10,12 @@ This is my opinionated minimal config (setup), tailored to work with macOS with 
 
 ## 🛠 Developer Tools
 
-- Browsers
+- Browser
   - [Brave](https://brave.com/)
 - Editor
-  - [Neovim](https://neovim.io/)
   - [Zed](https://zed.dev/)
 - Terminal Emulator
-  - [iTerm2](https://iterm2.com/)
-
-###### You can find my default applications on macOS [here](https://kimchiii.space/defaults?ref=github.com/yeskunall/dotfiles).
+  - [Ghostty](http://ghostty.org/)
 
 #### License
 
