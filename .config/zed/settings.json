@@ -473,28 +473,7 @@
   "semantic_tokens": "combined",
   "show_whitespaces": "selection",
   "soft_wrap": "none",
-  "ssh_connections": [
-    {
-      "host": "192.168.2.45",
-      "username": "kimchi",
-      "args": [],
-      "projects": [
-        {
-          "paths": ["/home/kimchi/dev/remote/github.com/zed-industries/zed"],
-        },
-      ],
-    },
-    {
-      "host": "192.168.2.42",
-      "username": "kimchi",
-      "args": [],
-      "projects": [
-        {
-          "paths": ["/home/kimchi/dev/remote/github.com/zed-industries/zed"],
-        },
-      ],
-    },
-  ],
+  "ssh_connections": [],
   "status_bar": {
     "cursor_position_button": false,
   },
@@ -525,8 +504,9 @@
     "show_user_picture": false,
   },
   "toolbar": {
+    "breadcrumbs": false,
     "quick_actions": false,
   },
-  "ui_font_family": ".ZedMono",
-  "ui_font_size": 14,
+  "ui_font_family": ".SystemUIFont",
+  "ui_font_size": 15,
 }
