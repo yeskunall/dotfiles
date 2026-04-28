@@ -279,6 +279,60 @@
             { "pattern": "^gh\\s+label\\s+list(\\s|$)" },
             { "pattern": "^gh\\s+cache\\s+list(\\s|$)" },
             { "pattern": "^gh\\s+status(\\s|$)" },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+bisect\\s+(log|view|visualize)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+branch(\\s+(--list|-l|-a|--all|-r|--remotes|-v|--verbose|-vv|--show-current|--contains|--no-contains|--merged|--no-merged|--points-at|--format|--column|--no-column|--sort)(\\s|=|$)|\\s*$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+(cat-file|rev-parse|rev-list|merge-base|name-rev|count-objects)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+(check-ignore|check-attr|check-ref-format|check-mailmap)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+config\\s+(--get|--get-all|--get-regexp|--get-urlmatch|--list|-l|--show-origin|--show-scope|--name-only)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+(diff-files|diff-index|diff-tree|diff-pairs|ls-files|ls-tree)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+(for-each-ref|show-ref|show-branch|show-index|get-tar-commit-id)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+(help|version|--version|var)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+(log|show|shortlog|describe|range-diff|whatchanged|cherry)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+notes\\s+(list|show)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+reflog(\\s+(show|exists)(\\s|$)|\\s*$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+remote(\\s+(-v|--verbose|get-url)(\\s|$)|\\s*$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+stash\\s+(list|show)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+(status|diff|blame|annotate|grep)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+submodule\\s+(status|summary)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+tag(\\s+(--list|-l|-n|--contains|--no-contains|--merged|--no-merged|--points-at|--format|--column|--sort)(\\s|=|$)|\\s*$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+(verify-pack|verify-commit|verify-tag)(\\s|$)",
+            },
+            {
+              "pattern": "^git(\\s+--no-pager)?\\s+worktree\\s+list(\\s|$)",
+            },
           ],
         },
         "thinking": { "default": "allow" },
