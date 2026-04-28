@@ -417,28 +417,6 @@
     "coloring": "indent_aware",
     "active_line_width": 3,
   },
-  "language_models": {
-    "openai_compatible": {
-      "LiteLLM": {
-        "api_url": "http://localhost:4000/v1",
-        "available_models": [
-          {
-            "name": "us.anthropic.claude-opus-4-6-v1",
-            "display_name": "Claude Opus 4.6 (Bedrock via LiteLLM)",
-            "max_tokens": 1000000,
-            "max_output_tokens": 128000,
-            "max_completion_tokens": 128000,
-            "capabilities": {
-              "tools": true,
-              "images": true,
-              "parallel_tool_calls": false,
-              "prompt_cache_key": false,
-            },
-          },
-        ],
-      },
-    },
-  },
   "languages": {
     "Astro": {
       "code_actions_on_format": {
