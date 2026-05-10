@@ -1,10 +1,11 @@
 [tools]
-node = "24.14.1"
-go = "1.25.1"
+node = "24.15.0"
+go = "1.26.3"
 ruby = "3.4.3"
-python = "3.14.2"
-uv = "0.8.6"
+python = "3.14.0"
+uv = "0.11.12"
 rust = { version = "nightly", profile = "default", components = "rust-analyzer" }
+rumdl = "latest"
 
 [settings]
 experimental = true
