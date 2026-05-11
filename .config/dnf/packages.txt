@@ -1,0 +1,153 @@
+# DNF packages (equivalent to Homebrew formulae)
+# Lines starting with # are comments
+# Format: package-name  # Description
+
+# Core utilities and libraries
+openssl  # Cryptography and SSL/TLS Toolkit
+libyaml-devel  # YAML Parser
+sqlite  # Command-line interface for SQLite
+tree  # Display directories as trees
+
+# Configuration management
+ansible  # Automate deployment, configuration, and upgrading
+
+# Media and image processing
+libjxl  # JPEG XL image format
+ImageMagick  # Tools and libraries to manipulate images
+harfbuzz  # OpenType text shaping engine
+tesseract  # OCR (Optical Character Recognition) engine
+ffmpeg-free  # Play, record, convert, and stream audio and video (use ffmpeg from RPM Fusion for full codec support)
+woff2  # Web Open Font File utilities
+
+# Download tools
+aria2  # Download with resuming and segmented downloading
+
+# Build tools
+autoconf  # Automatic configure script builder
+cmake  # Cross-platform make
+llvm  # Next-gen compiler infrastructure
+
+# AWS tools
+awscli2  # Official Amazon AWS command-line interface
+
+# Modern CLI replacements
+bat  # Clone of cat(1) with syntax highlighting and Git integration
+eza  # Modern, maintained replacement for ls (from COPR)
+fd-find  # Simple, fast and user-friendly alternative to find
+ripgrep  # Search tool like grep and The Silver Searcher
+duf  # Disk Usage/Free Utility - a better 'df' alternative
+procs  # Modern replacement for ps written in Rust (from COPR)
+zoxide  # Shell extension to navigate your filesystem faster (from COPR)
+trash-cli  # Move files and folders to the trash (replacement for macos-trash)
+
+# Graphics libraries
+glib2  # Core application library for C
+cairo  # Vector graphics library with cross-device output support
+
+# Code statistics
+cloc  # Statistics utility to count lines of code
+
+# Container tools
+podman  # Container runtimes (preferred on Fedora over Docker)
+podman-compose  # Isolated development environments using containers
+buildah  # Container image building
+
+# PHP development
+php  # General-purpose scripting language
+composer  # Dependency Manager for PHP
+
+# Data processing
+python3-csvkit  # Suite of command-line tools for working with CSV
+
+# JavaScript/TypeScript runtimes
+deno  # Secure runtime for JavaScript and TypeScript (from COPR)
+
+# Container inspection
+dive  # Tool for exploring each layer in a container image (from COPR)
+
+# Code formatting
+# dprint - install via cargo or direct download
+
+# Database tools
+duckdb  # Embeddable SQL OLAP Database Management System (from COPR)
+
+# Metadata tools
+perl-Image-ExifTool  # Perl lib for reading and writing EXIF metadata
+
+# Fuzzy finder
+fzf  # Command-line fuzzy finder written in Go
+
+# Git tools
+gh  # GitHub command-line tool (from COPR)
+git-delta  # Syntax-highlighting pager for git and diff output (from COPR)
+# git-town - install via direct download
+
+# Charm tools
+gum  # Tool for glamorous shell scripts (from COPR)
+
+# Text editors
+helix  # Post-modern modal text editor (from COPR)
+neovim  # Ambitious Vim-fork focused on extensibility and agility
+
+# HTTP tools
+httpie  # User-friendly cURL replacement (command-line HTTP client)
+
+# Static site generator
+hugo  # Configurable static site generator
+
+# Network tools
+nmap  # Port scanning utility for large networks
+
+# Python tools
+python3.12  # Python 3.12 interpreter
+pipx  # Execute binaries from Python packages in isolated environments
+python3-jupyterlab  # Interactive environments for writing and running code
+python3-fonttools  # Library for manipulating fonts
+
+# Database servers
+postgresql  # Object-relational database system
+# mysql or mariadb-server  # Relational database (uncomment preferred)
+redis  # Persistent key-value database
+
+# Cloud storage
+rclone  # Rsync for cloud storage
+
+# Network monitoring
+# sniffnet - install via cargo or Flatpak
+
+# Streaming
+streamlink  # CLI for extracting streams from various websites
+
+# Typesetting
+typst  # Markup-based typesetting system (from COPR)
+
+# Data processing
+yq  # Process YAML, JSON, XML, CSV from the CLI
+yt-dlp  # Feature-rich command-line audio/video downloader
+
+# Shell
+zsh  # Z shell
+zinit  # Flexible and fast Zsh plugin manager (install via script)
+
+# GPG
+gnupg2  # GNU Privacy Guard
+pinentry-gnome3  # Pinentry for GPG (GNOME integration)
+
+# Lazygit/Lazydocker
+lazygit  # Simple terminal UI for git commands (from COPR)
+# lazydocker - install via direct download
+
+# Mise (asdf replacement)
+mise  # Polyglot runtime manager (from COPR)
+
+# Ollama
+ollama  # Create, run, and share large language models (from COPR)
+
+# Terminal emulator
+ghostty  # Terminal emulator with GPU acceleration (from COPR)
+
+# Development
+# act - Run GitHub Actions locally (from COPR)
+
+# Tailscale
+tailscale  # Mesh VPN based on WireGuard
