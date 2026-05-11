@@ -502,7 +502,6 @@
   "project_panel": {
     "button": false,
     "default_width": 300,
-    "dock": "right",
     "scrollbar": {
       "show": "system",
     },
