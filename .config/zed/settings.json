@@ -343,14 +343,6 @@
       },
     },
   },
-  "agent_servers": {
-    "claude-acp": {
-      "type": "registry",
-    },
-    "codex-acp": {
-      "type": "registry",
-    },
-  },
   "auto_update": false,
   "buffer_font_size": 14,
   "buffer_font_family": "Liga SFMono Nerd Font",
@@ -439,6 +431,7 @@
     },
     "Markdown": {
       "format_on_save": "on",
+      "language_servers": ["!rumdl", "..."],
       "remove_trailing_whitespace_on_save": false,
       "prettier": {
         "allowed": true,
