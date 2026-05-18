@@ -7,6 +7,7 @@ Skills I currently use.
 Tracked in this repo:
 
 - [`deep-research`](./skills/deep-research): Multi-agent academic research pipeline. Modified from [`Imbad0202/academic-research-skills`](https://github.com/Imbad0202/academic-research-skills).
+- [`use-semble`](./skills/use-semble): Hybrid (BM25 + semantic) code search via the `semble` CLI.
 
 ### Curated from [`obra/superpowers`](https://github.com/obra/superpowers)
 
