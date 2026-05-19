@@ -357,6 +357,7 @@
     "button": false,
   },
   "colorize_brackets": true,
+  "confirm_quit": true,
   "context_servers": {
     "Context7": {
       "command": "npx",
@@ -434,7 +435,7 @@
       "language_servers": ["!rumdl", "..."],
       "remove_trailing_whitespace_on_save": false,
       "prettier": {
-        "allowed": true,
+        "allowed": false,
       },
     },
     "TSX": {
