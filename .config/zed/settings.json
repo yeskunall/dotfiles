@@ -337,6 +337,11 @@
             {
               "pattern": "^git(\\s+--no-pager)?\\s+worktree\\s+list(\\s|$)",
             },
+            { "pattern": "^rg(\\s|$)" },
+          ],
+          "always_deny": [
+            { "pattern": "^rg\\s+(.*\\s)?--hostname-bin(=|\\s|$)" },
+            { "pattern": "^rg\\s+(.*\\s)?--pre(=|\\s|$)" },
           ],
         },
         "thinking": { "default": "allow" },
