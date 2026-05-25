@@ -527,7 +527,6 @@
   "terminal": {
     "button": false,
     "copy_on_select": true,
-    "working_directory": "current_project_directory",
   },
   "theme": {
     "mode": "dark",
