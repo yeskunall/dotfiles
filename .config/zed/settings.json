@@ -14,11 +14,11 @@
       "model": "claude-haiku-4-5",
     },
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-opus-4-7",
       "effort": "max",
-      "enable_thinking": true,
       "speed": "standard",
+      "provider": "zed.dev",
+      "model": "claude-opus-4-8",
+      "enable_thinking": true,
     },
     "default_profile": "ask",
     "dock": "left",
@@ -37,7 +37,6 @@
         "enable_thinking": true,
       },
     ],
-    "limit_content_width": false,
     "message_editor_min_lines": 8,
     "notify_when_agent_waiting": "all_screens",
     "play_sound_when_agent_done": "always",
@@ -63,6 +62,13 @@
               "read_wiki_structure": true,
               "read_wiki_contents": true,
               "ask_question": true,
+            },
+          },
+          "fff": {
+            "tools": {
+              "multi_grep": true,
+              "grep": true,
+              "find_files": true,
             },
           },
           "Sentry": {
@@ -146,14 +152,6 @@
         },
         "name": "Triage",
         "context_servers": {
-          "DuckDB (read-only)": {
-            "tools": {
-              "list_tables": true,
-              "list_databases": true,
-              "list_columns": true,
-              "execute_query": true,
-            },
-          },
           "Context7": {
             "tools": {
               "query-docs": true,
@@ -166,6 +164,13 @@
               "read_wiki_structure": true,
               "read_wiki_contents": true,
               "ask_question": true,
+            },
+          },
+          "fff": {
+            "tools": {
+              "multi_grep": true,
+              "grep": true,
+              "find_files": true,
             },
           },
           "Sentry": {
@@ -371,6 +376,10 @@
     "DeepWiki": {
       "url": "https://mcp.deepwiki.com/mcp",
     },
+    "fff": {
+      "command": "fff-mcp",
+      "args": ["--no-update-check"],
+    },
     "Sentry": {
       "command": "npx",
       "args": ["-y", "mcp-remote@latest", "https://mcp.sentry.dev/mcp"],
@@ -530,8 +539,8 @@
   },
   "theme": {
     "mode": "dark",
-    "light": "One Light",
-    "dark": "One Dark",
+    "light": "Amp Light",
+    "dark": "Amp Dark",
   },
   "title_bar": {
     "show_branch_name": false,
