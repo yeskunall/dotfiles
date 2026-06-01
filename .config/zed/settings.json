@@ -21,7 +21,6 @@
       "enable_thinking": true,
     },
     "default_profile": "ask",
-    "dock": "left",
     "enable_feedback": false,
     "inline_assistant_model": {
       "provider": "zed.dev",
@@ -37,6 +36,7 @@
         "enable_thinking": true,
       },
     ],
+    "limit_content_width": false,
     "message_editor_min_lines": 8,
     "notify_when_agent_waiting": "all_screens",
     "play_sound_when_agent_done": "always",
@@ -393,8 +393,6 @@
   "cursor_shape": "block",
   "debugger": {
     "button": false,
-    "format_dap_log_messages": true,
-    "log_dap_communications": true,
   },
   "diagnostics": {
     "button": false,
@@ -409,7 +407,6 @@
   "file_types": {
     "Git Ignore": [".dockerignore", ".prettierignore"],
   },
-  "git_hosting_providers": [],
   "git_panel": {
     "button": false,
     "dock": "left",
@@ -491,7 +488,6 @@
     },
   },
   "minimap": {
-    "display_in": "active_editor",
     "show": "auto",
   },
   "outline_panel": {
@@ -515,9 +511,6 @@
     "button": false,
   },
   "semantic_tokens": "combined",
-  "show_whitespaces": "selection",
-  "soft_wrap": "none",
-  "ssh_connections": [],
   "status_bar": {
     "active_language_button": false,
     "cursor_position_button": false,
