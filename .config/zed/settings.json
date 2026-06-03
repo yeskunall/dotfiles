@@ -71,6 +71,12 @@
               "find_files": true,
             },
           },
+          "Parallel": {
+            "tools": {
+              "web_fetch": true,
+              "web_search": true,
+            },
+          },
           "Sentry": {
             "tools": {
               "find_organizations": true,
@@ -96,19 +102,18 @@
         },
         "enable_all_context_servers": false,
         "tools": {
+          "search_web": true,
           "spawn_agent": true,
           "terminal": true,
           "diagnostics": true,
           "fetch": true,
           "list_directory": true,
           "project_notifications": false,
-          "now": true,
           "find_path": true,
           "read_file": true,
           "open": true,
           "grep": true,
           "thinking": true,
-          "web_search": true,
         },
       },
       "minimal": {
@@ -124,14 +129,13 @@
       },
       "sequential_thinking": {
         "tools": {
+          "search_web": true,
           "spawn_agent": true,
           "diagnostics": true,
           "list_directory": true,
           "grep": true,
           "find_path": true,
-          "web_search": true,
           "open": true,
-          "now": true,
           "fetch": true,
         },
         "name": "Sequential thinking",
@@ -173,6 +177,12 @@
               "find_files": true,
             },
           },
+          "Parallel": {
+            "tools": {
+              "web_fetch": true,
+              "web_search": true,
+            },
+          },
           "Sentry": {
             "tools": {
               "find_organizations": true,
@@ -198,19 +208,18 @@
         },
         "enable_all_context_servers": false,
         "tools": {
+          "search_web": true,
           "spawn_agent": true,
           "terminal": true,
           "diagnostics": true,
           "fetch": true,
           "list_directory": true,
           "project_notifications": false,
-          "now": true,
           "find_path": true,
           "read_file": true,
           "open": true,
           "grep": true,
           "thinking": true,
-          "web_search": true,
         },
       },
       "write": {
@@ -237,7 +246,6 @@
           "grep": true,
           "list_directory": true,
           "move_path": true,
-          "now": true,
           "open": true,
           "project_notifications": false,
           "read_file": true,
@@ -247,7 +255,6 @@
           "terminal": true,
           "thinking": true,
           "update_plan": true,
-          "web_search": true,
           "write_file": true,
         },
       },
@@ -263,13 +270,8 @@
         "mcp:DeepWiki:ask_question": { "default": "allow" },
         "mcp:DeepWiki:read_wiki_contents": { "default": "allow" },
         "mcp:DeepWiki:read_wiki_structure": { "default": "allow" },
-        "mcp:DuckDB (read-only):list_tables": { "default": "allow" },
-        "mcp:DuckDB (read-only):list_databases": { "default": "allow" },
-        "mcp:DuckDB (read-only):list_columns": { "default": "allow" },
-        "mcp:DuckDB (read-only):execute_query": { "default": "allow" },
         "mcp:Sequential thinking:sequentialthinking": { "default": "allow" },
         "diagnostics": { "default": "allow" },
-        "now": { "default": "allow" },
         "terminal": {
           "always_allow": [
             { "pattern": "^gh\\s+issue\\s+(list|view|status)(\\s|$)" },
@@ -383,6 +385,10 @@
     "Sentry": {
       "command": "npx",
       "args": ["-y", "mcp-remote@latest", "https://mcp.sentry.dev/mcp"],
+    },
+    // Complements Exa: https://docs.parallel.ai/integrations/mcp/search-mcp
+    "Parallel": {
+      "url": "https://search.parallel.ai/mcp",
     },
     // An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.
     "Sequential thinking": {
