@@ -10,6 +10,8 @@ Skills I currently use.
 |                                  |                                                                                                                 |
 | `use-semble`                     | Local skill                                                                                                     |
 |                                  |                                                                                                                 |
+| `improve-claude-md`              | [humanlayer/skills](https://github.com/humanlayer/skills/tree/main/plugins/improve-claude-md)                   |
+|                                  |                                                                                                                 |
 | `brainstorming`                  | [obra/superpowers](https://github.com/obra/superpowers)                                                         |
 | `dispatching-parallel-agents`    | [obra/superpowers](https://github.com/obra/superpowers)                                                         |
 | `executing-plans`                | [obra/superpowers](https://github.com/obra/superpowers)                                                         |
