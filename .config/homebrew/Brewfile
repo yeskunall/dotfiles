@@ -1,11 +1,11 @@
-tap "charmbracelet/tap"
-tap "fastly/tap"
-tap "libsql/sqld"
-tap "natesales/repo", "https://github.com/natesales/repo"
+tap "anomalyco/tap", trusted: true
+tap "charmbracelet/tap", trusted: true
+tap "libsql/sqld", trusted: true
+tap "natesales/repo", "https://github.com/natesales/repo", trusted: true
 tap "neilotoole/sq"
-tap "oven-sh/bun"
-tap "shaunsingh/sfmono-nerd-font-ligaturized"
-tap "sst/tap"
+tap "oven-sh/bun", trusted: true
+tap "shaunsingh/sfmono-nerd-font-ligaturized", trusted: true
+tap "sst/tap", "https://github.com/anomalyco/homebrew-tap.git", trusted: true
 tap "tursodatabase/tap"
 # Run your GitHub Actions locally
 brew "act"
@@ -19,8 +19,6 @@ brew "sqlite"
 brew "tree"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
-# New file format for still image compression
-brew "jpeg-xl"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Automatic configure script builder
@@ -41,6 +39,8 @@ brew "cfonts"
 brew "cmake"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
+# New file format for still image compression
+brew "jpeg-xl"
 # General-purpose scripting language
 brew "php"
 # Dependency Manager for PHP
@@ -81,6 +81,8 @@ brew "fzf"
 brew "gh"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Quickly rewrite git repository history
+brew "git-filter-repo"
 # High-level command-line interface for Git
 brew "git-town"
 # Render markdown on the CLI
@@ -105,14 +107,10 @@ brew "icann-rdap"
 brew "imagemagick"
 # Official CLI for the IPinfo IP Address API
 brew "ipinfo-cli"
-# Interactive environments for writing and running code
-brew "jupyterlab"
 # Lazier way to manage everything docker
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
-# Next-gen compiler infrastructure
-brew "llvm"
 # LLVM Project Linker
 brew "lld"
 # Lightning memory-mapped database: key-value data store
@@ -129,8 +127,6 @@ brew "mysql"
 brew "neovim"
 # Port scanning utility for large networks
 brew "nmap"
-# Create, run, and share large language models (LLMs)
-brew "ollama"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Execute binaries from Python packages in isolated environments
@@ -173,18 +169,16 @@ brew "zinit"
 brew "zls"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-# A CLI for interacting with the Fastly platform
-brew "fastly/tap/fastly"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode", trusted: true
 # The libsql-server application
 brew "libsql/sqld/sqld"
 brew "natesales/repo/q"
 # sq data wrangler
-brew "neilotoole/sq/sq"
+brew "neilotoole/sq/sq", trusted: true
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
-# The AI coding agent built for the terminal.
-brew "sst/tap/opencode"
-brew "tursodatabase/tap/turso"
+brew "tursodatabase/tap/turso", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -194,15 +188,13 @@ cask "adobe-acrobat-reader"
 # 3D creation suite
 cask "blender"
 # Web browser focusing on privacy
-cask "brave-browser"
+cask "brave-browser@nightly"
 # Screen recording software
 cask "cap"
 # Collaborative team software
 cask "figma"
 # Web browser
 cask "firefox@developer-edition"
-# Web browser
-cask "firefox@nightly"
 cask "font-commit-mono-nerd-font"
 cask "font-sf-mono-nerd-font-ligaturized"
 # Font viewer for various font formats
@@ -213,16 +205,8 @@ cask "freetube"
 cask "ghostty"
 # Free and open-source media player
 cask "iina"
-# Java IDE by JetBrains
-cask "intellij-idea"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
-# Open-source keystroke visualiser
-cask "keycastr"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
-# Free cross-platform office suite, fresh version
-cask "libreoffice"
 # Markdown editor
 cask "markedit"
 # Monitors and reports any microphone and camera activity
@@ -241,16 +225,3 @@ cask "rectangle"
 cask "signal"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
-# Google Chromium, sans integration with Google
-cask "ungoogled-chromium"
-# Binary releases of VS Code without MS branding/telemetry/licensing
-cask "vscodium"
-# Video communication and virtual meeting platform
-cask "zoom"
-go "github.com/air-verse/air"
-go "cmd/go"
-go "cmd/gofmt"
-uv "openai-whisper"
-vscode "orta.vscode-jest"
-vscode "redhat.vscode-yaml"
-vscode "vue.volar"
