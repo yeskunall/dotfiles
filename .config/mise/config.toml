@@ -6,8 +6,9 @@ python = "3.14.0"
 uv = "0.11.12"
 rust = { version = "nightly", profile = "default", components = "rust-analyzer" }
 rumdl = "latest"
+lychee = "latest"
 
 [settings]
 experimental = true
-idiomatic_version_file_enable_tools = []
+idiomatic_version_file_enable_tools = ["rust"]
 python.uv_venv_auto = true
