@@ -276,7 +276,6 @@
       },
     },
     "sandbox_permissions": {
-      "allow_git_access": true,
       "network_hosts": [
         "github.com",
         "api.github.com",
@@ -299,6 +298,27 @@
         "mcp:DeepWiki:read_wiki_structure": { "default": "allow" },
         "mcp:Sequential thinking:sequentialthinking": { "default": "allow" },
         "diagnostics": { "default": "allow" },
+        "skill": {
+          "always_allow": [
+            { "pattern": "\\.agents/skills/brainstorming/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/dispatching-parallel-agents/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/domain-modeling/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/executing-plans/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/finishing-a-development-branch/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/grilling/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/grilling-with-docs/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/receiving-code-review/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/requesting-code-review/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/subagent-driven-development/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/systematic-debugging/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/test-driven-development/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/using-git-worktrees/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/using-superpowers/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/verification-before-completion/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/writing-plans/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/writing-skills/SKILL\\.md$" },
+          ],
+        },
         "terminal": {
           "always_allow": [
             { "pattern": "^gh\\s+issue\\s+(list|view|status)(\\s|$)" },
