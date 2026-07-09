@@ -30,7 +30,8 @@ source "${XDG_CONFIG_HOME}/zinit/init.zsh"
 source "${XDG_CONFIG_HOME}/zinit/plugins.zsh";
 
 # Load completions
-autoload -Uz compinit && compinit;
+[[ -d "${XDG_CACHE_HOME}/zsh" ]] || mkdir -p "${XDG_CACHE_HOME}/zsh";
+autoload -Uz compinit && compinit -d "${XDG_CACHE_HOME}/zsh/.zcompdump";
 
 # Enable replaying of cached completions
 zinit cdreplay -q;
