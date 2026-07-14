@@ -182,13 +182,14 @@ _path_parts=(
   "${HOMEBREW_BIN}"
   "${HOMEBREW_SBIN}"
   "${LLVM_PATH}"
-  "${PNPM_HOME}"
-)
+  "${PNPM_HOME}/bin"
+);
 
 for _p in "${_path_parts[@]}"; do
-  [[ -n "$_p" ]] && PATH="$_p:$PATH"
+  [[ -n "$_p" ]] && PATH="$_p:$PATH";
 done
-unset _path_parts _p
+
+unset _path_parts _p;
 
 # ... Finally, export `$PATH`
-export PATH
+export PATH;
