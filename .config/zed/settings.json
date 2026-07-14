@@ -301,22 +301,34 @@
         "skill": {
           "always_allow": [
             { "pattern": "\\.agents/skills/brainstorming/SKILL\\.md$" },
-            { "pattern": "\\.agents/skills/dispatching-parallel-agents/SKILL\\.md$" },
+            {
+              "pattern": "\\.agents/skills/dispatching-parallel-agents/SKILL\\.md$",
+            },
             { "pattern": "\\.agents/skills/domain-modeling/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/executing-plans/SKILL\\.md$" },
-            { "pattern": "\\.agents/skills/finishing-a-development-branch/SKILL\\.md$" },
+            {
+              "pattern": "\\.agents/skills/finishing-a-development-branch/SKILL\\.md$",
+            },
             { "pattern": "\\.agents/skills/git-commit/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/grilling/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/grilling-with-docs/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/receiving-code-review/SKILL\\.md$" },
-            { "pattern": "\\.agents/skills/requesting-code-review/SKILL\\.md$" },
-            { "pattern": "\\.agents/skills/subagent-driven-development/SKILL\\.md$" },
+            {
+              "pattern": "\\.agents/skills/requesting-code-review/SKILL\\.md$",
+            },
+            {
+              "pattern": "\\.agents/skills/subagent-driven-development/SKILL\\.md$",
+            },
             { "pattern": "\\.agents/skills/systematic-debugging/SKILL\\.md$" },
-            { "pattern": "\\.agents/skills/test-driven-development/SKILL\\.md$" },
+            {
+              "pattern": "\\.agents/skills/test-driven-development/SKILL\\.md$",
+            },
             { "pattern": "\\.agents/skills/use-semble/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/using-git-worktrees/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/using-superpowers/SKILL\\.md$" },
-            { "pattern": "\\.agents/skills/verification-before-completion/SKILL\\.md$" },
+            {
+              "pattern": "\\.agents/skills/verification-before-completion/SKILL\\.md$",
+            },
             { "pattern": "\\.agents/skills/writing-plans/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/writing-skills/SKILL\\.md$" },
           ],
@@ -431,13 +443,17 @@
       "command": "fff-mcp",
       "args": ["--no-update-check"],
     },
-    "Sentry": {
-      "command": "npx",
-      "args": ["-y", "mcp-remote@latest", "https://mcp.sentry.dev/mcp"],
-    },
     // Complements Exa: https://docs.parallel.ai/integrations/mcp/search-mcp
     "Parallel": {
       "url": "https://search.parallel.ai/mcp",
+    },
+    "semble": {
+      "command": "uvx",
+      "args": ["--from", "semble[mcp]", "semble"],
+    },
+    "Sentry": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote@latest", "https://mcp.sentry.dev/mcp"],
     },
     // An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.
     "Sequential thinking": {
