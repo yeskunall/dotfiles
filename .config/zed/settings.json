@@ -452,8 +452,7 @@
       "args": ["--from", "semble[mcp]", "semble"],
     },
     "Sentry": {
-      "command": "npx",
-      "args": ["-y", "mcp-remote@latest", "https://mcp.sentry.dev/mcp"],
+      "url": "https://mcp.sentry.dev/mcp",
     },
     // An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.
     "Sequential thinking": {
