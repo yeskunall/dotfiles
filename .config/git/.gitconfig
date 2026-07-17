@@ -12,13 +12,9 @@
   autocrlf = false
   editor = nvim
   excludesfile = "~/.config/git/.gitignore_global"
-  pager = "delta"
+	pager = hunk pager
   # https://git-scm.com/docs/git-update-index#_untracked_cache
   untrackedCache = true
-[delta]
-  line-numbers = true
-  navigate = true
-  side-by-side = true
 [gpg]
   format = ssh
 [gpg "ssh"]
@@ -26,8 +22,6 @@
   allowedSignersFile = "/Users/admin/.ssh/allowed_signers"
 [init]
   defaultBranch = main
-[interactive]
-  diffFilter = delta --color-only
 [user]
   email = hey@kimchiii.space
   name = Kunall Banerjee

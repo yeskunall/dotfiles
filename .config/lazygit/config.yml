@@ -1,7 +1,7 @@
 git:
   autoForwardBranches: none
   pagers:
-    - pager: delta --detect-dark-light always --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}" --line-numbers --paging=never
+    - pager: hunk pager
       colorArg: always
 gui:
   language: en
