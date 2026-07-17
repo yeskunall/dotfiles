@@ -1,11 +1,16 @@
 tap "anomalyco/tap", trusted: true
+tap "carvel-dev/carvel", "https://github.com/carvel-dev/homebrew.git", trusted: true
 tap "charmbracelet/tap", trusted: true
+tap "dmtrkovalenko/fff", "https://github.com/dmtrKovalenko/homebrew-fff"
 tap "libsql/sqld", trusted: true
+tap "modem-dev/tap"
 tap "natesales/repo", "https://github.com/natesales/repo", trusted: true
 tap "neilotoole/sq"
 tap "oven-sh/bun", trusted: true
+tap "rilldata/tap"
 tap "shaunsingh/sfmono-nerd-font-ligaturized", trusted: true
 tap "sst/tap", "https://github.com/anomalyco/homebrew-tap.git", trusted: true
+tap "tigrisdata/tap"
 tap "tursodatabase/tap"
 # Run your GitHub Actions locally
 brew "act"
@@ -39,6 +44,8 @@ brew "cfonts"
 brew "cmake"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
+# TIFF library and utilities
+brew "libtiff"
 # New file format for still image compression
 brew "jpeg-xl"
 # General-purpose scripting language
@@ -53,6 +60,8 @@ brew "deno"
 brew "dive"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
+# Docker CLI plugin for extended build capabilities with BuildKit
+brew "docker-buildx"
 # Isolated development environments using Docker
 brew "docker-compose"
 # Pluggable and configurable code formatting platform written in Rust
@@ -79,8 +88,6 @@ brew "fx"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
-# Syntax-highlighting pager for git and diff output
-brew "git-delta"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
 # High-level command-line interface for Git
@@ -171,13 +178,23 @@ brew "zls"
 brew "zoxide"
 # The AI coding agent built for the terminal.
 brew "anomalyco/tap/opencode", trusted: true
+# Vendir
+brew "carvel-dev/carvel/vendir"
+# Fast file search toolkit for AI agents (MCP server)
+brew "dmtrkovalenko/fff/fff-mcp", trusted: true
 # The libsql-server application
 brew "libsql/sqld/sqld"
+# Desktop-inspired terminal diff viewer for agent-authored changesets
+brew "modem-dev/tap/hunk", trusted: true
 brew "natesales/repo/q"
 # sq data wrangler
 brew "neilotoole/sq/sq", trusted: true
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
+# The Rill CLI
+brew "rilldata/tap/rill", trusted: true
+# Command line interface for Tigris object storage
+brew "tigrisdata/tap/tigris", trusted: true
 brew "tursodatabase/tap/turso", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
@@ -185,6 +202,8 @@ cask "1password"
 cask "1password-cli"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
+# Universal chat app powered by Matrix
+cask "beeper"
 # 3D creation suite
 cask "blender"
 # Web browser focusing on privacy
@@ -221,6 +240,8 @@ cask "obsidian"
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Plugin for AWS CLI to start and end sessions that connect to managed instances
+cask "session-manager-plugin"
 # Instant messaging application focusing on security
 cask "signal"
 # Mesh VPN based on WireGuard
