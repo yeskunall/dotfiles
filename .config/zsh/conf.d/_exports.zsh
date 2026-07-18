@@ -95,6 +95,9 @@ if command -v brew &>/dev/null; then
   export LDFLAGS="-L${brew_prefix}/opt/llvm/lib";
 fi
 
+# https://impeccable.style/privacy/
+export IMPECCABLE_NO_UPDATE_CHECK="1";
+
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X";
 # Colorize `man` pages
