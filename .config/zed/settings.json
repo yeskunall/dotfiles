@@ -416,6 +416,12 @@
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
+      "language_servers": [
+        "typescript-ls",
+        "!typescript-language-server",
+        "!vtsls",
+        "...",
+      ],
       "prettier": {
         "allowed": false,
       },
@@ -424,6 +430,12 @@
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
+      "language_servers": [
+        "typescript-ls",
+        "!typescript-language-server",
+        "!vtsls",
+        "...",
+      ],
       "prettier": {
         "allowed": false,
       },
