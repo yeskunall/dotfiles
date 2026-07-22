@@ -22,6 +22,8 @@
   allowedSignersFile = "/Users/admin/.ssh/allowed_signers"
 [init]
   defaultBranch = main
+[pager]
+  log = less -FRX
 [user]
   email = hey@kimchiii.space
   name = Kunall Banerjee
