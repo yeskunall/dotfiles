@@ -336,6 +336,9 @@
       "command": "fff-mcp",
       "args": ["--no-update-check"],
     },
+    "linear": {
+      "url": "https://mcp.linear.app/mcp"
+    },
     // Complements Exa: https://docs.parallel.ai/integrations/mcp/search-mcp
     "Parallel": {
       "url": "https://search.parallel.ai/mcp",
