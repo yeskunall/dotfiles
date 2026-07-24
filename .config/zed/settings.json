@@ -326,8 +326,7 @@
   "confirm_quit": true,
   "context_servers": {
     "Context7": {
-      "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"],
+      "url": "https://mcp.context7.com/mcp",
     },
     "DeepWiki": {
       "url": "https://mcp.deepwiki.com/mcp",
