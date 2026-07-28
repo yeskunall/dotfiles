@@ -544,6 +544,12 @@
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
+      "language_servers": [
+        "typescript-ls",
+        "!typescript-language-server",
+        "!vtsls",
+        "...",
+      ],
       "prettier": {
         "allowed": false,
       },
@@ -596,8 +602,13 @@
         },
       },
     },
-    "vtsls": {
+    "typescript-ls": {
       "settings": {
+        "javascript": {
+          "preferences": {
+            "importModuleSpecifier": "non-relative",
+          },
+        },
         "typescript": {
           "preferences": {
             "importModuleSpecifier": "non-relative",
