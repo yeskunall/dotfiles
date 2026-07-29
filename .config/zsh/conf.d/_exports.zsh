@@ -156,6 +156,10 @@ export SAM_CLI_TELEMETRY="0";
 
 export SQLITE_HISTORY="${XDG_DATA_HOME}/.sqlite_history";
 
+if [[ "$OSTYPE" == darwin* ]]; then
+  export SSH_AUTH_SOCK="$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock";
+fi
+
 # https://docs.trunk.io/cli/configuration/telemetry#can-i-disable-usage-data
 export TRUNK_TELEMETRY="off";
 
