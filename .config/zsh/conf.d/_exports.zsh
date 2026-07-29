@@ -154,6 +154,8 @@ export RUSTUP_HOME="${XDG_CONFIG_HOME}/rustup";
 # See https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-telemetry.html for more
 export SAM_CLI_TELEMETRY="0";
 
+export SEMBLE_CACHE_LOCATION="${XDG_STATE_HOME}/semble";
+
 export SQLITE_HISTORY="${XDG_DATA_HOME}/.sqlite_history";
 
 if [[ "$OSTYPE" == darwin* ]]; then
