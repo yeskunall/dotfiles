@@ -369,6 +369,10 @@
         "gist.githubusercontent.com",
         "objects.githubusercontent.com",
       ],
+      "write_paths": [
+        "/Users/admin/.local/state/semble",
+        "/Users/kimchi/.local/state/semble",
+      ],
     },
     "show_turn_stats": true,
     "thinking_display": "preview",
