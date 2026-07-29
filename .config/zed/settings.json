@@ -52,20 +52,21 @@
           "effort": "max",
           "enable_thinking": true,
         },
+        "enable_all_context_servers": false,
         "name": "Ask",
         "context_servers": {
           "Context7": {
             "tools": {
-              "query-docs": true,
               "get-library-docs": true,
+              "query-docs": true,
               "resolve-library-id": true,
             },
           },
           "DeepWiki": {
             "tools": {
-              "read_wiki_structure": true,
-              "read_wiki_contents": true,
               "ask_question": true,
+              "read_wiki_contents": true,
+              "read_wiki_structure": true,
             },
           },
           "Elestio": {
@@ -115,9 +116,9 @@
           },
           "fff": {
             "tools": {
-              "multi_grep": true,
-              "grep": true,
               "find_files": true,
+              "grep": true,
+              "multi_grep": true,
             },
           },
           "linear": {
@@ -167,9 +168,9 @@
           },
           "Sentry": {
             "tools": {
+              "analyze_issue_with_seer": false,
               "find_organizations": true,
               "find_projects": true,
-              "analyze_issue_with_seer": false,
               "get_doc": true,
               "get_event_attachment": true,
               "get_issue_details": true,
@@ -188,7 +189,6 @@
             },
           },
         },
-        "enable_all_context_servers": false,
         "tools": {
           "diagnostics": true,
           "fetch": true,
@@ -211,9 +211,9 @@
           "effort": "xhigh",
           "enable_thinking": true,
         },
+        "enable_all_context_servers": false,
         "name": "Minimal",
         "tools": {},
-        "enable_all_context_servers": false,
       },
       "write": {
         "default_model": {
@@ -222,6 +222,7 @@
           "effort": "max",
           "enable_thinking": true,
         },
+        "enable_all_context_servers": false,
         "name": "Write",
         "context_servers": {
           "Elestio": {
@@ -331,7 +332,6 @@
             },
           },
         },
-        "enable_all_context_servers": false,
         "tools": {
           "apply_code_action": true,
           "copy_path": true,
