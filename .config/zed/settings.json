@@ -166,6 +166,12 @@
               "web_search": true,
             },
           },
+          "semble": {
+            "tools": {
+              "find_related": true,
+              "search": true,
+            },
+          },
           "Sentry": {
             "tools": {
               "analyze_issue_with_seer": false,
@@ -493,6 +499,8 @@
         "mcp:linear:list_users": { "default": "allow" },
         "mcp:linear:merge_diff": { "default": "deny" },
         "mcp:linear:search_documentation": { "default": "allow" },
+        "mcp:semble:find_related": { "default": "allow" },
+        "mcp:semble:search": { "default": "allow" },
         "mcp:Sequential thinking:sequentialthinking": { "default": "allow" },
         "diagnostics": { "default": "allow" },
         "skill": {
@@ -651,7 +659,7 @@
     },
     "semble": {
       "command": "uvx",
-      "args": ["--from", "semble[mcp]", "semble"],
+      "args": ["--from", "semble[mcp]==0.5.2", "semble"],
     },
     "Sentry": {
       "url": "https://mcp.sentry.dev/mcp",
