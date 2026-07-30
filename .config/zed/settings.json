@@ -114,13 +114,6 @@
               "whoami": true,
             },
           },
-          "fff": {
-            "tools": {
-              "find_files": true,
-              "grep": true,
-              "multi_grep": true,
-            },
-          },
           "linear": {
             "tools": {
               "extract_images": true,
@@ -645,10 +638,6 @@
     },
     "Elestio": {
       "url": "https://mcp.elest.io/",
-    },
-    "fff": {
-      "command": "fff-mcp",
-      "args": ["--no-update-check"],
     },
     "linear": {
       "url": "https://mcp.linear.app/mcp"
