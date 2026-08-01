@@ -1,0 +1,63 @@
+# Flatpak packages (equivalent to Homebrew casks)
+# Format: app-id  # Description
+
+# Password manager
+com.onepassword.OnePassword  # Password manager that keeps all passwords secure behind one password
+
+# Web browsers
+com.brave.Browser  # Web browser focusing on privacy
+org.mozilla.firefox  # Web browser (stable)
+# Note: Firefox Developer Edition and Nightly available via Mozilla's Flatpak beta repo
+org.chromium.Chromium  # Google Chromium (ungoogled alternatives available)
+
+# Communication
+com.discordapp.Discord  # Voice and text chat software
+im.element.Element  # Matrix collaboration client
+org.signal.Signal  # Instant messaging application focusing on security
+com.slack.Slack  # Team communication and collaboration software
+us.zoom.Zoom  # Video communication and virtual meeting platform
+
+# Design
+com.figma.Figma  # Collaborative team software (unofficial Flatpak)
+
+# Media players
+io.github.AKotchenko.FreeTubeGtk  # YouTube player focusing on privacy
+io.mpv.Mpv  # Free and open-source media player (alternative to IINA)
+org.videolan.VLC  # VLC media player (another alternative to IINA)
+
+# Productivity
+md.obsidian.Obsidian  # Knowledge base that works on top of a local folder of plain text Markdown files
+org.libreoffice.LibreOffice  # Free cross-platform office suite
+
+# RSS reader
+org.gnome.FeedReader  # RSS reader (alternative to NetNewsWire)
+io.gitlab.news_flash.NewsFlash  # Modern RSS reader (better alternative to NetNewsWire)
+
+# Development
+com.jetbrains.IntelliJ-IDEA-Community  # Java IDE by JetBrains (use -Ultimate for paid version)
+com.vscodium.codium  # Binary releases of VS Code without MS branding/telemetry
+
+# Markdown editor
+org.gnome.gitlab.somas.Apostrophe  # Markdown editor (alternative to MarkEdit)
+com.github.marktext.marktext  # Simple and elegant markdown editor
+
+# Application launcher
+com.github.Ulauncher.Ulauncher  # Control your tools with a few keystrokes (alternative to Raycast)
+
+# Screen recording
+# Cap is not available on Linux - alternatives below
+io.github.seadve.Kooha  # Screen recording software
+org.kde.kdenlive  # Video editor with screen capture
+
+# PDF viewer
+org.gnome.Evince  # Document viewer (PDF, etc.)
+# Adobe Acrobat Reader not available on Linux - use Evince, Okular, or Firefox
+
+# VPN
+# NordVPN - install via their official repo/script, no Flatpak
+
+# Font viewer
+org.gnome.font-viewer  # Font viewer (simpler than FontGoggles)
+
+# Security monitoring (alternative to Micro Snitch)
+# Linux has different security models - use your DE's privacy settings

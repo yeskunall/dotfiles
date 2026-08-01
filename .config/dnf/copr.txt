@@ -1,0 +1,53 @@
+# COPR repositories to enable (similar to Homebrew taps)
+# Format: owner/repo
+
+# Charm tools (gum, etc.)
+charmbracelet/gum
+
+# Helix editor
+helix-editor/helix
+
+# Lazygit and Lazydocker
+atim/lazygit
+
+# Mise (asdf rust clone)
+mise/mise
+
+# Eza (modern ls replacement)
+varlad/eza
+
+# Zoxide (shell navigation)
+atim/zoxide
+
+# GitHub CLI
+gh-cli/gh
+
+# Docker tools
+imtherealk/dive
+
+# Typst (markup-based typesetting)
+phryneas/typst
+
+# Procs (modern ps replacement)
+deltacopy/procs
+
+# Act (run GitHub Actions locally)
+rubemlrm/act
+
+# Deno runtime
+phryneas/deno
+
+# Git Delta (syntax-highlighting pager)
+guyuefangyuan/git-delta
+
+# DuckDB
+adrgomez/duckdb
+
+# Ollama (LLM runner)
+atim/ollama
+
+# Ghostty terminal
+pgdev/ghostty
+
+# VSCodium
+zeno/vscodium
