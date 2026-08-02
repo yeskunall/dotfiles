@@ -140,6 +140,21 @@
               "search_documentation": true,
             },
           },
+          "Paper": {
+            "tools": {
+              "get_basic_info": true,
+              "get_children": true,
+              "get_computed_styles": true,
+              "get_fill_image": true,
+              "get_font_family_info": true,
+              "get_guide": true,
+              "get_jsx": true,
+              "get_node_info": true,
+              "get_screenshot": true,
+              "get_selection": true,
+              "get_tree_summary": true,
+            },
+          },
           "Parallel": {
             "tools": {
               "web_fetch": true,
@@ -316,6 +331,31 @@
               "save_status_update": true,
               "search_documentation": true,
               "submit_diff_review": true,
+            },
+          },
+          "Paper": {
+            "tools": {
+              "create_artboard": true,
+              "delete_nodes": true,
+              "duplicate_nodes": true,
+              "export": true,
+              "finish_working_on_nodes": true,
+              "get_basic_info": true,
+              "get_children": true,
+              "get_computed_styles": true,
+              "get_fill_image": true,
+              "get_font_family_info": true,
+              "get_guide": true,
+              "get_jsx": true,
+              "get_node_info": true,
+              "get_screenshot": true,
+              "get_selection": true,
+              "get_tree_summary": true,
+              "move_nodes": true,
+              "rename_nodes": true,
+              "set_text_content": true,
+              "update_styles": true,
+              "write_html": true,
             },
           },
           "Sentry": {
@@ -649,6 +689,9 @@
     },
     "linear": {
       "url": "https://mcp.linear.app/mcp"
+    },
+    "Paper": {
+      "url": "http://127.0.0.1:29979/mcp",
     },
     // Complements Exa: https://docs.parallel.ai/integrations/mcp/search-mcp
     "Parallel": {
