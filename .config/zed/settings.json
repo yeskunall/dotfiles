@@ -634,7 +634,7 @@
               "pattern": "^git(\\s+--no-pager)?\\s+stash\\s+(list|show)(\\s|$)",
             },
             {
-              "pattern": "^git\\s+--no-optional-locks\\s+status\\s+--short\\s*$",
+              "pattern": "^git\\s+--no-optional-locks\\s+status\\s+--short(\\s+--branch)?\\s*$",
             },
             {
               "pattern": "^git(\\s+--no-pager)?\\s+(status|diff|blame|annotate|grep)(\\s|$)",
