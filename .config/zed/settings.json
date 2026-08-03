@@ -537,6 +537,17 @@
         "mcp:linear:list_users": { "default": "allow" },
         "mcp:linear:merge_diff": { "default": "deny" },
         "mcp:linear:search_documentation": { "default": "allow" },
+        "mcp:Paper:get_basic_info": { "default": "allow" },
+        "mcp:Paper:get_children": { "default": "allow" },
+        "mcp:Paper:get_computed_styles": { "default": "allow" },
+        "mcp:Paper:get_fill_image": { "default": "allow" },
+        "mcp:Paper:get_font_family_info": { "default": "allow" },
+        "mcp:Paper:get_guide": { "default": "allow" },
+        "mcp:Paper:get_jsx": { "default": "allow" },
+        "mcp:Paper:get_node_info": { "default": "allow" },
+        "mcp:Paper:get_screenshot": { "default": "allow" },
+        "mcp:Paper:get_selection": { "default": "allow" },
+        "mcp:Paper:get_tree_summary": { "default": "allow" },
         "mcp:semble:find_related": { "default": "allow" },
         "mcp:semble:search": { "default": "allow" },
         "mcp:Sequential thinking:sequentialthinking": { "default": "allow" },
@@ -685,7 +696,7 @@
       "url": "https://mcp.deepwiki.com/mcp",
     },
     "Elestio": {
-      "url": "https://mcp.elest.io/",
+      "url": "https://mcp.elest.io",
     },
     "linear": {
       "url": "https://mcp.linear.app/mcp"
