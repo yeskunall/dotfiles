@@ -14,9 +14,9 @@
       "model": "claude-haiku-4-5",
     },
     "default_model": {
-      "effort": "medium",
+      "effort": "max",
       "speed": "fast",
-      "provider": "zed.dev",
+      "provider": "openai-subscribed",
       "model": "gpt-5.6-sol",
       "enable_thinking": true,
     },
@@ -33,9 +33,9 @@
     "profiles": {
       "ask": {
         "default_model": {
-          "provider": "zed.dev",
+          "provider": "openai-subscribed",
           "model": "gpt-5.6-sol",
-          "effort": "medium",
+          "effort": "max",
           "speed": "fast",
           "enable_thinking": true,
         },
@@ -207,9 +207,10 @@
       },
       "minimal": {
         "default_model": {
-          "provider": "zed.dev",
-          "model": "gpt-5.4-pro",
-          "effort": "xhigh",
+          "provider": "openai-subscribed",
+          "model": "gpt-5.6-luna",
+          "effort": "max",
+          "speed": "fast",
           "enable_thinking": true,
         },
         "enable_all_context_servers": false,
@@ -218,9 +219,9 @@
       },
       "write": {
         "default_model": {
-          "provider": "zed.dev",
+          "provider": "openai-subscribed",
           "model": "gpt-5.6-sol",
-          "effort": "medium",
+          "effort": "max",
           "speed": "fast",
           "enable_thinking": true,
         },
