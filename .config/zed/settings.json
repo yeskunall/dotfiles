@@ -913,6 +913,7 @@
     "file_icons": true,
   },
   "telemetry": {
+    "anthropic_retention": true,
     "diagnostics": false,
     "metrics": false,
   },
