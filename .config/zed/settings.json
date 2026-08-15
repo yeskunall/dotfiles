@@ -215,7 +215,17 @@
         },
         "enable_all_context_servers": false,
         "name": "Minimal",
-        "tools": {},
+        "context_servers": {
+          "Parallel": {
+            "tools": {
+              "web_fetch": true,
+              "web_search": true,
+            },
+          },
+        },
+        "tools": {
+          "search_web": true,
+        },
       },
       "write": {
         "default_model": {
@@ -371,6 +381,12 @@
               "set_text_content": true,
               "update_styles": true,
               "write_html": true,
+            },
+          },
+          "Parallel": {
+            "tools": {
+              "web_fetch": true,
+              "web_search": true,
             },
           },
           "semble": {
