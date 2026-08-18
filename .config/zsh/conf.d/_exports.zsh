@@ -31,6 +31,9 @@ export AWS_SHARED_CREDENTIALS_FILE="${XDG_CONFIG_HOME}/aws/credentials.ini";
 
 export BAT_THEME="OneHalfDark";
 
+# https://github.com/get-bb/bb/blob/main/README.md#telemetry
+export BB_TELEMETRY="false";
+
 export BUN_BIN_DIR="${XDG_CACHE_HOME}/.bun/bin";
 
 # https://bundler.io/man/bundle-config.1.html#CONFIGURE-BUNDLER-DIRECTORIES
