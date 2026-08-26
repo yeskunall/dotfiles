@@ -48,6 +48,8 @@ export CHECKPOINT_DISABLE="1";
 export COMPOSER_HOME="${XDG_CONFIG_HOME}/composer";
 export COMPOSER_BIN_DIR="${COMPOSER_HOME}/vendor/bin";
 
+export DELTA_CONFIG_DIR="${XDG_CONFIG_HOME}/delta";
+
 export DENO_DIR="${XDG_CACHE_HOME}/deno";
 export DENO_INSTALL_ROOT="${XDG_CONFIG_HOME}/deno";
 export DENO_BIN_DIR="${DENO_INSTALL_ROOT}/bin";
