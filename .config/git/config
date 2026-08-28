@@ -1,0 +1,26 @@
+[alias]
+  mergetool = !nvim -c DiffviewOpen
+[color]
+  branch = true
+  ui = true # Default is `auto`
+[commit]
+  gpgsign = true
+[core]
+  autocrlf = false
+  editor = nvim
+  pager = hunk pager
+  untrackedCache = true # https://git-scm.com/docs/git-update-index#_untracked_cache
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  allowedSignersFile = ~/.ssh/allowed_signers
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[include]
+  path = config.local
+[init]
+  defaultBranch = main
+[pager]
+  log = less -FRX
+[user]
+  email = hey@kimchiii.space
+  name = Kunall Banerjee
