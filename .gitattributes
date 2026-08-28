@@ -9,4 +9,9 @@
 
 .config/ghostty/config linguist-language=ini
 .config/ghostty/themes/* linguist-language=ini
+
+.config/git/attributes linguist-language=gitattributes linguist-detectable=true
+.config/git/config linguist-language=gitconfig linguist-detectable=true
+.config/git/ignore linguist-language=ignore linguist-detectable=true
+
 .config/zed/*.json linguist-language=jsonc
