@@ -1,0 +1,115 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+
+inheritance: false
+language: en-US
+
+reviews:
+  profile: chill
+  request_changes_workflow: false
+
+  auto_review:
+    enabled: true
+    drafts: false
+    auto_incremental_review: true
+    auto_pause_after_reviewed_commits: 2
+    ignore_title_keywords:
+      - "[WIP]"
+      - "[skip review]"
+
+  finishing_touches:
+    docstrings:
+      enabled: false
+    unit_tests:
+      enabled: false
+    simplify:
+      enabled: false
+
+  pre_merge_checks:
+    docstrings:
+      mode: "off"
+    title:
+      mode: error
+    description:
+      mode: error
+
+  # Keep useful context in CodeRabbit's comment, not the human-written PR body.
+  high_level_summary: true
+  high_level_summary_in_walkthrough: true
+  collapse_walkthrough: false
+  changed_files_summary: true
+
+  # Remove output that adds little value in a personal dotfiles repository.
+  sequence_diagrams: false
+  estimate_code_review_effort: false
+  assess_linked_issues: false
+  related_issues: false
+  related_prs: false
+  suggested_labels: false
+  suggested_reviewers: false
+  in_progress_fortune: false
+  poem: false
+
+  # Keep the operational details visible when a review runs or is skipped.
+  review_status: true
+  review_details: true
+
+  path_filters:
+    - "!.config/nvim/lazy-lock.json"
+
+  path_instructions:
+    - path: ".macos"
+      instructions: |
+        Treat this file as Zsh for macOS. Check idempotency, safe quoting,
+        operating-system version compatibility, and commands that could
+        irreversibly overwrite user settings.
+
+    - path: ".config/{zsh,zinit}/**"
+      instructions: |
+        Treat these files as Zsh, not POSIX shell. Check startup performance,
+        quoting, array behavior, PATH duplication, command availability, and
+        portability across supported macOS machines.
+
+    - path: ".config/mise/**"
+      instructions: |
+        Check mise configuration syntax, backend identifiers, version syntax,
+        platform restrictions, and whether documentation matches the actual
+        install and bootstrap commands. Treat latest versions as intentional
+        unless the change introduces a concrete reproducibility regression.
+
+    - path: ".config/nvim/**/*.lua"
+      instructions: |
+        Check compatibility with the Neovim and LazyVim APIs visible in the
+        changed code. Preserve lazy loading and startup performance. Flag
+        obsolete APIs, conflicting keymaps, and eagerly loaded tools.
+
+    - path: ".config/**/*"
+      instructions: |
+        Check syntax against the owning tool, macOS portability, unsafe path
+        assumptions, accidental credentials, and duplicated sources of truth.
+
+    - path: ".github/workflows/**"
+      instructions: |
+        Check action syntax, minimal permissions, untrusted pull-request input,
+        secret exposure, and pinned action revisions. When a change adds or
+        updates a pinned action, verify its version comment and update strategy.
+
+    - path: ".ssh/**"
+      instructions: |
+        Flag private keys, credentials, tokens, unsafe trust settings, and
+        overly broad access. Do not report public keys or allowed-signers
+        entries as secrets solely because they contain public-key material.
+
+    - path: "**/*.md"
+      instructions: |
+        Check that commands, paths, links, and setup claims match repository
+        behavior. Treat CodeRabbit, LazyVim, mise, Neovim, Pullfrog, Zinit, and
+        Zsh as intentional product names.
+
+  tools:
+    languagetool:
+      enabled: true
+      level: default
+
+chat:
+  art: false
+  auto_reply: false
