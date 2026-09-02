@@ -1,13 +1,142 @@
+[tool_alias]
+fff-mcp = "github:dmtrKovalenko/fff"
+ipinfo-cli = "github:ipinfo/cli"
+
 [tools]
+# Runtimes
 node = "24.20.0"
 go = "1.26.6"
 ruby = "3.4.3"
-python = "3.14.6"
+python = ["3.14.6", "3.12"]
 uv = "0.11.28"
 rumdl = "latest"
 lychee = "latest"
+
+# Developer tools
+act = "latest"
+ansible = "latest"
+aws-cli = "latest"
+aws-vault = "latest"
+bat = "latest"
+bun = "latest"
+"npm:cfonts" = "latest"
+cmake = "latest"
+"github:composer/composer" = { version = "latest", bin = "composer" }
+"pipx:csvkit" = "latest"
+deno = "latest"
+dive = "latest"
+docker-cli = "latest"
+dprint = "latest"
+duf = "latest"
+exiftool = "latest"
+"vfox:jdx/vfox-eza" = "latest"
+fd = "latest"
+fff-mcp = { version = "latest", matching = "fff-mcp-", bin = "fff-mcp" }
+flyctl = "latest"
+"pipx:fonttools" = "latest"
+fx = "latest"
+fzf = "latest"
+github-cli = "latest"
+git-filter-repo = "latest"
+git-town = "latest"
+glow = "latest"
+golangci-lint = "latest"
+gum = "latest"
+helix = "latest"
+htmlq = "latest"
+hunk = "latest"
+"pipx:httpie" = "latest"
+hugo = "latest"
+"github:icann/icann-rdap" = "latest"
+ipinfo-cli = { version = "latest", version_prefix = "ipinfo-", matching = "ipinfo_", rename_exe = { "ipinfo_*" = "ipinfo" } }
+lazydocker = "latest"
+lazygit = "latest"
+libsql-server = "latest"
+"aqua:neilotoole/sq" = "latest"
+"aqua:neovim/neovim" = "latest"
+opencode = "latest"
+pandoc = "latest"
+pipx = "latest"
+"github:natesales/q" = "latest"
+qsv = "latest"
+rclone = "latest"
+"github:rilldata/rill" = "latest"
+ripgrep = "latest"
+"pipx:streamlink" = "latest"
+"npm:@tigrisdata/cli" = "latest"
+turso = "latest"
+typst = "latest"
+vale = "latest"
+vendir = "latest"
+yq = "latest"
+yt-dlp = "latest"
+zig = "latest"
+zls = "latest"
+zoxide = "latest"
 
 [settings]
 experimental = true
 idiomatic_version_file_enable_tools = ["rust"]
 python.uv_venv_auto = true
+
+[bootstrap.packages]
+# Shared libraries, services, and host-integrated formulae
+"brew:aria2" = "latest"
+"brew:autoconf" = "latest"
+"brew:cairo" = "latest"
+"brew:colima" = "latest"
+"brew:docker-buildx" = "latest"
+"brew:docker-compose" = "latest"
+"brew:duckdb" = "latest"
+"brew:ffmpeg" = "latest"
+"brew:glib" = "latest"
+"brew:harfbuzz" = "latest"
+"brew:imagemagick" = "latest"
+"brew:jpeg-xl" = "latest"
+"brew:libtiff" = "latest"
+"brew:libyaml" = "latest"
+"brew:lld" = "latest"
+"brew:lmdb" = "latest"
+"brew:macos-trash" = "latest"
+"brew:mdbtools" = "latest"
+"brew:mysql" = "latest"
+"brew:nmap" = "latest"
+"brew:openssl@3" = "latest"
+"brew:php" = "latest"
+"brew:postgresql@17" = "latest"
+"brew:qemu" = "latest"
+"brew:redis" = "latest"
+"brew:sniffnet" = "latest"
+"brew:sqlite" = "latest"
+"brew:tesseract" = "latest"
+"brew:tree" = "latest"
+"brew:woff2" = "latest"
+"brew:zinit" = "latest"
+
+# Applications, fonts, and system integrations
+"brew-cask:1password" = { version = "latest", os = "macos" }
+"brew-cask:1password-cli" = { version = "latest", os = "macos" }
+"brew-cask:adobe-acrobat-reader" = { version = "latest", os = "macos" }
+"brew-cask:beeper" = { version = "latest", os = "macos" }
+"brew-cask:blender" = { version = "latest", os = "macos" }
+"brew-cask:brave-browser@nightly" = { version = "latest", os = "macos" }
+"brew-cask:cap" = { version = "latest", os = "macos" }
+"brew-cask:figma" = { version = "latest", os = "macos" }
+"brew-cask:firefox@developer-edition" = { version = "latest", os = "macos" }
+"brew-cask:font-commit-mono-nerd-font" = { version = "latest", os = "macos" }
+"brew-cask:font-sf-mono-nerd-font-ligaturized" = { version = "latest", os = "macos" }
+"brew-cask:fontgoggles" = { version = "latest", os = "macos" }
+"brew-cask:freetube" = { version = "latest", os = "macos" }
+"brew-cask:ghostty" = { version = "latest", os = "macos" }
+"brew-cask:iina" = { version = "latest", os = "macos" }
+"brew-cask:knockknock" = { version = "latest", os = "macos" }
+"brew-cask:markedit" = { version = "latest", os = "macos" }
+"brew-cask:micro-snitch" = { version = "latest", os = "macos" }
+"brew-cask:netnewswire" = { version = "latest", os = "macos" }
+"brew-cask:nordvpn" = { version = "latest", os = "macos" }
+"brew-cask:obsidian" = { version = "latest", os = "macos" }
+"brew-cask:raycast" = { version = "latest", os = "macos" }
+"brew-cask:rectangle" = { version = "latest", os = "macos" }
+"brew-cask:session-manager-plugin" = { version = "latest", os = "macos" }
+"brew-cask:signal" = { version = "latest", os = "macos" }
+"brew-cask:tailscale-app" = { version = "latest", os = "macos" }
