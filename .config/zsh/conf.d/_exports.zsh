@@ -88,16 +88,16 @@ export LESSHISTFILE="${XDG_DATA_HOME}/.lesshst";
 export HISTSIZE="30000";
 export SAVEHIST="30000";
 
-if command -v brew &>/dev/null; then
-  local brew_prefix="$(brew --prefix)";
+export HOMEBREW_PREFIX="/opt/homebrew";
+export HOMEBREW_BIN="${HOMEBREW_PREFIX}/bin";
+export HOMEBREW_SBIN="${HOMEBREW_PREFIX}/sbin";
+export LLVM_PATH="${HOMEBREW_PREFIX}/opt/llvm/bin";
+export MISE_BREW_CASK_OPT_APPDIR="/Applications";
 
+if [[ -d "${HOMEBREW_PREFIX}" ]]; then
   export HOMEBREW_CASK_OPTS="${HOMEBREW_CASK_OPTS:---appdir=/Applications}";
-  export HOMEBREW_BIN="${brew_prefix}/bin";
-  export HOMEBREW_SBIN="${brew_prefix}/sbin";
-
-  export LLVM_PATH="${brew_prefix}/opt/llvm/bin";
-  export CPPFLAGS="-I${brew_prefix}/opt/llvm/include";
-  export LDFLAGS="-L${brew_prefix}/opt/llvm/lib";
+  export CPPFLAGS="-I${HOMEBREW_PREFIX}/opt/llvm/include";
+  export LDFLAGS="-L${HOMEBREW_PREFIX}/opt/llvm/lib";
 fi
 
 # https://impeccable.style/privacy/
@@ -142,7 +142,7 @@ export PRETTIERD_LOCAL_PRETTIER_ONLY="1";
 
 # Postgres is keg-only, which means it is not symlinked into
 # `/usr/local`, because this is an alternate version of another formula
-export PSQL_CLIENT_KEG_ONLY="/usr/local/opt/postgresql@17/bin";
+export PSQL_CLIENT_KEG_ONLY="${HOMEBREW_PREFIX}/opt/postgresql@17/bin";
 export PSQL_HISTORY="${XDG_DATA_HOME}/postgresql/.psql_history"
 
 export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
