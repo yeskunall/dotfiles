@@ -196,7 +196,7 @@ _path_parts=(
   "${HOMEBREW_BIN}"
   "${HOMEBREW_SBIN}"
   "${LLVM_PATH}"
-  "${PNPM_HOME}/bin"
+  "${PNPM_HOME}"
 );
 
 for _p in "${_path_parts[@]}"; do
