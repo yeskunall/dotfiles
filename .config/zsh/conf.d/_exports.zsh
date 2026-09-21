@@ -108,6 +108,9 @@ export MANPAGER="less -X";
 # Colorize `man` pages
 export MANROFFOPT="-c";
 
+# macos-trash is keg-only because it shadows the macOS `trash` command
+export MACOS_TRASH_KEG_ONLY="${HOMEBREW_PREFIX}/opt/macos-trash/bin";
+
 export MISE_NODE_DEFAULT_PACKAGES_FILE="${XDG_CONFIG_HOME/npm/.default-npm-packages}";
 
 export MIX_HOME="${XDG_CONFIG_HOME}/mix";
@@ -195,6 +198,7 @@ _path_parts=(
   "${PSQL_CLIENT_KEG_ONLY}"
   "${HOMEBREW_BIN}"
   "${HOMEBREW_SBIN}"
+  "${MACOS_TRASH_KEG_ONLY}"
   "${LLVM_PATH}"
   "${PNPM_HOME}"
 );
