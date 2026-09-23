@@ -722,22 +722,40 @@
         "diagnostics": { "default": "allow" },
         "skill": {
           "always_allow": [
+            { "pattern": "\\.agents/skills/animation-vocabulary/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/apple-design/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/brainstorming/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/branch/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/bro/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/ci-speedup/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/commit/SKILL\\.md$" },
             {
               "pattern": "\\.agents/skills/dispatching-parallel-agents/SKILL\\.md$",
             },
+            { "pattern": "\\.agents/skills/documentation/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/domain-modeling/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/emil-design-eng/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/executing-plans/SKILL\\.md$" },
+            {
+              "pattern": "\\.agents/skills/find-animation-opportunities/SKILL\\.md$",
+            },
             {
               "pattern": "\\.agents/skills/finishing-a-development-branch/SKILL\\.md$",
             },
             { "pattern": "\\.agents/skills/git-commit/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/grilling/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/grilling-with-docs/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/improve-animations/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/pick-ui-library/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/prototype/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/pull-requests/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/react-best-practices/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/receiving-code-review/SKILL\\.md$" },
             {
               "pattern": "\\.agents/skills/requesting-code-review/SKILL\\.md$",
             },
+            { "pattern": "\\.agents/skills/review-animations/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/show-me/SKILL\\.md$" },
             {
               "pattern": "\\.agents/skills/subagent-driven-development/SKILL\\.md$",
             },
@@ -751,6 +769,8 @@
             {
               "pattern": "\\.agents/skills/verification-before-completion/SKILL\\.md$",
             },
+            { "pattern": "\\.agents/skills/vocabulary/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/web-design-guidelines/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/writing-plans/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/writing-skills/SKILL\\.md$" },
           ],
