@@ -14,10 +14,10 @@
       "model": "claude-haiku-4-5",
     },
     "default_model": {
-      "effort": "max",
+      "effort": "medium",
       "speed": "fast",
       "provider": "openai-subscribed",
-      "model": "gpt-5.6-sol",
+      "model": "gpt-6-sol",
       "enable_thinking": true,
     },
     "default_profile": "ask",
