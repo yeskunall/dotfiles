@@ -890,7 +890,8 @@
       "url": "https://mcp.linear.app/mcp",
     },
     "Paper": {
-      "url": "http://127.0.0.1:29979/mcp",
+      "command": "/Users/kimchi/.paper/bin/paper",
+       "args": ["mcp"]
     },
     // Complements Exa: https://docs.parallel.ai/integrations/mcp/search-mcp
     "Parallel": {
