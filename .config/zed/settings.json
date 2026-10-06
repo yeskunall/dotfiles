@@ -776,7 +776,7 @@
             {
               "pattern": "\\.agents/skills/finishing-a-development-branch/SKILL\\.md$",
             },
-            { "pattern": "\\.agents/skills/git-commit/SKILL\\.md$" },
+            { "pattern": "\\.agents/skills/commit/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/grilling/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/grilling-with-docs/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/improve-animations/SKILL\\.md$" },
