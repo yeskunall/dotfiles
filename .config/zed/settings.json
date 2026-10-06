@@ -140,6 +140,14 @@
               "search_documentation": true,
             },
           },
+          "Loops": {
+            "tools": {
+              "describe": true,
+              "execute": false,
+              "search": true,
+              "teams": true,
+            },
+          },
           "Paper": {
             "tools": {
               "find_nodes": true,
@@ -399,6 +407,14 @@
               "save_status_update": true,
               "search_documentation": true,
               "submit_diff_review": true,
+            },
+          },
+          "Loops": {
+            "tools": {
+              "describe": true,
+              "execute": false,
+              "search": true,
+              "teams": true,
             },
           },
           "Paper": {
@@ -672,6 +688,10 @@
         "mcp:linear:list_users": { "default": "allow" },
         "mcp:linear:merge_diff": { "default": "deny" },
         "mcp:linear:search_documentation": { "default": "allow" },
+        "mcp:Loops:describe": { "default": "allow" },
+        "mcp:Loops:execute": { "default": "deny" },
+        "mcp:Loops:search": { "default": "allow" },
+        "mcp:Loops:teams": { "default": "allow" },
         "mcp:Paper:create_artboard": { "default": "allow" },
         "mcp:Paper:create_file": { "default": "allow" },
         "mcp:Paper:create_page": { "default": "allow" },
@@ -914,6 +934,9 @@
     },
     "linear": {
       "url": "https://mcp.linear.app/mcp",
+    },
+    "Loops": {
+      "url": "https://mcp.loops.so",
     },
     "Paper": {
       "command": "/Users/kimchi/.paper/bin/paper",
