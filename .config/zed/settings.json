@@ -975,6 +975,11 @@
     "coloring": "indent_aware",
     "active_line_width": 3,
   },
+  "instrumentation": {
+    "performance_profiler": {
+      "enabled": false,
+    },
+  },
   "languages": {
     "Astro": {
       "code_actions_on_format": {
