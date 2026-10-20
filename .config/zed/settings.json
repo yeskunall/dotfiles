@@ -215,12 +215,6 @@
               "sendSidekickMessage": false,
             },
           },
-          "Semble": {
-            "tools": {
-              "find_related": true,
-              "search": true,
-            },
-          },
           "Sentry": {
             "tools": {
               "analyze_issue_with_seer": false,
@@ -502,12 +496,6 @@
               "sendSidekickMessage": false,
             },
           },
-          "Semble": {
-            "tools": {
-              "find_related": true,
-              "search": true,
-            },
-          },
           "Sentry": {
             "tools": {
               "analyze_issue_with_seer": false,
@@ -563,10 +551,6 @@
         "gist.github.com",
         "gist.githubusercontent.com",
         "objects.githubusercontent.com",
-      ],
-      "write_paths": [
-        "/Users/admin/.local/state/semble",
-        "/Users/kimchi/.local/state/semble",
       ],
     },
     "show_turn_stats": true,
@@ -763,8 +747,6 @@
         "mcp:Plain:searchThreadLinkCandidates": { "default": "allow" },
         "mcp:Plain:searchThreads": { "default": "allow" },
         "mcp:Plain:sendSidekickMessage": { "default": "deny" },
-        "mcp:semble:find_related": { "default": "allow" },
-        "mcp:semble:search": { "default": "allow" },
         "mcp:Sequential thinking:sequentialthinking": { "default": "allow" },
         "diagnostics": { "default": "allow" },
         "skill": {
@@ -810,7 +792,6 @@
             {
               "pattern": "\\.agents/skills/test-driven-development/SKILL\\.md$",
             },
-            { "pattern": "\\.agents/skills/use-semble/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/using-git-worktrees/SKILL\\.md$" },
             { "pattern": "\\.agents/skills/using-superpowers/SKILL\\.md$" },
             {
@@ -948,10 +929,6 @@
     },
     "Plain": {
       "url": "https://mcp.plain.com/mcp",
-    },
-    "semble": {
-      "command": "uvx",
-      "args": ["--from", "semble[mcp]==0.5.2", "semble"],
     },
     "Sentry": {
       "url": "https://mcp.sentry.dev/mcp",
