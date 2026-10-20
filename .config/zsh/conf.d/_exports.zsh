@@ -95,6 +95,11 @@ if command -v brew &>/dev/null; then
   export HOMEBREW_BIN="${brew_prefix}/bin";
   export HOMEBREW_SBIN="${brew_prefix}/sbin";
 
+  # Use Homebrew's updated CA bundle instead of macOS's static curl trust store.
+  if [[ "$OSTYPE" == darwin* && -r "${brew_prefix}/opt/ca-certificates/share/ca-certificates/cacert.pem" ]]; then
+    export CURL_CA_BUNDLE="${brew_prefix}/opt/ca-certificates/share/ca-certificates/cacert.pem";
+  fi
+
   export LLVM_PATH="${brew_prefix}/opt/llvm/bin";
   export CPPFLAGS="-I${brew_prefix}/opt/llvm/include";
   export LDFLAGS="-L${brew_prefix}/opt/llvm/lib";
