@@ -1,13 +1,17 @@
 [tools]
-node = "24.21.0"
-go = "1.27.1"
-ruby = "3.4.3"
+go = "1.27.3"
+golangci-lint = "2.14.0"
+lychee = "0.24.2"
+node = "24.22.0"
 python = "3.14.6"
-uv = "0.11.28"
-rumdl = "latest"
-lychee = "latest"
+ruby = "3.4.3"
+rumdl = "0.2.79"
+uv = "0.13.4"
 
 [settings]
 experimental = true
 idiomatic_version_file_enable_tools = ["rust"]
+minimum_release_age = "7d"
 python.uv_venv_auto = true
+self_update.auto = true
+self_update.minimum_release_age = "0s"

@@ -43,7 +43,7 @@ source <(fzf --zsh);
 _zsh_eval_cache zoxide init zsh;
 
 # Activate `mise`
-eval "$(mise activate zsh)";
+eval "$("$HOME/.local/bin/mise" activate zsh)";
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh
 [[ ! -f "${XDG_CONFIG_HOME}/zsh/.p10k.zsh" ]] || source "${XDG_CONFIG_HOME}/zsh/.p10k.zsh";
