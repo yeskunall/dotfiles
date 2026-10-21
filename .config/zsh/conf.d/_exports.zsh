@@ -81,13 +81,13 @@ export LESSHISTFILE="${XDG_DATA_HOME}/.lesshst";
 export HISTSIZE="30000";
 export SAVEHIST="30000";
 
+# mise's brew and brew-cask bootstrap managers pour packages into the canonical
+# Homebrew prefix without invoking the `brew` executable, so only the prefix
+# itself is needed here.
 export HOMEBREW_PREFIX="/opt/homebrew";
-export HOMEBREW_BIN="${HOMEBREW_PREFIX}/bin";
-export HOMEBREW_SBIN="${HOMEBREW_PREFIX}/sbin";
 export LLVM_PATH="${HOMEBREW_PREFIX}/opt/llvm/bin";
 
 if [[ -d "${HOMEBREW_PREFIX}" ]]; then
-  export HOMEBREW_CASK_OPTS="${HOMEBREW_CASK_OPTS:---appdir=/Applications}";
   export CPPFLAGS="-I${HOMEBREW_PREFIX}/opt/llvm/include";
   export LDFLAGS="-L${HOMEBREW_PREFIX}/opt/llvm/lib";
 
@@ -189,8 +189,8 @@ _path_parts=(
   "${BUN_BIN_DIR}"
   "${CARGO_BIN}"
   "${PSQL_CLIENT_KEG_ONLY}"
-  "${HOMEBREW_BIN}"
-  "${HOMEBREW_SBIN}"
+  "${HOMEBREW_PREFIX}/bin"
+  "${HOMEBREW_PREFIX}/sbin"
   "${MACOS_TRASH_KEG_ONLY}"
   "${LLVM_PATH}"
   "${PNPM_HOME}/bin"
