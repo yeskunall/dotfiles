@@ -45,14 +45,7 @@ export CARGO_HOME="${XDG_CONFIG_HOME}/cargo";
 # Opt-out of PlanetScale/Prisma Telemetry
 export CHECKPOINT_DISABLE="1";
 
-export COMPOSER_HOME="${XDG_CONFIG_HOME}/composer";
-export COMPOSER_BIN_DIR="${COMPOSER_HOME}/vendor/bin";
-
 export DELTA_CONFIG_DIR="${XDG_CONFIG_HOME}/delta";
-
-export DENO_DIR="${XDG_CACHE_HOME}/deno";
-export DENO_INSTALL_ROOT="${XDG_CONFIG_HOME}/deno";
-export DENO_BIN_DIR="${DENO_INSTALL_ROOT}/bin";
 
 export DUCKDB_HISTORY="${XDG_CONFIG_HOME}/duckdb/.duckdb_history";
 
@@ -88,21 +81,20 @@ export LESSHISTFILE="${XDG_DATA_HOME}/.lesshst";
 export HISTSIZE="30000";
 export SAVEHIST="30000";
 
-if command -v brew &>/dev/null; then
-  local brew_prefix="$(brew --prefix)";
+# mise's brew and brew-cask bootstrap managers pour packages into the canonical
+# Homebrew prefix without invoking the `brew` executable, so only the prefix
+# itself is needed here.
+export HOMEBREW_PREFIX="/opt/homebrew";
+export LLVM_PATH="${HOMEBREW_PREFIX}/opt/llvm/bin";
 
-  export HOMEBREW_CASK_OPTS="${HOMEBREW_CASK_OPTS:---appdir=/Applications}";
-  export HOMEBREW_BIN="${brew_prefix}/bin";
-  export HOMEBREW_SBIN="${brew_prefix}/sbin";
+if [[ -d "${HOMEBREW_PREFIX}" ]]; then
+  export CPPFLAGS="-I${HOMEBREW_PREFIX}/opt/llvm/include";
+  export LDFLAGS="-L${HOMEBREW_PREFIX}/opt/llvm/lib";
 
   # Use Homebrew's updated CA bundle instead of macOS's static curl trust store.
-  if [[ "$OSTYPE" == darwin* && -r "${brew_prefix}/opt/ca-certificates/share/ca-certificates/cacert.pem" ]]; then
-    export CURL_CA_BUNDLE="${brew_prefix}/opt/ca-certificates/share/ca-certificates/cacert.pem";
+  if [[ "$OSTYPE" == darwin* && -r "${HOMEBREW_PREFIX}/opt/ca-certificates/share/ca-certificates/cacert.pem" ]]; then
+    export CURL_CA_BUNDLE="${HOMEBREW_PREFIX}/opt/ca-certificates/share/ca-certificates/cacert.pem";
   fi
-
-  export LLVM_PATH="${brew_prefix}/opt/llvm/bin";
-  export CPPFLAGS="-I${brew_prefix}/opt/llvm/include";
-  export LDFLAGS="-L${brew_prefix}/opt/llvm/lib";
 fi
 
 # https://impeccable.style/privacy/
@@ -112,6 +104,9 @@ export IMPECCABLE_NO_UPDATE_CHECK="1";
 export MANPAGER="less -X";
 # Colorize `man` pages
 export MANROFFOPT="-c";
+
+# macos-trash is keg-only because it shadows the macOS `trash` command
+export MACOS_TRASH_KEG_ONLY="${HOMEBREW_PREFIX}/opt/macos-trash/bin";
 
 export MISE_NODE_DEFAULT_PACKAGES_FILE="${XDG_CONFIG_HOME/npm/.default-npm-packages}";
 
@@ -147,7 +142,7 @@ export PRETTIERD_LOCAL_PRETTIER_ONLY="1";
 
 # Postgres is keg-only, which means it is not symlinked into
 # `/usr/local`, because this is an alternate version of another formula
-export PSQL_CLIENT_KEG_ONLY="/usr/local/opt/postgresql@17/bin";
+export PSQL_CLIENT_KEG_ONLY="${HOMEBREW_PREFIX}/opt/postgresql@17/bin";
 export PSQL_HISTORY="${XDG_DATA_HOME}/postgresql/.psql_history"
 
 export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
@@ -192,12 +187,11 @@ _path_parts=(
   "/usr/local/sbin"
   "${HOME}/.local/bin"
   "${BUN_BIN_DIR}"
-  "${COMPOSER_BIN_DIR}"
-  "${DENO_BIN_DIR}"
   "${CARGO_BIN}"
   "${PSQL_CLIENT_KEG_ONLY}"
-  "${HOMEBREW_BIN}"
-  "${HOMEBREW_SBIN}"
+  "${HOMEBREW_PREFIX}/bin"
+  "${HOMEBREW_PREFIX}/sbin"
+  "${MACOS_TRASH_KEG_ONLY}"
   "${LLVM_PATH}"
   "${PNPM_HOME}/bin"
 );
