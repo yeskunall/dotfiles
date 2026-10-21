@@ -45,14 +45,7 @@ export CARGO_HOME="${XDG_CONFIG_HOME}/cargo";
 # Opt-out of PlanetScale/Prisma Telemetry
 export CHECKPOINT_DISABLE="1";
 
-export COMPOSER_HOME="${XDG_CONFIG_HOME}/composer";
-export COMPOSER_BIN_DIR="${COMPOSER_HOME}/vendor/bin";
-
 export DELTA_CONFIG_DIR="${XDG_CONFIG_HOME}/delta";
-
-export DENO_DIR="${XDG_CACHE_HOME}/deno";
-export DENO_INSTALL_ROOT="${XDG_CONFIG_HOME}/deno";
-export DENO_BIN_DIR="${DENO_INSTALL_ROOT}/bin";
 
 export DUCKDB_HISTORY="${XDG_CONFIG_HOME}/duckdb/.duckdb_history";
 
@@ -92,7 +85,6 @@ export HOMEBREW_PREFIX="/opt/homebrew";
 export HOMEBREW_BIN="${HOMEBREW_PREFIX}/bin";
 export HOMEBREW_SBIN="${HOMEBREW_PREFIX}/sbin";
 export LLVM_PATH="${HOMEBREW_PREFIX}/opt/llvm/bin";
-export MISE_BREW_CASK_OPT_APPDIR="/Applications";
 
 if [[ -d "${HOMEBREW_PREFIX}" ]]; then
   export HOMEBREW_CASK_OPTS="${HOMEBREW_CASK_OPTS:---appdir=/Applications}";
@@ -195,8 +187,6 @@ _path_parts=(
   "/usr/local/sbin"
   "${HOME}/.local/bin"
   "${BUN_BIN_DIR}"
-  "${COMPOSER_BIN_DIR}"
-  "${DENO_BIN_DIR}"
   "${CARGO_BIN}"
   "${PSQL_CLIENT_KEG_ONLY}"
   "${HOMEBREW_BIN}"
