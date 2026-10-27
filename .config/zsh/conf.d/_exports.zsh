@@ -71,8 +71,6 @@ export GH_TELEMETRY="disabled";
 export GOMODCACHE="${XDG_CACHE_HOME}/go/pkg/mod";
 export GOPATH="${XDG_DATA_HOME}/go";
 
-export HEX_HOME="${XDG_CONFIG_HOME}/hex";
-
 export HISTCONTROL="ignoreboth";
 export HISTDUP="erase";
 export HISTFILE="${XDG_DATA_HOME}/.zsh_history";
@@ -109,10 +107,6 @@ export MANROFFOPT="-c";
 export MACOS_TRASH_KEG_ONLY="${HOMEBREW_PREFIX}/opt/macos-trash/bin";
 
 export MISE_NODE_DEFAULT_PACKAGES_FILE="${XDG_CONFIG_HOME/npm/.default-npm-packages}";
-
-export MIX_HOME="${XDG_CONFIG_HOME}/mix";
-# Specifies the directory where `Mix.install/2` keeps install cache
-export MIX_INSTALL_DIR="${XDG_CACHE_HOME/mix}";
 
 # Disable Mozilla Breakpad crash reporting entirely
 export MOZ_CRASHREPORTER_DISABLE="1";
