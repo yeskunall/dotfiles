@@ -106,8 +106,6 @@ export MANROFFOPT="-c";
 # macos-trash is keg-only because it shadows the macOS `trash` command
 export MACOS_TRASH_KEG_ONLY="${HOMEBREW_PREFIX}/opt/macos-trash/bin";
 
-export MISE_NODE_DEFAULT_PACKAGES_FILE="${XDG_CONFIG_HOME/npm/.default-npm-packages}";
-
 # Disable Mozilla Breakpad crash reporting entirely
 export MOZ_CRASHREPORTER_DISABLE="1";
 
