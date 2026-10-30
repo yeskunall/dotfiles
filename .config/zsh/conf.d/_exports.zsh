@@ -79,16 +79,10 @@ export LESSHISTFILE="${XDG_DATA_HOME}/.lesshst";
 export HISTSIZE="30000";
 export SAVEHIST="30000";
 
-# mise's brew and brew-cask bootstrap managers pour packages into the canonical
-# Homebrew prefix without invoking the `brew` executable, so only the prefix
-# itself is needed here.
+# https://mise.jdx.dev/bootstrap/packages/brew.html#the-prefix-and-path
 export HOMEBREW_PREFIX="/opt/homebrew";
-export LLVM_PATH="${HOMEBREW_PREFIX}/opt/llvm/bin";
 
 if [[ -d "${HOMEBREW_PREFIX}" ]]; then
-  export CPPFLAGS="-I${HOMEBREW_PREFIX}/opt/llvm/include";
-  export LDFLAGS="-L${HOMEBREW_PREFIX}/opt/llvm/lib";
-
   # Use Homebrew's updated CA bundle instead of macOS's static curl trust store.
   if [[ "$OSTYPE" == darwin* && -r "${HOMEBREW_PREFIX}/opt/ca-certificates/share/ca-certificates/cacert.pem" ]]; then
     export CURL_CA_BUNDLE="${HOMEBREW_PREFIX}/opt/ca-certificates/share/ca-certificates/cacert.pem";
@@ -103,7 +97,7 @@ export MANPAGER="less -X";
 # Colorize `man` pages
 export MANROFFOPT="-c";
 
-# macos-trash is keg-only because it shadows the macOS `trash` command
+# https://github.com/Homebrew/homebrew-core/blob/801e163f49ef10f2b212c3f8a66d4367594a3ed2/Formula/m/macos-trash.rb#L17
 export MACOS_TRASH_KEG_ONLY="${HOMEBREW_PREFIX}/opt/macos-trash/bin";
 
 # Disable Mozilla Breakpad crash reporting entirely
@@ -132,9 +126,6 @@ export PNPM_HOME="${XDG_DATA_HOME}/pnpm";
 
 export PRETTIERD_LOCAL_PRETTIER_ONLY="1";
 
-# Postgres is keg-only, which means it is not symlinked into
-# `/usr/local`, because this is an alternate version of another formula
-export PSQL_CLIENT_KEG_ONLY="${HOMEBREW_PREFIX}/opt/postgresql@17/bin";
 export PSQL_HISTORY="${XDG_DATA_HOME}/postgresql/.psql_history"
 
 export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
@@ -180,11 +171,9 @@ _path_parts=(
   "${HOME}/.local/bin"
   "${BUN_BIN_DIR}"
   "${CARGO_BIN}"
-  "${PSQL_CLIENT_KEG_ONLY}"
   "${HOMEBREW_PREFIX}/bin"
   "${HOMEBREW_PREFIX}/sbin"
   "${MACOS_TRASH_KEG_ONLY}"
-  "${LLVM_PATH}"
   "${PNPM_HOME}/bin"
 );
 
