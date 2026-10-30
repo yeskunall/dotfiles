@@ -59,9 +59,9 @@ zoxide = "0.10.0"
 "aqua:neilotoole/sq" = "0.55.0"
 "aqua:neovim/neovim" = "0.12.6"
 "aqua:pnpm/pnpm" = "12.15.0"
+
 "conda:ffmpeg" = "9.0.2"
 "conda:imagemagick" = "7.1.2_31"
-
 "conda:sqlite" = "3.54.1"
 
 "github:docker/compose" = "5.6.1"
@@ -80,27 +80,15 @@ zoxide = "0.10.0"
 "vfox:jdx/vfox-eza" = "0.23.5"
 
 [bootstrap.packages]
-"brew:aria2" = "latest"
-"brew:autoconf" = "latest"
-"brew:cairo" = "latest"
 "brew:docker-buildx" = "latest"
-"brew:glib" = "latest"
-"brew:harfbuzz" = "latest"
-"brew:jpeg-xl" = "latest"
-"brew:libtiff" = "latest"
 "brew:libyaml" = "latest"
-"brew:lld" = "latest"
-"brew:lmdb" = "latest"
 "brew:macos-trash" = "latest"
-"brew:mdbtools" = "latest"
 "brew:nmap" = "latest"
 "brew:openssl@3" = "latest"
 "brew:postgresql@17" = "latest"
-"brew:qemu" = "latest"
-"brew:tesseract" = "latest"
+"brew:pystardust/ani-cli/ani-cli" = "latest"
 "brew:tree" = "latest"
 "brew:woff2" = "latest"
-"brew:zinit" = "latest"
 
 "brew-cask:1password" = { version = "latest", os = "macos" }
 "brew-cask:1password-cli" = { version = "latest", os = "macos" }
@@ -128,3 +116,6 @@ zoxide = "0.10.0"
 "brew-cask:session-manager-plugin" = { version = "latest", os = "macos" }
 "brew-cask:signal" = { version = "latest", os = "macos" }
 "brew-cask:tailscale-app" = { version = "latest", os = "macos" }
+
+[bootstrap.brew.taps]
+"pystardust/ani-cli" = "https://github.com/pystardust/ani-cli.git"
