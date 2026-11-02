@@ -1149,7 +1149,7 @@
     "copy_on_select": true,
   },
   "theme": {
-    "mode": "light",
+    "mode": "dark",
     "light": "Vercel Light",
     "dark": "Vercel Dark",
   },
