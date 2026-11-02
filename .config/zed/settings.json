@@ -571,6 +571,7 @@
         "gist.github.com",
         "gist.githubusercontent.com",
         "objects.githubusercontent.com",
+        "release-assets.githubusercontent.com",
       ],
     },
     "show_turn_stats": true,
