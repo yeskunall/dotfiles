@@ -14,14 +14,34 @@
       "model": "claude-haiku-4-5",
     },
     "default_model": {
-      "effort": "medium",
+      "effort": "high",
       "speed": "fast",
-      "provider": "openai-subscribed",
-      "model": "gpt-6-sol",
+      "provider": "openrouter",
+      "model": "deepseek/deepseek-v4.1-flash-1017",
       "enable_thinking": true,
     },
-    "default_profile": "ask",
+    "default_profile": "write",
     "enable_feedback": false,
+    "favorite_models": [
+      {
+        "provider": "openrouter",
+        "model": "~deepseek/deepseek-v4-flash-latest",
+        "enable_thinking": true,
+        "effort": "high",
+      },
+      {
+        "provider": "openrouter",
+        "model": "~deepseek/deepseek-pro-latest",
+        "enable_thinking": true,
+        "effort": "high",
+      },
+      {
+        "provider": "openrouter",
+        "model": "~moonshotai/kimi-latest",
+        "enable_thinking": true,
+        "effort": "max",
+      },
+    ],
     "thread_summary_model": {
       "provider": "zed.dev",
       "model": "gpt-5.6-luna",
