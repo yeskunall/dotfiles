@@ -1087,6 +1087,22 @@
         },
       },
     },
+    "tinymist": {
+      "initialization_options": {
+        // Background preview server on 127.0.0.1:23635
+        // https://myriad-dreamin.github.io/tinymist/feature/preview.html
+        "preview": {
+          "background": {
+            "enabled": true,
+          },
+        },
+      },
+      "settings": {
+        "exportPdf": "onSave",
+        "formatterMode": "typstyle",
+        "outputPath": "$root/target/$name",
+      },
+    },
   },
   "minimap": {
     "show": "auto",
