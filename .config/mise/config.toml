@@ -114,7 +114,11 @@ for plugin in docker-buildx docker-compose; do
     if [ -f "$src" ]; then
       config_dir="${DOCKER_CONFIG:-$HOME/.docker}"
       mkdir -p "$config_dir/cli-plugins"
-      ln -sfn "$src" "$config_dir/cli-plugins/$plugin"
+      dest="$config_dir/cli-plugins/$plugin"
+      if [ -f "$dest" ] && [ ! -L "$dest" ]; then
+        mv "$dest" "$dest.bak"
+      fi
+      ln -sfn "$src" "$dest"
     fi
   fi
 done
