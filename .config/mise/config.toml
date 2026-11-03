@@ -83,42 +83,24 @@ zoxide = "0.10.0"
 "brew:macos-trash" = "latest"
 "brew:nmap" = "latest"
 "brew:openssl@3" = "latest"
-"brew:postgresql@17" = "latest"
 "brew:tree" = "latest"
 "brew:woff2" = "latest"
 
 "brew-cask:1password" = { version = "latest", os = "macos" }
 "brew-cask:1password-cli" = { version = "latest", os = "macos" }
-"brew-cask:adobe-acrobat-reader" = { version = "latest", os = "macos" }
 "brew-cask:beeper" = { version = "latest", os = "macos" }
 "brew-cask:blender" = { version = "latest", os = "macos" }
 "brew-cask:brave-browser@nightly" = { version = "latest", os = "macos" }
-"brew-cask:cap" = { version = "latest", os = "macos" }
-"brew-cask:figma" = { version = "latest", os = "macos" }
 "brew-cask:firefox@developer-edition" = { version = "latest", os = "macos" }
 "brew-cask:font-commit-mono-nerd-font" = { version = "latest", os = "macos" }
 "brew-cask:font-sf-mono-nerd-font-ligaturized" = { version = "latest", os = "macos" }
-"brew-cask:fontgoggles" = { version = "latest", os = "macos" }
-"brew-cask:freetube" = { version = "latest", os = "macos" }
-"brew-cask:ghostty" = { version = "latest", os = "macos" }
-"brew-cask:handy" = { version = "latest", os = "macos" }
-"brew-cask:iina" = { version = "latest", os = "macos" }
 "brew-cask:knockknock" = { version = "latest", os = "macos" }
-"brew-cask:linear" = { version = "latest", os = "macos" }
 "brew-cask:localsend" = { version = "latest", os = "macos" }
-"brew-cask:macshot" = { version = "latest", os = "macos" }
-"brew-cask:markedit" = { version = "latest", os = "macos" }
 "brew-cask:micro-snitch" = { version = "latest", os = "macos" }
-"brew-cask:netnewswire" = { version = "latest", os = "macos" }
 "brew-cask:nordvpn" = { version = "latest", os = "macos" }
 "brew-cask:obsidian" = { version = "latest", os = "macos" }
-"brew-cask:paper-design" = { version = "latest", os = "macos" }
 "brew-cask:raycast" = { version = "latest", os = "macos" }
-"brew-cask:rectangle" = { version = "latest", os = "macos" }
 "brew-cask:session-manager-plugin" = { version = "latest", os = "macos" }
-"brew-cask:signal" = { version = "latest", os = "macos" }
-"brew-cask:snapzy" = { version = "latest", os = "macos" }
-"brew-cask:tailscale-app" = { version = "latest", os = "macos" }
 
 # Docker only finds CLI plugins in `~/.docker/cli-plugins`, not PATH or the
 # Homebrew prefix, so link the installed plugins there.

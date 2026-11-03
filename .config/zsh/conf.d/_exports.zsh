@@ -126,8 +126,6 @@ export PNPM_HOME="${XDG_DATA_HOME}/pnpm";
 
 export PRETTIERD_LOCAL_PRETTIER_ONLY="1";
 
-export PSQL_HISTORY="${XDG_DATA_HOME}/postgresql/.psql_history"
-
 export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
 
 export PYENV_ROOT="${XDG_CONFIG_HOME}/pyenv";
@@ -173,7 +171,6 @@ _path_parts=(
   "${CARGO_BIN}"
   "${HOMEBREW_PREFIX}/bin"
   "${HOMEBREW_PREFIX}/sbin"
-  "${HOMEBREW_PREFIX}/opt/postgresql@17/bin"
   "${MACOS_TRASH_KEG_ONLY}"
   "${PNPM_HOME}/bin"
 );
