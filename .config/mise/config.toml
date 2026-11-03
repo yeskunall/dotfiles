@@ -61,6 +61,7 @@ zoxide = "0.10.0"
 "conda:imagemagick" = "7.1.2_31"
 "conda:sqlite" = "3.54.1"
 
+"github:beeper/bridge-manager" = { version = "0.15.0", version_prefix = "v", matching = "bbctl-macos-", rename_exe = { "bbctl-macos-*" = "bbctl" } }
 "github:icann/icann-rdap" = "1.0.1"
 "github:ipinfo/cli" = { version = "3.3.3", version_prefix = "ipinfo-", matching = "ipinfo_", rename_exe = { "ipinfo_*" = "ipinfo" } }
 "github:natesales/q" = "0.19.12"
