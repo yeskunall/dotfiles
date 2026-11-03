@@ -45,7 +45,7 @@
         "provider": "openrouter",
         "model": "~z-ai/glm-flash-latest",
         "enable_thinking": true,
-        "effort": "max",
+        "effort": "high",
       },
     ],
     "thread_summary_model": {
