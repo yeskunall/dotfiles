@@ -103,16 +103,18 @@ zoxide = "0.10.0"
 "brew-cask:raycast" = { version = "latest", os = "macos" }
 "brew-cask:session-manager-plugin" = { version = "latest", os = "macos" }
 
-# Docker only finds CLI plugins in `~/.docker/cli-plugins`, not PATH or the
-# Homebrew prefix, so link the installed plugins there.
+# Docker only finds CLI plugins in its config directory (`~/.docker/cli-plugins`
+# by default), not PATH or the Homebrew prefix, so link the installed plugins
+# there.
 [bootstrap.hooks.post-packages]
 run = '''
 for plugin in docker-buildx docker-compose; do
   if root=$(mise bootstrap packages where "brew:$plugin"); then
     src="$root/lib/docker/cli-plugins/$plugin"
     if [ -f "$src" ]; then
-      mkdir -p "$HOME/.docker/cli-plugins"
-      ln -sfn "$src" "$HOME/.docker/cli-plugins/$plugin"
+      config_dir="${DOCKER_CONFIG:-$HOME/.docker}"
+      mkdir -p "$config_dir/cli-plugins"
+      ln -sfn "$src" "$config_dir/cli-plugins/$plugin"
     fi
   fi
 done
