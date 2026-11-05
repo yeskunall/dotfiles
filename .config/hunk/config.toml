@@ -1,38 +1,44 @@
-theme = "custom"
-mode = "auto"
-watch = true
 line_numbers = true
+mode = "auto"
+theme = "custom"
 wrap_lines = true
 
 [custom_theme]
-base = "github-dark-default"
-label = "GitHub Dark"
-background = "#010409"
-contextBg = "#010409"
-lineNumberBg = "#010409"
-text = "#e6edf3"
-muted = "#6e7681"
-border = "#484f58"
 accent = "#58a6ff"
 accentMuted = "#79c0ff"
 addedBg = "#0d2817"
-removedBg = "#341c1e"
 addedContentBg = "#174322"
-removedContentBg = "#5a2e2e"
 addedSignColor = "#3fb950"
-removedSignColor = "#ff7b72"
-lineNumberFg = "#6e7681"
-selectedHunk = "#264f78"
+background = "#010409"
 badgeAdded = "#3fb950"
-badgeRemoved = "#ff7b72"
 badgeNeutral = "#6e7681"
-fileNew = "#3fb950"
+badgeRemoved = "#ff7b72"
+base = "github-dark-default"
+border = "#484f58"
+contextBg = "#010409"
+contextContentBg = "#010409"
 fileDeleted = "#ff7b72"
-fileRenamed = "#d29922"
 fileModified = "#58a6ff"
+fileNew = "#3fb950"
+fileRenamed = "#d29922"
 fileUntracked = "#6e7681"
+label = "GitHub Dark"
+lineNumberBg = "#010409"
+lineNumberFg = "#6e7681"
+movedAddedBg = "#0d2817"
+movedRemovedBg = "#341c1e"
+muted = "#6e7681"
+noteBackground = "#0d1117"
 noteBorder = "#bc8cff"
+noteTitleBackground = "#161b22"
 noteTitleText = "#e6edf3"
+panel = "#010409"
+panelAlt = "#0d1117"
+removedBg = "#341c1e"
+removedContentBg = "#5a2e2e"
+removedSignColor = "#ff7b72"
+selectedHunk = "#264f78"
+text = "#e6edf3"
 
 [custom_theme.syntax]
 default = "#e6edf3"
@@ -46,3 +52,9 @@ type = "#e3b341"
 variable = "#e6edf3"
 operator = "#ff7b72"
 punctuation = "#b1bac4"
+
+[show]
+watch = true
+
+[vcs]
+watch = true
