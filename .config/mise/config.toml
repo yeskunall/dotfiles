@@ -68,6 +68,7 @@ zoxide = "0.10.0"
 "github:rilldata/rill" = "0.90.8"
 
 "npm:@tigrisdata/cli" = "3.17.1"
+"npm:vercel" = { version = "63.0.1", trust_policy_excludes = ["vercel@63.0.1"] }
 
 "pipx:csvkit" = "2.2.0"
 "pipx:fonttools" = "4.68.0"
