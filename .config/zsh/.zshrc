@@ -37,7 +37,7 @@ autoload -Uz compinit && compinit -d "${XDG_CACHE_HOME}/zsh/.zcompdump";
 zinit cdreplay -q;
 
 # Activate `mise`
-eval "$(mise activate zsh)";
+eval "$("$HOME/.local/bin/mise" activate zsh)";
 
 # Set up `fzf` key bindings and fuzzy completion
 source <(fzf --zsh);
