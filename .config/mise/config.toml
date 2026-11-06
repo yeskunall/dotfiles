@@ -8,7 +8,6 @@ self_update.minimum_release_age = "0s"
 
 [tools]
 act = "0.2.89"
-ansible = "14.5.0"
 aws-cli = "2.39.0"
 bat = "0.26.1"
 bun = "1.4.4"
@@ -68,7 +67,6 @@ zoxide = "0.10.0"
 "github:rilldata/rill" = "0.90.8"
 
 "npm:@tigrisdata/cli" = "3.17.1"
-"npm:vercel" = { version = "63.0.1", trust_policy_excludes = ["vercel@63.0.1"] }
 
 "pipx:csvkit" = "2.2.0"
 "pipx:fonttools" = "4.68.0"
@@ -81,6 +79,7 @@ zoxide = "0.10.0"
 "brew:docker-buildx" = "latest"
 "brew:docker-compose" = "latest"
 "brew:libyaml" = "latest"
+"brew:lima" = "latest"
 "brew:macos-trash" = "latest"
 "brew:openssl@3" = "latest"
 "brew:tree" = "latest"
