@@ -16,7 +16,3 @@ This is my opinionated minimal config (setup), tailored to work with macOS with 
   - [Zed](https://zed.dev/)
 - Terminal Emulator
   - [Ghostty](http://ghostty.org/)
-
-#### License
-
-[MIT](./license) © [Kunall Banerjee](https://kunall.dev/)
