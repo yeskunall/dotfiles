@@ -271,7 +271,6 @@
           "grep": true,
           "list_directory": true,
           "read_file": true,
-          "search_web": true,
           "spawn_agent": true,
           "terminal": true,
         },
@@ -294,9 +293,7 @@
             },
           },
         },
-        "tools": {
-          "search_web": true,
-        },
+        "tools": {},
       },
       "write": {
         "default_model": {
@@ -562,7 +559,6 @@
           "move_path": true,
           "read_file": true,
           "rename_symbol": true,
-          "search_web": true,
           "spawn_agent": true,
           "terminal": true,
           "write_file": true,
