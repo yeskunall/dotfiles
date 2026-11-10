@@ -11,6 +11,7 @@ act = "0.2.95"
 aws-cli = { version = "2.39.3", symlink_bins = "true" }
 bat = "0.26.1"
 bun = "1.4.4"
+deno = "2.9.8"
 dive = "0.13.1"
 docker-cli = "29.9.2"
 dprint = "0.64.3"
