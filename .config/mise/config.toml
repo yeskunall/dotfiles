@@ -69,6 +69,8 @@ zoxide = "0.10.0"
 "github:pystardust/ani-cli" = "5.1"
 "github:rilldata/rill" = "0.90.8"
 
+"http:amp" = { version = "0.0.1794297642-g6d0247", url = "https://static.ampcode.com/cli/{{ version }}/amp-darwin-arm64.gz", checksum_url = "https://static.ampcode.com/cli/{{ version }}/darwin-arm64-amp.sha256" }
+
 "npm:@tigrisdata/cli" = "3.17.1"
 
 "pipx:csvkit" = "2.2.0"
