@@ -178,6 +178,9 @@ killall Finder 2>/dev/null || true
 defaults write com.colliderli.iina "ytdlSearchPath" -string "${HOME}/.local/share/mise/shims"
 defaults write com.colliderli.iina "ytdlRawOptions" -string "extractor-args=youtube:player-client=visionos"
 
+# Finally, kill all instances of the IINA app to apply the changes
+killall IINA 2>/dev/null || true
+
 #
 #  __       __            __  __
 # /  \     /  |          /  |/  |
