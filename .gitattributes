@@ -2,8 +2,7 @@
 
 *.json linguist-detectable=true
 
-*.md linguist-detectable=true
-*.md linguist-documentation=false
+*.md linguist-detectable=true linguist-documentation=false
 
 *.toml linguist-detectable=true
 
