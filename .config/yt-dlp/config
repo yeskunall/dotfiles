@@ -1,0 +1,5 @@
+# Download with aria2c: parallel connections get around per-connection
+# throttling (e.g. behind a VPN). When aria2c is not on PATH, yt-dlp
+# quietly falls back to its own downloader.
+--downloader aria2c
+--downloader-args "aria2c:-x 16 -s 16 -k 1M"

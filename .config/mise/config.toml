@@ -58,6 +58,7 @@ zoxide = "0.10.0"
 "aqua:neovim/neovim" = "0.12.6"
 "aqua:pnpm/pnpm" = "12.17.0"
 
+"conda:aria2" = "1.37.0"
 "conda:ffmpeg" = "9.0.2"
 "conda:imagemagick" = "7.1.2_31"
 "conda:poppler" = "26.10.0"
