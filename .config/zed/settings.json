@@ -15,9 +15,8 @@
     },
     "default_model": {
       "effort": "high",
-      "speed": "fast",
       "provider": "openrouter",
-      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "model": "~deepseek/deepseek-flash-latest",
       "enable_thinking": true,
     },
     "default_profile": "write",
@@ -25,7 +24,7 @@
     "favorite_models": [
       {
         "provider": "openrouter",
-        "model": "~deepseek/deepseek-v4-flash-latest",
+        "model": "~deepseek/deepseek-flash-latest",
         "enable_thinking": true,
         "effort": "high",
       },
