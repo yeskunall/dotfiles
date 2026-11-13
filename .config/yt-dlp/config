@@ -1,0 +1,2 @@
+# yt-dlp only uses aria2c when asked. See https://github.com/yt-dlp/yt-dlp#download-options
+--downloader aria2c
