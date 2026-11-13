@@ -1,3 +1,2 @@
-# 16 connections per download dodge per-connection throttling; yt-dlp only
-# uses aria2c when asked. See https://github.com/yt-dlp/yt-dlp#download-options
+# yt-dlp only uses aria2c when asked. See https://github.com/yt-dlp/yt-dlp#download-options
 --downloader aria2c
