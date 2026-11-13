@@ -10,8 +10,8 @@
   "agent": {
     "button": false,
     "commit_message_model": {
-      "provider": "zed.dev",
-      "model": "claude-haiku-4-5",
+      "provider": "openrouter",
+      "model": "~deepseek/deepseek-flash-latest",
     },
     "default_model": {
       "effort": "high",
@@ -48,8 +48,8 @@
       },
     ],
     "thread_summary_model": {
-      "provider": "zed.dev",
-      "model": "gpt-5.6-luna",
+      "provider": "openrouter",
+      "model": "~deepseek/deepseek-flash-latest",
     },
     "limit_content_width": false,
     "message_editor_min_lines": 8,
@@ -58,10 +58,9 @@
     "profiles": {
       "ask": {
         "default_model": {
-          "provider": "openai-subscribed",
-          "model": "gpt-5.6-sol",
-          "effort": "max",
-          "speed": "fast",
+          "provider": "openrouter",
+          "model": "~deepseek/deepseek-flash-latest",
+          "effort": "high",
           "enable_thinking": true,
         },
         "enable_all_context_servers": false,
@@ -276,10 +275,9 @@
       },
       "minimal": {
         "default_model": {
-          "provider": "openai-subscribed",
-          "model": "gpt-5.6-luna",
-          "effort": "max",
-          "speed": "fast",
+          "provider": "openrouter",
+          "model": "~deepseek/deepseek-flash-latest",
+          "effort": "low",
           "enable_thinking": true,
         },
         "enable_all_context_servers": false,
@@ -296,10 +294,9 @@
       },
       "write": {
         "default_model": {
-          "provider": "openai-subscribed",
-          "model": "gpt-5.6-sol",
-          "effort": "max",
-          "speed": "fast",
+          "provider": "openrouter",
+          "model": "~deepseek/deepseek-flash-latest",
+          "effort": "high",
           "enable_thinking": true,
         },
         "enable_all_context_servers": false,
