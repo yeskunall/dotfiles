@@ -104,6 +104,7 @@ zoxide = "0.10.0"
 "brew-cask:localsend" = { version = "latest", os = "macos" }
 "brew-cask:raycast" = { version = "latest", os = "macos" }
 "brew-cask:session-manager-plugin" = { version = "latest", os = "macos" }
+"brew-cask:tailscale-app" = { version = "latest", os = "macos" }
 "brew-cask:puremac" = { version = "latest", os = "macos" }
 
 # Docker only finds CLI plugins in its config directory (`~/.docker/cli-plugins`
