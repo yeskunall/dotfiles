@@ -13,6 +13,6 @@
 .config/git/config linguist-language=gitconfig linguist-detectable=true
 .config/git/ignore linguist-language=ignore linguist-detectable=true
 
-.config/amp/settings.jsonc linguist-language=jsonc linguist-detectable=true
+.config/amp/settings.jsonc linguist-detectable=true
 
 .config/zed/*.json linguist-language=jsonc
