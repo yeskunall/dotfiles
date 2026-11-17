@@ -14,5 +14,6 @@
 .config/git/ignore linguist-language=ignore linguist-detectable=true
 
 .config/amp/settings.jsonc linguist-detectable=true
+.config/nvim/lazy-lock.json linguist-detectable=false
 
 .config/zed/*.json linguist-language=jsonc
