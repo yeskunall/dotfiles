@@ -6,6 +6,8 @@
 
 *.toml linguist-detectable=true
 
+.config/amp/settings.jsonc linguist-detectable=true
+
 .config/ghostty/config linguist-language=ini
 .config/ghostty/themes/* linguist-language=ini
 
@@ -13,7 +15,6 @@
 .config/git/config linguist-language=gitconfig linguist-detectable=true
 .config/git/ignore linguist-language=ignore linguist-detectable=true
 
-.config/amp/settings.jsonc linguist-detectable=true
 .config/nvim/lazy-lock.json linguist-detectable=false
 
 .config/zed/*.json linguist-language=jsonc
