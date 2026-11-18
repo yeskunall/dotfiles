@@ -126,6 +126,10 @@ export PNPM_HOME="${XDG_DATA_HOME}/pnpm";
 
 export PRETTIERD_LOCAL_PRETTIER_ONLY="1";
 
+export PSQL_HISTORY="${XDG_DATA_HOME}/psql/history";
+# psql opens the history file directly, without creating its parent directory
+[[ -d "${XDG_DATA_HOME}/psql" ]] || mkdir -p "${XDG_DATA_HOME}/psql";
+
 export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
 
 export PYENV_ROOT="${XDG_CONFIG_HOME}/pyenv";
