@@ -130,7 +130,7 @@ export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
 
 export PYENV_ROOT="${XDG_CONFIG_HOME}/pyenv";
 
-export PYTHON_HISTORY="${XDG_DATA_HOME}/.python_history";
+export PYTHON_HISTORY="${XDG_DATA_HOME}/python_history";
 # Store Pylint analysis data in `${HOME}/.local/share`
 export PYLINTHOME="${XDG_DATA_HOME}";
 
