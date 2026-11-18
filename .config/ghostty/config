@@ -7,7 +7,8 @@ cursor-style-blink = true
 font-family = Liga SFMono Nerd Font
 macos-titlebar-style = tabs
 keybind = super+k=clear_screen
-shell-integration-features = no-cursor,sudo,no-title
+# `ssh-terminfo` off until https://github.com/ghostty-org/ghostty/pull/15136 (re-runs `ssh host <cmd>`).
+shell-integration-features = no-cursor,no-title,ssh-env,sudo
 theme = github-dark
 title = " "
 window-colorspace = display-p3
