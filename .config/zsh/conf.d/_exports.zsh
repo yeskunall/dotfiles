@@ -126,6 +126,10 @@ export PNPM_HOME="${XDG_DATA_HOME}/pnpm";
 
 export PRETTIERD_LOCAL_PRETTIER_ONLY="1";
 
+export PSQL_HISTORY="${XDG_DATA_HOME}/psql/history";
+# psql opens the history file directly, without creating its parent directory
+[[ -d "${XDG_DATA_HOME}/psql" ]] || mkdir -p "${XDG_DATA_HOME}/psql";
+
 export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
 
 export PYENV_ROOT="${XDG_CONFIG_HOME}/pyenv";
@@ -165,7 +169,9 @@ export ZSH_AUTOSUGGEST_USE_ASYNC="true";
 # Enable all available highlighter modes in `zsh-syntax-highlighting`
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor);
 
-# Build `$PATH`, skipping any empty entries
+# Build `$PATH`, skipping any empty entries. `-U` drops duplicates so entries
+# already added by macOS `path_helper` are not repeated.
+typeset -U path;
 _path_parts=(
   "/usr/local/sbin"
   "${HOME}/.local/bin"
@@ -178,7 +184,7 @@ _path_parts=(
 );
 
 for _p in "${_path_parts[@]}"; do
-  [[ -n "$_p" ]] && PATH="$_p:$PATH";
+  [[ -n "$_p" ]] && path=("$_p" $path);
 done
 
 unset _path_parts _p;
