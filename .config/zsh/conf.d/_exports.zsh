@@ -130,8 +130,10 @@ export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
 
 export PYENV_ROOT="${XDG_CONFIG_HOME}/pyenv";
 
-export PYTHON_HISTORY="${XDG_CONFIG_HOME}/python/history";
-export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/.pythonrc.py";
+export PYTHON_HISTORY="${XDG_DATA_HOME}/python/history";
+# PyREPL opens `PYTHON_HISTORY` directly, without creating its parent directory
+# See https://github.com/python/cpython/blob/main/Lib/_pyrepl/simple_interact.py
+[[ -d "${XDG_DATA_HOME}/python" ]] || mkdir -p "${XDG_DATA_HOME}/python";
 # Store Pylint analysis data in `${HOME}/.local/share`
 export PYLINTHOME="${XDG_DATA_HOME}";
 
