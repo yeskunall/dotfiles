@@ -2,13 +2,14 @@
 experimental = true
 idiomatic_version_file_enable_tools = ["rust"]
 minimum_release_age = "7d"
+minimum_release_age_excludes = ["http:amp"] # the `http` backend publishes no release dates
 python.uv_venv_auto = true
 self_update.auto = true
 self_update.minimum_release_age = "0s"
 
 [tools]
 act = "0.2.97"
-aws-cli = { version = "2.39.6", symlink_bins = "true" }
+aws-cli = { version = "2.40.3", symlink_bins = "true" }
 bat = "0.26.1"
 bun = "1.4.4"
 deno = "2.9.8"
@@ -16,37 +17,38 @@ dive = "0.13.1"
 docker-cli = "29.9.3"
 dprint = "0.64.3"
 duf = "0.9.1"
-exiftool = "13.61"
+exiftool = "13.63"
 fd = "10.5.2"
-flyctl = "0.5.5"
+flyctl = "0.5.10"
 fx = "40.0.1"
 fzf = "0.75.0"
+gcloud = "593.0.0"
 git-filter-repo = "2.47.0"
 git-town = "24.1.1"
-github-cli = "2.103.3"
+github-cli = "2.104.0"
 glow = "3.0.0"
-go = "1.27.3"
+go = "1.27.4"
 golangci-lint = "2.15.0"
 gum = "2.0.2"
-hunk = "0.24.1"
-infisical = { version = "0.45.4", asset_pattern = "cli_{{ version }}_{{ os(macos='darwin') }}_{{ arch(x64='amd64') }}.tar.gz" }
+hunk = "0.25.0"
+infisical = { version = "0.45.8", asset_pattern = "cli_{{ version }}_{{ os(macos='darwin') }}_{{ arch(x64='amd64') }}.tar.gz" }
 lazydocker = "0.25.2"
 lazygit = "0.66.3"
 node = "24.22.2"
-nub = "0.10.0"
-pandoc = "3.13"
+nub = "0.11.0"
+pandoc = "3.14"
 pipx = "1.18.16"
 python = "3.15.2"
 qsv = "28.0.0"
 rclone = "1.76.0"
 ripgrep = "15.2.0"
 ruby = "3.4.12"
-rumdl = "0.3.2"
+rumdl = "0.3.4"
 typst = "0.15.1"
-uv = "0.13.7"
-vale = "3.26.0"
+uv = "0.13.8"
+vale = "3.27.0"
 vendir = "0.46.3"
-yq = "4.54.2"
+yq = "4.54.3"
 yt-dlp = "2026.10.26"
 zig = "0.17.1"
 zls = "0.17.0"
@@ -56,12 +58,12 @@ zoxide = "0.10.0"
 "aqua:duckdb/duckdb" = "1.5.6"
 "aqua:neilotoole/sq" = "0.55.0"
 "aqua:neovim/neovim" = "0.12.6"
-"aqua:pnpm/pnpm" = "12.18.0"
+"aqua:pnpm/pnpm" = "12.21.0"
 
 "conda:aria2" = "1.37.0"
 "conda:ffmpeg" = "9.0.2"
 "conda:imagemagick" = "7.1.2_31"
-"conda:poppler" = "26.10.0"
+"conda:poppler" = "26.11.0"
 "conda:sqlite" = "3.54.1"
 
 "github:beeper/bridge-manager" = { version = "0.15.0", version_prefix = "v", matching = "bbctl-macos-", rename_exe = { "bbctl-macos-*" = "bbctl" } }
@@ -69,9 +71,9 @@ zoxide = "0.10.0"
 "github:ipinfo/cli" = { version = "3.3.4", version_prefix = "ipinfo-", matching = "ipinfo_", rename_exe = { "ipinfo_*" = "ipinfo" } }
 "github:natesales/q" = "0.19.12"
 "github:pystardust/ani-cli" = "5.1"
-"github:rilldata/rill" = "0.91.1"
+"github:rilldata/rill" = "0.91.3"
 
-"http:amp" = { version = "0.0.1794297642-g6d0247", url = "https://static.ampcode.com/cli/{{ version }}/amp-darwin-arm64.gz", checksum_url = "https://static.ampcode.com/cli/{{ version }}/darwin-arm64-amp.sha256" }
+"http:amp" = { version = "0.0.1795608053-gcec25c", url = "https://static.ampcode.com/cli/{{ version }}/amp-darwin-arm64", checksum_url = "https://static.ampcode.com/cli/{{ version }}/darwin-arm64-amp.sha256", version_list_url = "https://static.ampcode.com/cli/cli-version.txt" }
 
 "npm:@tigrisdata/cli" = "3.17.2"
 
