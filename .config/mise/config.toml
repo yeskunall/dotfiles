@@ -2,6 +2,7 @@
 experimental = true
 idiomatic_version_file_enable_tools = ["rust"]
 minimum_release_age = "7d"
+minimum_release_age_excludes = ["http:amp"] # the `http` backend publishes no release dates
 python.uv_venv_auto = true
 self_update.auto = true
 self_update.minimum_release_age = "0s"
@@ -72,7 +73,7 @@ zoxide = "0.10.0"
 "github:pystardust/ani-cli" = "5.1"
 "github:rilldata/rill" = "0.91.3"
 
-"http:amp" = { version = "0.0.1794297642-g6d0247", url = "https://static.ampcode.com/cli/{{ version }}/amp-darwin-arm64.gz", checksum_url = "https://static.ampcode.com/cli/{{ version }}/darwin-arm64-amp.sha256" }
+"http:amp" = { version = "0.0.1795608053-gcec25c", url = "https://static.ampcode.com/cli/{{ version }}/amp-darwin-arm64", checksum_url = "https://static.ampcode.com/cli/{{ version }}/darwin-arm64-amp.sha256", version_list_url = "https://static.ampcode.com/cli/cli-version.txt" }
 
 "npm:@tigrisdata/cli" = "3.17.2"
 
