@@ -126,6 +126,9 @@ export PNPM_HOME="${XDG_DATA_HOME}/pnpm";
 
 export PRETTIERD_LOCAL_PRETTIER_ONLY="1";
 
+[[ -d "${XDG_DATA_HOME}/psql" ]] || mkdir -p "${XDG_DATA_HOME}/psql";
+export PSQL_HISTORY="${XDG_DATA_HOME}/psql/history";
+
 export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
 
 export PYENV_ROOT="${XDG_CONFIG_HOME}/pyenv";
@@ -166,6 +169,7 @@ export ZSH_AUTOSUGGEST_USE_ASYNC="true";
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor);
 
 # Build `$PATH`, skipping any empty entries
+typeset -U path;
 _path_parts=(
   "/usr/local/sbin"
   "${HOME}/.local/bin"
@@ -178,7 +182,7 @@ _path_parts=(
 );
 
 for _p in "${_path_parts[@]}"; do
-  [[ -n "$_p" ]] && PATH="$_p:$PATH";
+  [[ -n "$_p" ]] && path=("$_p" $path);
 done
 
 unset _path_parts _p;
