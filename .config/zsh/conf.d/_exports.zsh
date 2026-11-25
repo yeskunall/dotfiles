@@ -126,7 +126,7 @@ export PNPM_HOME="${XDG_DATA_HOME}/pnpm";
 
 export PRETTIERD_LOCAL_PRETTIER_ONLY="1";
 
-[[ -d "${XDG_DATA_HOME}/psql" ]] || mkdir -p "${XDG_DATA_HOME}/psql" || return;
+[[ -d "${XDG_DATA_HOME}/psql" ]] || mkdir -p "${XDG_DATA_HOME}/psql";
 export PSQL_HISTORY="${XDG_DATA_HOME}/psql/history";
 
 export PULUMI_HOME="${XDG_CONFIG_HOME}/pulumi";
