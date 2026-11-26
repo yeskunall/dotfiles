@@ -256,11 +256,6 @@
               "whoami": true,
             },
           },
-          "Sequential thinking": {
-            "tools": {
-              "sequentialthinking": true,
-            },
-          },
         },
         "tools": {
           "diagnostics": true,
@@ -532,11 +527,6 @@
               "whoami": true,
             },
           },
-          "Sequential thinking": {
-            "tools": {
-              "sequentialthinking": true,
-            },
-          },
         },
         "tools": {
           "apply_code_action": true,
@@ -766,7 +756,6 @@
         "mcp:Plain:searchThreadLinkCandidates": { "default": "allow" },
         "mcp:Plain:searchThreads": { "default": "allow" },
         "mcp:Plain:sendSidekickMessage": { "default": "deny" },
-        "mcp:Sequential thinking:sequentialthinking": { "default": "allow" },
         "diagnostics": { "default": "allow" },
         "skill": {
           "always_allow": [
@@ -951,11 +940,6 @@
     },
     "Sentry": {
       "url": "https://mcp.sentry.dev/mcp",
-    },
-    // An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.
-    "Sequential thinking": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
     },
   },
   "cursor_shape": "block",
